@@ -1,0 +1,257 @@
+
+
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Etape 7</title>
+      <script type="text/javascript" src="assets/etape7_library.js"></script>
+      <script
+         src="https://code.jquery.com/jquery-3.1.1.js"
+         integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+         crossorigin="anonymous"></script>
+      <!--JQUERY ET EXTENSIONS-->
+      <!--FIN DE JQUERY ET EXTENSIONS-->
+      <link rel="stylesheet" type="text/css"href="../assets/style/interfacestyle.css"/>
+      <link rel="stylesheet" type="text/css"href="assets/style/css/fontstyle.css"/>
+      <style>
+         .sequenceconsign {
+         color: #7d7d7d;
+         font-family: "Helvetica Neue LT Std 55 Roman";
+         font-size: 11px;
+         margin-top: 0;
+         position: relative;
+         top: -12px;
+         }
+         body{
+         color: #7d7d7d;
+         font-family:"Helvetica Neue LT Std 55 Roman"
+         background-color: #efefef;
+         }
+         #dialogoverlay{
+         display:none;
+         width:200px;
+         height:120px;
+         position:absolute;
+         background:#009FE3;
+         color:#FFFFFF;
+         opacity:0.9;
+         padding:0px;
+         border-radius:20px;
+         box-shadow:0 0 2px rgba(0,0,0,.5);
+         font-family:'Helvetica Neue LT Std 55 Roman';font-weight:normal;
+         font-size:15px;
+         left:50%;
+         }
+         #dialogbox{
+         display:none;
+         width:230px;
+         height:90px;
+         position:absolute;
+         background:#009FE3;
+         color:#FFFFFF;
+         opacity:0.9;
+         border-radius:20px;
+         box-shadow:0 0 2px rgba(0,0,0,.5);
+         font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;
+         font-size:12px;
+         left:50%;
+         bottom:30%;
+         }
+         #dialogbox > div{ background:#FFF; margin:8px; }
+         #dialogbox > div > #dialogboxhead{ background: #009FE3; font-size:19px; padding:10px; color:#CCC; }
+         #dialogbox > div > #dialogboxbody{ background:#009FE3; padding:15px; color:#FFF; margin-top:-30px;padding-bottom:0px}
+         #dialogbox > div > #dialogboxfoot{ background: #009FE3; padding:10px; text-align:right; }		
+         #ok{cursor:pointer;margin:0px;} 
+         .etapeTitle {
+         color: black;
+         font-size: 35px;
+         text-transform: uppercase;
+         }
+         .choices{
+         color: #009FE3;
+         font-weight: 700;
+         cursor:pointer;
+         }
+         @font-face{
+         src: url("/assets/police/HelveticaNeueLTStd-Roman.otf");
+         font-family: "Helvetica Neue LT Std 55 Roman";
+         }
+         .valider {
+         font-family: "Helvetica Neue LT Std 55 Roman";
+         font-size: 12px;
+         font-weight: normal;
+         padding: 14px 60px;
+         }
+         .valider {
+         background-color: black;
+         border-radius: 11px;
+         box-shadow: -5px 5px 5px 0 silver;
+         color: #ffffff;
+         cursor: pointer;
+         display: inline-block;
+         font-size: 12px;
+         margin-left: 460px;
+         margin-top: 40px;
+         padding: 15px 65px;
+         text-decoration: none;
+         text-shadow: 0 1px 0 #2f6627;
+         text-transform: uppercase;
+         }
+         .gradient {
+         background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(229, 229, 229, 1) 8%, rgba(0, 0, 0, 1) 100%) repeat scroll 0 0;
+         height: 7px;
+         margin-bottom: 30px;
+         margin-left: -15px;
+         opacity: 0.2;
+         width: 715px;
+         }
+      </style>
+   </head>
+   <body id="bodymaininside" style='height:auto;width:650px;margin-left:0px;'>
+
+      <div id="consignesGenerales">
+         <div class='consigncontainer' style="width:650px;">
+        
+            </br>
+            <span class="titleblue">SUITE (EN OPTION)</span></br>
+      
+           Comparée à celle de l’indice, la volatilité du fonds A est  <span class="listing">
+            <span class="choices"><img data-checked=true src="off.png" ><label for="thing"></label> quasi identique</span>
+            <span class="choices"><img data-checked=false src="off.png" ><label for="thing"></label> supérieure</span>
+            <span class="choices"><img data-checked=false src="off.png" ><label for="thing"></label> inférieure</span>
+            </span>.
+           </br>La Tracking Error du fonds est  <span class="listing">
+            <span class="choices"><img data-checked=true src="off.png" ><label for="thing"></label> proche de 0</span>
+            <span class="choices"><img data-checked=false src="off.png" ><label for="thing"></label> proche de 1 </span>
+            <span class="choices"><img data-checked=false src="off.png" ><label for="thing"></label> supérieure à 2</span>
+            </span>
+           et son bêta est toujours  <span class="listing">
+            <span class="choices"><img data-checked=true src="off.png" ><label for="thing"></label> très proche de 1 </span>
+            <span class="choices"><img data-checked=false src="off.png" ><label for="thing"></label> supérieur à 1 </span>
+            <span class="choices"><img data-checked=false src="off.png" ><label for="thing"></label> inférieur à 1 </span>
+            </span>
+            . Ces chiffres montrent qu’il s’agit d’une gestion <span class="listing">
+            <span class="choices"><img data-checked=false src="off.png" ><label for="thing"></label> active</span>
+            <span class="choices"><img data-checked=true src="off.png" ><label for="thing"></label> passive</span>
+            </span>
+            et qu’elle est en outre de type <span class="listing">
+            <span class="choices"><img data-checked=false src="off.png" ><label for="thing"></label> benchmarké </span>
+            <span class="choices"><img data-checked=true src="off.png" ><label for="thing"></label> indiciel </span>
+            <span class="choices"><img data-checked=false src="off.png" ><label for="thing"></label>  structuré </span>
+            </span>
+          </br>  </br>Le fonds applique donc une approche <span class="listing">
+            <span class="choices"><img data-checked=false src="off.png" ><label for="thing"></label> qualitative</span>
+            <span class="choices"><img data-checked=true src="off.png" ><label for="thing"></label> quantitative</span>
+            </span> 
+            , ce que confirme d’ailleurs le nombre de lignes en portefeuille qui est au 31 mars de <span class="listing">
+            <span class="choices"><img data-checked=false src="off.png" ><label for="thing"></label> 63</span>
+            <span class="choices"><img data-checked=false src="off.png" ><label for="thing"></label> 151</span>
+            <span class="choices"><img data-checked=true src="off.png" ><label for="thing"></label>  239</span>
+            </span> 
+            pour un indice de référence qui en comporte près de  <span class="listing">
+            <span class="choices"><img data-checked=false src="off.png" ><label for="thing"></label> 155 </span>
+            <span class="choices"><img data-checked=true src="off.png" ><label for="thing"></label> 240 </span>
+            <span class="choices"><img data-checked=false src="off.png" ><label for="thing"></label>  300 </span>
+            </span> 
+            .<br>
+            <div class="valider" style="margin-left:0px;visibility:hidden" id="reload" onclick="reload()">recommencer</div>
+            <div class="valider" style="margin-left:5px;visibility:hidden" id="reponse" onclick="showGoodDeal()">voir la réponse</div>
+            <div class="valider" style="margin-left:-50px" id="ckbtn" >valider</div>
+         </div>
+      </div>
+      <div id="dialogoverlay"></div>
+      <div id="dialogbox">
+      <div>
+      <div id="dialogboxfoot"></div>
+      <div id="dialogboxbody"></div>
+      <div id="dialogboxhead"></div>
+      <!--
+         <script type='text/javascript' src='../assets/jquery-2.2.4.min.js'></script>
+         <script type='text/javascript' src='../assets/jquery.browser.js'></script>
+         <script type='text/javascript' src='../assets/jquery.iframe-auto-height.js'></script>
+         <script type='text/javascript' src='../assets/jquery.scrollTo.min.js'></script>
+         -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+      <script src="alert.js"></script>
+      <script>
+         function validerHide() {
+             $("#ckbtn").hide();
+         }
+
+         function reloadShow() {
+             $("#reload").css("visibility", "visible");
+         }
+
+         function reponseShow() {
+             $("#reponse").css("visibility", "visible");
+         }
+
+         function reload() {
+            window.reload();
+         }
+
+         $('.choices').click(function() {
+             $(this).parent().find('img').attr('src', 'off.png');
+             $(this).find('img').attr('src', 'on.png');
+         })
+
+
+         $('#ckbtn').click(function() {
+             var i = 0;
+             var y = 0;
+             var rep = 8;
+             $('.choices').find('img').each(function() {
+                 var on = $(this).attr('src');
+                 on = on.replace('.png', '');
+                 if (on == 'on') {
+                     y = y + 1;
+                 }
+                 var data = $(this).data('checked');
+                 if (on == 'on' && data == true) {
+                     i = i + 1;
+                 }
+
+             })
+
+
+             console.log(y);
+             if (y == rep) {
+                 if (i == rep) {
+                     success();
+                     validerHide()
+                 } else {
+
+                     reloadShow();
+                     error();
+                     validerHide();
+                     reponseShow()
+                     $('.choices').find('img').each(function() {
+                         var on2 = $(this).attr('src');
+                         on2 = on2.replace('.png', '');
+                         var data2 = $(this).data('checked');
+                         if (on2 == 'on' && data2 == false) {
+                             $(this).attr('src', 'error.png');
+                         }
+
+                     })
+                 }
+             } else {
+                 miss();
+             }
+         })
+
+         var data2 = $(this).data('checked');
+         var showGoodDeal = function() {
+             $('.choices').find('img').each(function() {
+                 if ($(this).data('checked') == true) {
+                     $(this).attr('src', 'on.png');
+                 } else {
+                     $(this).attr('src', 'off.png');
+                 }
+             })
+         }
+          
+      </script>
+   </body>
+</html>
+

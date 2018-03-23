@@ -1,0 +1,334 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Etape 3</title>
+	<!--JQUERY ET EXTENSIONS-->
+	<link rel="stylesheet" type="text/css"href="assets/style/css/fontstyle.css"/>
+		<script type='text/javascript' src='assets/jquery-2.2.4.min.js'></script>
+		<script type='text/javascript' src='assets/jquery.browser.js'></script>
+	
+		<script type='text/javascript' src='assets/jquery.scrollTo.min.js'></script>
+	<!--FIN DE JQUERY ET EXTENSIONS-->
+	
+	<!--NOS PROPRES SCRIPTS-->
+	<script type="text/javascript" src="assets/etape3_library.js"></script>
+	<!--FIN DE NOS PROPRES SCRIPTS CHARGES EN DEBUT DE PAGE-->
+	
+	<!-- optimize mobile versions -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+
+<style>
+
+.etapeTitle {
+    color: black;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+	
+	
+.boutonMarche{text-transform:uppercase;padding:10px;width:100px;font-weight:normal;}
+
+.icone{position:absolute;margin-top:10px;cursor:pointer;}
+	
+#iconacta{left:206px;}	
+#iconmona{left:453px;}	
+#iconoba{left:331px;}	
+.socle{width:45px;}
+	</style>
+	
+	<script>
+		var actasimul=function(){$("#boutonMarcheAction1").click();$('#marcheCourant').attr('height', '3750px');parent.parent.parent.etape3ScrollStarter();}
+		var obasimul=function(){$("#boutonMarcheObligataire1").click();$('#marcheCourant').attr('height', '5100px');parent.parent.parent.etape3ScrollStarter();}
+		var monasimul=function(){$("#boutonMarcheMonetaire1").click();$('#marcheCourant').attr('height', '2700px');parent.parent.parent.etape3ScrollStarter();}
+var scrollpoint2as=function() {
+parent.parent.$('html, body').animate({
+		scrollTop:$("#scrollPoint").offset().top
+	}, 0);
+
+
+			};
+
+ var goToQuiz=function(){$('#consignesGenerales').hide();$('#plateaudesmarches1').hide();$('#plateaudesmarches2').hide();$('#marcheCourant').hide();$('.quizSpell').show();scrollpoint2as();}
+ 		   var forum = function() {
+			   parent.parent.parent.forum();
+		   }
+
+		   var survey = function() {
+			   window.open("https://services.themoocagency.com/survey/index.php/912935?912935X163X1662=" + username);
+		   }
+
+
+		   var cookContent = document.cookie,
+			   cookEnd, i, j;
+		   var cookie_apoc = cookie_apoc + "=";
+
+
+		   function getCookie(name) {
+			   if (document.cookie.length == 0)
+				   return null;
+
+			   var regSepCookie = new RegExp('(; )', 'g');
+			   var cookies = document.cookie.split(regSepCookie);
+
+			   for (var i = 0; i < cookies.length; i++) {
+				   var regInfo = new RegExp('=', 'g');
+				   var infos = cookies[i].split(regInfo);
+				   if (infos[0] == name) {
+					   return unescape(infos[1]);
+				   }
+			   }
+			   return null;
+		   }
+
+
+		   //console.log('myCookie a pour valeur : ' + getCookie('cookie_apoc'));
+
+		   var recept = 0;
+		   var teste = function() {
+
+			   if (document.cookie.length > 0) {
+				   var texte = "status";
+				   var table = document.cookie.split(/;/);
+				   var valeur = "";
+				   for (i = 0; i < table.length; i++) {
+					   if (table[i].indexOf(texte) != -1) {
+						   valeur = table[i].substring(Number(texte.length + table[i].indexOf(texte)), table[i].length);
+					   }
+					   recept = valeur;
+					   alert(recept);
+				   }
+			   }
+		   }
+
+
+		   $('button').click(function() {
+			   data = {
+				   user_id: $('#user_id').val(),
+				   total_score: $('#total_score').val(),
+				   status: $('#status').val(),
+				   etape_id: $('#etape_id').val(),
+				   etape_score: $('#etape_score').val(),
+			   };
+			   $.ajax({
+				   url: '/apoc/status_and_score/',
+				   type: 'POST',
+				   dataType: 'json',
+				   data: data,
+				   success: function(data) {
+					   cookievalue = getCookie('cookie_apoc').replace(/\\054/g, ',').replace(/\L\054/g, ',').replace(/u'/g, "'").replace(/'/g, '"').replace(/L}/g, '}').replace(/True/g, 'true').replace(/False/g, 'false').slice(1, -1);
+				   }
+			   })
+		   })
+
+
+		   cookievalue = getCookie('cookie_apoc').replace(/\\054/g, ',').replace(/\L\054/g, ',').replace(/u'/g, "'").replace(/'/g, '"').replace(/L}/g, '}').replace(/True/g, 'true').replace(/False/g, 'false').slice(1, -1);
+
+		   var actualiseCookie = function() {
+			   cookievalue = getCookie('cookie_apoc').replace(/\\054/g, ',').replace(/\L\054/g, ',').replace(/u'/g, "'").replace(/'/g, '"').replace(/L}/g, '}').replace(/True/g, 'true').replace(/False/g, 'false').slice(1, -1);
+		   }
+
+
+		   var uryAc = function() {
+			   ury = JSON.parse(cookievalue);
+			   userPosition = ury.status.position;
+			   userTop3 = ury.status.trio;
+			   userId = ury.status.user_id;
+			   username = ury.user.username;
+			   userLName = ury.status.user_lastname;
+			   userFName = ury.status.user_firstname;
+			   top1 = ury.status.trio[0];
+			   top2 = ury.status.trio[1];
+			   top3 = ury.status.trio[2];
+			   check = ury.status.check;
+			   current_status = ury.score.current_status;
+			   scoreTotal = ury.score.score_total;
+			   scoreDetail = ury.score.score_detail;
+			   etape1 = scoreDetail[0].status;
+			   etape2 = scoreDetail[1].status;
+			   etape3 = scoreDetail[2].status;
+			   etape4 = scoreDetail[3].status;
+			   etape5 = scoreDetail[4].status;
+			   etape6 = scoreDetail[5].status;
+			   etape7 = scoreDetail[6].status;
+			   etape8 = scoreDetail[7].status;
+			   DbUserprogression = 75 + "%";
+			   DbUserClassement = userPosition;
+			   DbUserScore = scoreTotal;
+			   DbUserStep0 = 0;
+			   DbUserStep1 = etape1;
+			   DbUserStep2 = etape2;
+			   DbUserStep3 = etape3;
+			   DbUserStep4 = etape4;
+			   DbUserStep5 = etape5;
+			   DbUserStep6 = etape6;
+			   DbUserStep7 = etape7;
+			   DbUserStep8 = etape8;
+		   }
+		   var ratioStar = scoreTotal / 850 * 100;
+		   var ury = JSON.parse(cookievalue);
+		   var userPosition = ury.status.position;
+		   var userTop3 = ury.status.trio;
+		   var userId = ury.status.user_id;
+		   var username = ury.user.username;
+		   var userLName = ury.status.user_lastname;
+		   var userFName = ury.status.user_firstname;
+		   var top1 = ury.status.trio[0];
+		   var top2 = ury.status.trio[1];
+		   var top3 = ury.status.trio[2];
+		   var check = ury.status.check;
+		   var current_status = ury.score.current_status;
+		   var scoreTotal = ury.score.score_total;
+		   var scoreDetail = ury.score.score_detail;
+
+		</script>
+
+<body id="bodymaininside" style='height:auto;width:708px;margin-left:-7px;'>
+
+<div id="consignesGenerales">
+	<span class='etapeTitle' style="margin-left:17px;">principes</span></br></br></br>
+		<div class='consigncontainer'>
+
+		<div class="sequence">
+                    <div class='imgcontain view' style="margin-top:8px;"><img></div>
+					
+                     <div class='sequencetextcontainer'>
+						 <span class='sequencetitle'>
+                         VIDÉO
+                        </span>
+						</br></br>
+                        <div class='sequenceconsign'>
+                        Durée : 0.33 min
+                
+                     </div>
+					 </div>
+					</br>
+                  <div class="consigne" >
+                     <span class="titleblue">vidéo introductive</span></br>
+				Découvrez l'étape 7 en visionnant  la vidéo ci-dessous.
+      
+	  
+                 	</span>
+	
+			
+				
+                  </div>
+			</div>
+				<div style="width:655px;height:380px;background-color:white;padding:2px;padding-top:7px;padding-left:-2px;margin-bottom:26px;margin-left:10px;margin-top:72px;">
+		<iframe src="https://player.vimeo.com/video/185672502" width="640" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="margin-left:7px;margin-top:4px;"></iframe>
+	</div>
+			
+			
+L’ensemble des transactions sur lesquelles vous avez travaillé aux étapes 5 et 6, ont toutes eu lieu en 2009 et 2010:	</br>-	d’avril 2009 à septembre 2009 
+pour les actions, </br>-	de janvier 2010 à octobre 2010 pour les obligations, </br>- et en mai 2009 pour les titres de créance négociables. </br></br>
+Nous vous proposons de quitter 2009-2010 pour faire un bond de 2 ans à 2 ans et demi dans le temps et vous projeter en octobre 2011.</br></br>
+
+
+	<div class="gradient"></div>
+	<div class='consigncontainer'>
+
+		<div class="sequence">
+                    <div class='imgcontain view' style="margin-top:8px;height:20px;"><img></div>
+					
+                     <div class='sequencetextcontainer'>
+						 <span class='sequencetitle'>
+                         VIDÉO 
+                        </span>
+						</br></br>
+                        <div class='sequenceconsign'>
+                        Durée : 3.53 min
+                        </div>
+                     </div>
+					 </div>
+					</br>
+                  <div class="consigne" >
+                     <span class="titleblue">CONTEXTE ÉCONOMIQUE </span></br>
+					Découvrez ce qui s’est passé dans le monde et sur les marchés financiers durant cette période en visionnant </br>la vidéo ci-dessous. Soyez attentif à la façon dont les différentes zones géographiques réagissent aux événements.
+</br>Cette vidéo vous permettra d'évaluer le risque
+ des différents titres dans les séquences suivantes.
+      
+	  
+                 	</span>
+	
+			
+				</br>
+				</br>
+                  </div>
+			</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div style="width:655px;height:380px;background-color:white;padding:2px;padding-top:7px;padding-left:-2px;margin-bottom:20px;margin-left:10px;">
+		<iframe src="https://player.vimeo.com/video/185882827" width="640" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="margin-left:7px;margin-top:4px;"></iframe>
+	</div>
+
+	</br>
+	</br>
+	<div class='videocomm' style='margin-top:5px;margin-bottom:-10px'>
+	<span>Dans ce contexte économique décrit dans la vidéo ci-dessus, qu’est-il advenu des titres qui ont été échangés</br> en 2009 et 2010 ?</span>
+	</div>
+	</br>  
+<span>
+Choisissez le marché financier (actions, obligations, monétaire) sur lequel vous souhaitez d’abord travailler à l’aide du bouton <img style="width:25px;height:15px;"class="socle" src="../assets/img/entermarket.png";>.
+</span>
+</div>
+<div id="plateaudesmarches1" class="plateaudesmarches" style="margin-bottom:20px;margin-top:20px;" onmouseover="gestionMenuMarche();"onmouseout="gestionMenuMarche();">
+	<div id="boutonMarcheAction1" class="boutonMarche boutonAction boutonActive">entrer sur</br> le marché <span style='font-weight:bold'>ACTIONS</span></div>
+	<div class="icone" id="iconacta"  onclick="actasimul()"><img class="socle" src="../assets/img/entermarket.png";></div>  
+	<div id="boutonMarcheObligataire1" class="boutonMarche boutonObligataire boutonActive">entrer sur</br> le marché <span style='font-weight:bold'>OBLIGATAIRE</span></div>
+	<div class="icone" id="iconoba"  onclick="obasimul()"><img class="socle" src="../assets/img/entermarket.png";></div>  
+	<div id="boutonMarcheMonetaire1" class="boutonMarche boutonMonetaire boutonActive">entrer sur</br> le marché <span style='font-weight:bold'>MONÉTAIRE</span></div>
+	<div class="icone" id="iconmona"  onclick="monasimul()"><img class="socle" src="../assets/img/entermarket.png";></div>  
+</div>
+<div id="scrollPoint" style="width:1px;height:1px;"></div> 
+<iframe id="marcheCourant" align="middle"  frameborder="0" scrolling="no"  src="main2.html" width="709px"height="2700px" onmouseover="gestionMenuMarche();"onmouseout="gestionMenuMarche();">
+	Marché courant
+</iframe>
+
+<div id="plateaudesmarches2" class="plateaudesmarches" style="margin-bottom:20px;" onmouseover="gestionMenuMarche();"onmouseout="gestionMenuMarche();">
+	<div id="boutonMarcheAction2" class="boutonMarche boutonAction boutonActive">entrer sur</br> le marché <span style='font-weight:bold'>ACTIONS</span></div>
+	<div class="icone" id="iconacta"  onclick="actasimul()"><img class="socle" src="../assets/img/entermarket.png";></div>  
+	<div id="boutonMarcheObligataire2" class="boutonMarche boutonObligataire boutonActive">entrer sur</br> le marché <span style='font-weight:bold'>OBLIGATAIRE</span></div>
+	<div class="icone" id="iconoba"  onclick="obasimul()"><img class="socle" src="../assets/img/entermarket.png";></div>  
+	<div id="boutonMarcheMonetaire2" class="boutonMarche boutonMonetaire boutonActive">entrer sur</br> le marché <span style='font-weight:bold'>MONÉTAIRE</span></div>
+	<div class="icone" id="iconmona"  onclick="monasimul()"><img class="socle" src="../assets/img/entermarket.png";></div>  
+	<div style="width:300px;float:left;margin-left:430px;margin-top:80px;" class="converter">
+	   		<div id="quiz" class="valider" style="background-color: black;
+font-weight:normal;border-radius: 11px;box-shadow: -5px 5px 5px 0 silver;color: #ffffff;cursor: pointer;display: inline-block;font-size: 11px;margin-left: 10px;margin-top: 0px;padding: 15px 10px;text-decoration: none;     text-shadow: 0 1px 0 #2f6627;     text-transform: uppercase; 	width:165px;text-align: center;font-family:'Helvetica Neue LT Std 55 Roman';"onclick="parent.parent.quiz3();">POURSUIVRE VERS LA</br> VIDÈO DES 3 MARCHÉS</br> ET LE QUIZ DE FIN D’ÈTAPE
+</div>
+</br>
+</br>
+
+<div id="quiz" class="valider" style="background-color: black;
+font-weight:normal;border-radius: 11px;box-shadow: -5px 5px 5px 0 silver;color: #ffffff;cursor: pointer;display: inline-block;font-size: 11px;margin-left: 10px;margin-top: 0px;padding: 15px 10px;text-decoration: none;     text-shadow: 0 1px 0 #2f6627;     text-transform: uppercase; 	width:165px;text-align: center;font-family:'Helvetica Neue LT Std 55 Roman';"onclick="forum();">entrer sur le forum
+</div>
+
+
+	   </div>
+<div  class="quizSpell" style="height:50px;width:708px;margin-top:20px;display:none;">
+
+	  </div>
+<div id="quiz" class="quizSpell" style="height:300px;width:708px;margin-top:40px;display:none;">
+  <iframe src="quiz/quiz1.html" align="middle" style='display:block;margin-bottom:30px;border:none;margin-top:0px;'
+         width="708" 
+         height="400" frameborder="0" scrolling="no"  >
+      </iframe> 
+	  
+	  
+	  </div>
+
+</body>
+<!--NOS PROPRES SCRIPTS-->
+<script type="text/javascript" src="assets/etape3_index.js"></script>
+<!--FIN DE NOS PROPRES SCRIPTS CHARGES EN FIN DE PAGE-->
+
+</html>

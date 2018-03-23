@@ -1,0 +1,614 @@
+<html style='height:7000px;width:708px;'>
+   <head>
+      <meta charset="utf-8">
+      <title>ÉTAPE 6</title>
+      <script type='text/javascript' src='assets/jquery-2.2.4.min.js'></script>
+      <script type='text/javascript' src='assets/jquery.browser.js'></script>
+      <script type='text/javascript' src='assets/jquery.iframe-auto-height.js'></script>
+      <script type='text/javascript' src='assets/jquery.scrollTo.min.js'></script>
+      <script type="text/javascript" src="assets/etape6_library.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="assets/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/style/marchestyle.css">
+      <!-- fichier css à utiliser -->
+      <link rel="stylesheet" type="text/css" href="../assets/style/marchestyle.css">
+   </head>
+<style>
+.checkbox15 {
+    float: left;
+    width: 100px;
+}</style>
+   <body id="bodymaininside" style='height:auto;width:708px;margin-left:0px;font-family:'>
+   	  <script>
+	  
+var formaCheck=function(){
+if(
+
+(document.getElementById("Oba5q1").value == "Italie"||
+document.getElementById("Oba5q1").value == "France"||
+document.getElementById("Oba5q1").value == "Espagne")&&
+
+
+(document.getElementById("Oba5q2").value == "Italie"||
+document.getElementById("Oba5q2").value == "France"||
+document.getElementById("Oba5q2").value == "Espagne")&&
+
+
+(document.getElementById("Oba5q3").value == "Italie"||
+document.getElementById("Oba5q3").value == "France"||
+document.getElementById("Oba5q3").value == "Espagne")&&
+
+
+(document.getElementById("Oba5q4").value == "Italie"||
+document.getElementById("Oba5q4").value == "Espagne"||
+document.getElementById("Oba5q4").value == "Pays-Bas")&&
+
+
+(document.getElementById("Oba5q5").value == "Italie"||
+document.getElementById("Oba5q5").value == "Espagne"||
+document.getElementById("Oba5q5").value == "Pays-Bas")&&
+
+(document.getElementById("Oba5q6").value == "Italie"||
+document.getElementById("Oba5q6").value == "Espagne"||
+document.getElementById("Oba5q6").value == "Pays-Bas")&&
+
+
+(document.getElementById("Oba5q7").value == "Italie"||
+document.getElementById("Oba5q7").value == "Espagne"||
+document.getElementById("Oba5q7").value == "Pays-Bas")&&
+
+
+(document.getElementById("Oba5q8").value == "Italie"||
+document.getElementById("Oba5q8").value == "Espagne"||
+document.getElementById("Oba5q8").value == "Pays-Bas")&&
+
+(document.getElementById("Oba5q9").value == "Italie"||
+document.getElementById("Oba5q9").value == "Espagne"||
+document.getElementById("Oba5q9").value == "Pays-Bas")&&
+
+
+document.getElementById("Oba5q10").value == "AT&T INC"
+
+
+&&
+
+document.getElementById("Oba5q11").value == "AT&T INC"
+
+&&
+
+document.getElementById("Oba5q12").value == "ACHMEA BANK NV"
+
+&&
+
+
+document.getElementById("Oba5q13").value == "Italie"
+
+
+
+&&
+
+
+
+document.getElementById("Oba5q14").value == "France"
+
+
+)
+
+
+{success();;
+	}
+
+else{error();};
+
+
+}
+
+
+
+
+
+
+
+var formaCheck2=function(){
+if(
+
+
+
+document.getElementById("Oba5q15").value == "5 ans"
+
+&&
+
+document.getElementById("Oba5q16").value == "7 ans"
+
+)
+
+
+{success2();;
+	}
+
+else{error();};
+
+
+}
+
+
+      var Alert = new CustomAlert();
+      // FIN CUSTOM ALERTT
+      // CONGRAT
+       var success=function(){Alert.render("BRAVO ! C'EST LA BONNE RÉPONSE."); valideHide();$("#dialogbox").css("height","90px");};
+      
+       var success2=function(){Alert.render("BRAVO ! C'EST LA BONNE RÉPONSE."); valideHide2();$("#dialogbox").css("height","90px");$("#infoOba1").show();};
+      
+      
+      var error=function(){Alert.render("CE N'EST PAS LA BONNE RÉPONSE. CONTINUEZ !");$("#dialogbox").css("height","90px");};
+	  
+	  var valideHide=function(){$('#valider').hide();}
+	  var valideHide2=function(){$('#valider2').hide();}
+      
+</script>
+	 	<div class='consigncontainer'>
+
+
+  <div class="consigne">
+               <span class="titleblue">ANALYSE 5</span></br>
+ 
+    <span>	
+        A partie des données fournies, analyser l’exposition du fonds B en sélectionnant les bonnes réponses.<img src="assets/img/down.png" style="width:15px;height:15px;border-top-right-radius:5px;border-bottom-right-radius:5px;">.
+         </span>
+ 
+            </div>
+
+			
+	<div class="formActa formNew" style="width:708px;height:470px;" >
+<iframe style="display:block;margin-bottom: 60px;border:none;" src="obaAnalyse5bis/index.html" id="ficheA" scrolling="no" height="450" width="708">
+         </iframe> 
+	
+
+<div class="formQuest">
+Quels sont les trois États auxquels le fonds est
+le plus exposé ?
+
+	</div>
+<div class="formliner" id="line1" >
+
+
+
+<div class="checkbox15 marge10"> En % d’actif	
+
+
+</div>
+<div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba5q1">
+ <option>?</option>
+   <option>Allemagne</option>		
+<option>Autriche</option>	
+<option>Belgique</option>	
+<option>Espagne</option>		
+<option>France</option>		
+<option>Irlande</option>	
+<option>Italie</option>				
+<option>Pays-Bas</option>			
+
+
+ </select>  </div>
+ <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba5q2">
+ <option>?</option>
+   <option>Allemagne</option>		
+<option>Autriche</option>	
+<option>Belgique</option>	
+<option>Espagne</option>		
+<option>France</option>		
+<option>Irlande</option>	
+<option>Italie</option>				
+<option>Pays-Bas</option>		
+
+ </select>  </div>
+ <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba5q3">
+ <option>?</option>
+   <option>Allemagne</option>		
+<option>Autriche</option>	
+<option>Belgique</option>	
+<option>Espagne</option>		
+<option>France</option>		
+<option>Irlande</option>	
+<option>Italie</option>				
+<option>Pays-Bas</option>		
+ </select>  </div>
+
+
+</div>
+<div class="formliner" id="line1" >
+
+
+
+<div class="checkbox15 marge10">En sensibilité 	
+
+
+</div>
+<div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba5q4">
+    <option>?</option>
+   <option>Allemagne</option>		
+<option>Autriche</option>	
+<option>Belgique</option>	
+<option>Espagne</option>		
+<option>France</option>		
+<option>Irlande</option>	
+<option>Italie</option>				
+<option>Pays-Bas</option>	
+
+ </select>  </div>
+ <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba5q5">
+ <option>?</option>
+   <option>Allemagne</option>		
+<option>Autriche</option>	
+<option>Belgique</option>	
+<option>Espagne</option>		
+<option>France</option>		
+<option>Irlande</option>	
+<option>Italie</option>				
+<option>Pays-Bas</option>	
+
+ </select>  </div>
+
+ <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba5q6">
+ <option>?</option>
+   <option>Allemagne</option>		
+<option>Autriche</option>	
+<option>Belgique</option>	
+<option>Espagne</option>		
+<option>France</option>		
+<option>Irlande</option>	
+<option>Italie</option>				
+<option>Pays-Bas</option>	
+
+ </select>  </div>
+
+
+
+</div>
+
+
+<div class="formliner" id="line1" >
+
+
+
+<div class="checkbox15 marge10">En SPS	
+
+
+</div>
+<div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba5q7">
+ <option>?</option>
+   <option>Allemagne</option>		
+<option>Autriche</option>	
+<option>Belgique</option>	
+<option>Espagne</option>		
+<option>France</option>		
+<option>Irlande</option>	
+<option>Italie</option>				
+<option>Pays-Bas</option>	
+
+ </select>  </div>
+ <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba5q8">
+ <option>?</option>
+   <option>Allemagne</option>		
+<option>Autriche</option>	
+<option>Belgique</option>	
+<option>Espagne</option>		
+<option>France</option>		
+<option>Irlande</option>	
+<option>Italie</option>				
+<option>Pays-Bas</option>	
+
+ </select>  </div>
+ <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba5q9">
+ <option>?</option>
+   <option>Allemagne</option>		
+<option>Autriche</option>	
+<option>Belgique</option>	
+<option>Espagne</option>		
+<option>France</option>		
+<option>Irlande</option>	
+<option>Italie</option>				
+<option>Pays-Bas</option>	
+
+ </select>  </div>
+
+
+</div>
+
+
+	
+
+<div class="formQuest">
+Quel est l’émetteur entreprise auquel le fonds
+est le plus exposé ?
+
+
+	</div>
+<div class="formliner" id="line1" >
+
+
+
+<div class="checkbox15 marge10"> En % d’actif ?
+
+
+</div>
+<div class="styled-select black rounded shadowed"style="position: relative;width:290px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba5q10" style="width:320px;">
+ <option>?</option>
+
+<option>AT&T INC</option>	
+<option>UNICREDIT SPA</option>
+<option>ACHMEA BANK NV</option>
+<option>COVENTRY BUILDG STY</option>
+<option>HSBC HOLDINGS PLC </option>
+<option>MORGAN STANLEY</option>
+<option>BPCE SA</option>
+<option>WM MORRISON SUPERMARKETS PL</option>
+<option>CARNIVAL CORP</option>
+<option>LEASEPLAN CORP NV</option>
+<option>BAYER AG</option>
+<option>PRICELINE GROUP INC / T</option>
+<option>BMW FINANCE NV</option>
+<option>BANK OF AMERICA CORP</option>
+<option>JAB HOLDINGS BV</option>
+
+
+ </select>  </div>
+
+
+
+</div>
+<div class="formliner" id="line1" >
+
+
+
+<div class="checkbox15 marge10">En sensibilité 	
+
+
+</div>
+<div class="styled-select black rounded shadowed"style="position: relative;width:290px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba5q11" style="width:320px;">
+    <option>?</option>
+
+<option>AT&T INC</option>	
+<option>UNICREDIT SPA</option>
+<option>ACHMEA BANK NV</option>
+<option>COVENTRY BUILDG STY</option>
+<option>HSBC HOLDINGS PLC </option>
+<option>MORGAN STANLEY</option>
+<option>BPCE SA</option>
+<option>WM MORRISON SUPERMARKETS PL</option>
+<option>CARNIVAL CORP</option>
+<option>LEASEPLAN CORP NV</option>
+<option>BAYER AG</option>
+<option>PRICELINE GROUP INC / T</option>
+<option>BMW FINANCE NV</option>
+<option>BANK OF AMERICA CORP</option>
+<option>JAB HOLDINGS BV</option>>	
+
+ </select>  </div>
+
+
+
+</div>
+
+
+<div class="formliner" id="line1" >
+
+
+
+<div class="checkbox15 marge10">En SPS	
+
+
+</div>
+<div class="styled-select black rounded shadowed"style="position: relative;width:290px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba5q12"style="width:320px;">
+ <option>?</option>
+
+<option>AT&T INC</option>	
+<option>UNICREDIT SPA</option>
+<option>ACHMEA BANK NV</option>
+<option>COVENTRY BUILDG STY</option>
+<option>HSBC HOLDINGS PLC </option>
+<option>MORGAN STANLEY</option>
+<option>BPCE SA</option>
+<option>WM MORRISON SUPERMARKETS PL</option>
+<option>CARNIVAL CORP</option>
+<option>LEASEPLAN CORP NV</option>
+<option>BAYER AG</option>
+<option>PRICELINE GROUP INC / T</option>
+<option>BMW FINANCE NV</option>
+<option>BANK OF AMERICA CORP</option>
+<option>JAB HOLDINGS BV</option>
+
+ </select>  </div>
+
+
+
+</div>
+
+
+
+
+
+<div class="formQuest" style="clear:both;">
+Par rapport au SPS de l’indice ?
+	</div>
+<div class="formliner" id="line1" >
+
+
+
+<div class="checkbox15 marge10"style="width:320px;">Quel est l’État auquel le fonds est le plus sur-exposé :
+
+
+</div>
+<div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba5q13">
+  <option>?</option>
+  <option>Allemagne</option>		
+<option>Autriche</option>	
+<option>Belgique</option>	
+<option>Espagne</option>		
+<option>France</option>		
+<option>Irlande</option>	
+<option>Italie</option>				
+<option>Pays-Bas</option>	
+
+
+ </select>  </div>
+ <div class="checkbox15 marge10" style="clear:both;margin-top:20px;width:320px;">Quel est l’État auquel le fonds est
+le plus sous-exposé :
+
+
+
+</div>
+<div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;margin-top:20px;
+    top: 2px;">
+
+ <select id="Oba5q14">
+  <option>?</option>
+   <option>Allemagne</option>		
+<option>Autriche</option>	
+<option>Belgique</option>	
+<option>Espagne</option>		
+<option>France</option>		
+<option>Irlande</option>	
+<option>Italie</option>				
+<option>Pays-Bas</option>	
+
+
+
+ </select>  </div>
+
+
+</div> 
+
+
+</br>
+</br>
+
+
+<div class="valider" onclick="formaCheck()" >VALIDER</div>	
+ <div class="consigne">
+               <span class="titleblue">ANALYSE 5 (SUITE)</span></br>
+ 
+
+ 
+            </div>
+<iframe style="display:block;margin-bottom: 60px;border:none;" src="obaAnalyse5ter/index.html" id="ficheA" scrolling="no" height="390" width="708">
+         </iframe> 
+	<div class="formQuest" style="clear:both;">
+Sur quelle maturité le fonds est-il le plus
+concentré ?
+
+	</div>
+<div class="formliner" id="line1" >
+
+
+
+<div class="checkbox15 marge10" style="width:320px;">En terme d’actif 
+
+
+</div>
+<div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba5q15">
+  <option>?</option>
+   <option>Court terme</option>		
+<option>2 ans</option>	
+<option>5 ans</option>	
+<option>7 ans</option>		
+<option>10 ans</option>		
+<option>15 ans</option>	
+<option>20 ans</option>				
+<option>30 ans</option>	
+
+
+ </select>  </div>
+ <div class="checkbox15 marge10" style="clear:both;margin-top:20px;width:320px;">en terme de sensibilité 
+
+
+
+</div>
+<div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;margin-top:20px;
+    top: 2px;">
+
+ <select id="Oba5q16">
+  <option>?</option>
+   <option>Court terme</option>		
+<option>2 ans</option>	
+<option>5 ans</option>	
+<option>7 ans</option>		
+<option>10 ans</option>		
+<option>15 ans</option>	
+<option>20 ans</option>				
+<option>30 ans</option>	
+
+
+ </select>  </div>
+
+
+</div>
+
+<div class="valider" id="valider2" onclick="formaCheck2()" >VALIDER</div>	
+ <div class="consigne" id="infoOba1" style="display:none;padding:20px;margin-top:32px;">
+        
+               <br><span>
+ 
+
+Le poids des principaux émetteurs en % de l’actif et la répartition du fonds par maturité ne sont pas forcément révélateurs de l’exposition d’un fonds obligataire. Il faut aussi tenir compte de la sensibilité des titres aux mouvements des taux d’intérêts et mieux encore de la sensibilité pondérée par le spread (SPS).</br>
+La SPS présente en effet l’intérêt de lier l’exposition du fonds aux mouvements des taux d’intérêt (sensibilité) et le risque présenté par les émetteurs (spread). L’écart entre la contribution des émetteurs à la SPS du fonds et celle des émetteurs à la SPS de l’indice permet de mesurer la sur ou sous-exposition du fonds relativement à l’indice. La France occupe, par exemple dans ce fonds, la deuxième position en % de l’actif mais c’est aussi le titre qui présente la plus forte sous-exposition par rapport à l’indice. 
+
+
+</span>
+  </div>
+
+
+</div>
+
+ 
+
+   </body>
+   <div id="dialogoverlay"></div>
+   <div id="dialogbox">
+   <div>
+   <div id="dialogboxfoot"></div>
+   <div id="dialogboxbody"></div>
+   <div id="dialogboxhead"></div>
+</html>

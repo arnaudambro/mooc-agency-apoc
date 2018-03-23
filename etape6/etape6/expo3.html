@@ -1,0 +1,334 @@
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>ÉTAPE6DIVA2</title><link rel="stylesheet" type="text/css" href="../assets/style/css/fontstyle.css">
+      <script type='text/javascript' src='assets/jquery-2.2.4.min.js'></script>
+      <script type='text/javascript' src='assets/jquery.browser.js'></script>
+      <script type='text/javascript' src='assets/jquery.iframe-auto-height.js'></script>
+      <script type='text/javascript' src='assets/jquery.scrollTo.min.js'></script>
+      <script type="text/javascript" src="assets/etape6_library.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="assets/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/style/marchestyle.css">
+      <!-- fichier css à utiliser -->
+      <link rel="stylesheet" type="text/css" href="../assets/style/marchestyle.css">
+   </head>
+<style>
+
+.formEnonce{position: relative;
+               margin-top: 10px;}
+			   
+.styled-select{position: relative;
+               margin-top: 10px;}
+
+</style>
+   <body id="bodymaininside">
+   	  <script>
+	  
+var formaCheck=function(){
+if(
+
+document.getElementById("Diva2q2").value == "31/12/2015"&&
+
+
+(document.getElementById("Diva2q3").value == "Actions"||
+document.getElementById("Diva2q3").value == "Obligations Haut rendement"
+)&&
+
+(document.getElementById("Diva2q4").value == "Actions"||
+document.getElementById("Diva2q4").value == "Obligations Haut rendement"
+)&&
+
+(document.getElementById("Diva2q5").value =="Monétaire"||
+document.getElementById("Diva2q5").value == "Obligations Zone euro"||
+document.getElementById("Diva2q5").value == "Obligations États"||
+document.getElementById("Diva2q5").value == "Obligations Investment grade"
+)&&
+
+(document.getElementById("Diva2q6").value =="Monétaire"||
+document.getElementById("Diva2q6").value == "Obligations Zone euro"||
+document.getElementById("Diva2q6").value == "Obligations États"||
+document.getElementById("Diva2q6").value == "Obligations Investment grade"
+)&&
+
+(document.getElementById("Diva2q7").value =="Monétaire"||
+document.getElementById("Diva2q7").value == "Obligations Zone euro"||
+document.getElementById("Diva2q7").value == "Obligations États"||
+document.getElementById("Diva2q7").value == "Obligations Investment grade"
+)&&
+(document.getElementById("Diva2q8").value =="Monétaire"||
+document.getElementById("Diva2q8").value == "Obligations Zone euro"||
+document.getElementById("Diva2q8").value == "Obligations États"||
+document.getElementById("Diva2q8").value == "Obligations Investment grade"
+)
+
+
+&&document.getElementById("Diva2q5").value != document.getElementById("Diva2q6").value
+&&document.getElementById("Diva2q6").value != document.getElementById("Diva2q7").value
+&&document.getElementById("Diva2q7").value != document.getElementById("Diva2q8").value
+&&document.getElementById("Diva2q8").value != document.getElementById("Diva2q5").value
+&&document.getElementById("Diva2q3").value != document.getElementById("Diva2q4").value
+
+
+)
+
+{success();valideHide1(); goodAnswer=1;
+	}
+
+else{error();goodAnswer=0;};
+
+
+}
+ var goodAnswer=0;
+function CustomAlert(){
+               
+         var position = document.getElementById('placeholderL3n3');
+         this.render = function(dialog){
+                  var winW = window.innerWidth;
+                  var winH = window.innerHeight;
+                  var dialogoverlay = document.getElementById('dialogoverlay');
+                  var dialogbox = document.getElementById('dialogbox');
+                  dialogoverlay.style.display = "none";
+                  dialogoverlay.style.height = "100px";
+                  dialogbox.style.left = (winW/2) - (300* .5)+"px";
+                  dialogbox.style.top = cursorY-90;
+                  dialogbox.style.display = "block";
+                  
+                  document.getElementById('dialogboxbody').innerHTML = dialog;
+                  document.getElementById('dialogboxfoot').innerHTML = '<p id="ok" onclick="Alert.ok()">X</p>';
+               }
+               this.ok = function(){
+               document.getElementById('dialogbox').style.display = "none";
+               document.getElementById('dialogoverlay').style.display = "none";
+			   if(goodAnswer==1){$('#infoOba1').show();$('#perfSynth').show();}
+         
+               }
+               }
+
+
+
+var Alert = new CustomAlert();
+        var success = function() {
+            Alert.render("BRAVO ! C'EST LA BONNE RÉPONSE.");
+            valideHide1();
+          $('#backToSchool').hide();
+        };
+        var error = function() {
+            Alert.render("CE N'EST PAS LA BONNE RÉPONSE. RÉESSAYEZ !");
+            showPlainTrue();valideHide1();
+        };
+        var valideHide1 = function() {
+            $('#valider').hide();
+        };
+        var showPlainFunc = function() {
+            $('#showPlain').css("visibility", "hidden");
+            $('#infoOba1').show();
+			$('#backToSchool').show();
+        };
+		    var backToSchoolFunc = function() {
+            $('#showPlain').css("visibility", "hidden");
+            $('#infoOba1').hide();
+			$('#backToSchool').hide();
+			$('#valider').show();
+        };
+        var showPlainTrue = function() {
+            $('#showPlain').css("visibility", "visible");
+        };
+      
+      
+</script>
+
+			
+			
+		 <div class="consigne">
+               <span class="titleblue">EN % DE L’ACTIF PAR CLASSE D’ACTIF (POUR LES FONDS de type mixte)  </span>
+               <br>
+ 
+               <span>	
+En quoi consiste la stratégie d’investissement d’un fonds de type mixte ?</br></br>
+À partir des données fournies ci-dessous, analysez l’exposition du fonds de type mixte C en sélectionnant les bonnes réponses à l’aide du bouton 
+<img src="assets/img/down.png" style="width:15px;height:15px;border-top-right-radius:5px;border-bottom-right-radius:5px;">.             
+               </span>
+ 
+            </div>	
+			
+			
+			
+			
+		    <div style="background-image:url('divaAnalyse2/jet1.png');height:350px;width:708px;background-size:700px 350px;background-repeat:no-repeat;" class="analyse">
+      </div> 
+	
+</br>
+	
+	<div class="formActa formNew" style="width:708px;height:700px;margin-top:00px;" >
+
+
+
+   
+	
+<div class="formliner" id="line1" style="height:120px;width:100%;float:left;" >
+<div class="formQuest" style="float:left;width:65%">
+À quelle date l’exposition du fonds aux actifs risqués</br>
+(actions, obligations à haut rendement,
+obligations émergentes)</br>est-elle la plus forte ? 	
+
+
+</div>
+
+
+
+<div class="styled-select black rounded shadowed"style="position: relative;float:left;
+ ">
+  <select id="Diva2q2">
+    <option>?</option>
+    <option>30/04/2015</option>
+    <option>29/05/2015</option>
+    <option>30/06/2015</option>
+    <option>31/07/2015</option>
+    <option>31/08/2015</option>
+    <option>30/09/2015</option>
+    <option>31/10/2015</option>
+    <option>30/11/2015</option>
+    <option>31/12/2015</option>
+    <option>31/01/2016</option>
+    <option>18/02/2016</option>
+    <option>31/03/2016</option>
+
+
+
+  </select>
+</div>
+</div>
+
+
+<div class="formliner" id="line1" style="clear:both;margin-top:50px;height:400px;">
+<div class="formQuest">
+
+Pour réduire l’exposition du fonds aux actifs risqués, le gérant peut baisser le poids des classes d’actifs risquées et/ou augmenter celui des classes d’actifs moins risquées.</br>
+Du 31/12/2015 au 31/03/2016, quelles sont celles dont ?
+
+</div>
+</br>
+
+<div class="formEnonce" style="width:32%;float:left;">
+Le poids baisse
+</div>
+
+<div class="styled-select black rounded shadowed" style="width:32%;float:left;margin-left:-48px">
+  <select id="Diva2q3">
+<option>?</option>
+<option>Actions</option>
+<option>Monétaire</option>
+<option>Obligations Zone euro</option>
+<option>Obligations Pays émergents</option>
+<option>Obligations États</option>
+<option>Obligations Haut rendement</option>
+<option>Obligations Investment grade</option>
+
+
+
+  </select>
+</div>
+<div class="styled-select black rounded shadowed" style="width:220px;float:left;margin-left:10px">
+  <select id="Diva2q4">
+<option>?</option>
+<option>Actions</option>
+<option>Monétaire</option>
+<option>Obligations Zone euro</option>
+<option>Obligations Pays émergents</option>
+<option>Obligations États</option>
+<option>Obligations Haut rendement</option>
+<option>Obligations Investment grade</option>
+
+  </select>
+  
+</div>
+
+</br>
+<div class="formEnonce" style="clear:both;width:176px">
+Le poids augmente	
+</div>
+
+<div class="styled-select black rounded shadowed"style="position: relative;margin-left:191px;
+    top: 15px;">
+  <select id="Diva2q5">
+<option>?</option>
+<option>Actions</option>
+<option>Monétaire</option>
+<option>Obligations Zone euro</option>
+<option>Obligations Pays émergents</option>
+<option>Obligations États</option>
+<option>Obligations Haut rendement</option>
+<option>Obligations Investment grade</option>
+
+  </select>
+</div>
+<div class="styled-select black rounded shadowed"style="position: relative;margin-top:-25px;left:242px;
+   ">
+  <select id="Diva2q6">
+<option>?</option>
+<option>Actions</option>
+<option>Monétaire</option>
+<option>Obligations Zone euro</option>
+<option>Obligations Pays émergents</option>
+<option>Obligations États</option>
+<option>Obligations Haut rendement</option>
+<option>Obligations Investment grade</option>
+	 	
+
+  </select>
+</div>
+<div class="styled-select black rounded shadowed"style="position: relative;margin-left:191px;
+    top: 6px;">
+  <select id="Diva2q7">
+<option>?</option>
+<option>Actions</option>
+<option>Monétaire</option>
+<option>Obligations Zone euro</option>
+<option>Obligations Pays émergents</option>
+<option>Obligations États</option>
+<option>Obligations Haut rendement</option>
+<option>Obligations Investment grade</option>
+
+	   	
+
+  </select>
+</div>
+<div class="styled-select black rounded shadowed"style="position: relative;margin-left:428px;
+    top: 6px;margin-top:-40px">
+  <select id="Diva2q8">
+<option>?</option>
+<option>Actions</option>
+<option>Monétaire</option>
+<option>Obligations Zone euro</option>
+<option>Obligations Pays émergents</option>
+<option>Obligations États</option>
+<option>Obligations Haut rendement</option>
+<option>Obligations Investment grade</option>
+  </select>
+</div>
+
+</br>
+          <div class="consigne" id="infoOba1" style="padding:0px;width:582px;margin-left:-18px;display:none;border-radius: 25px;padding: 20px;">
+
+			   <span></br>
+
+À partir du 31/12/2015 (point haut de l’exposition du fonds aux actifs risqués) , le gérant a réduit la part des actions, tout particulièrement en Zone euro, ainsi que celle des obligations à haut rendement, et augmenté celle des obligations les moins risquées (Zone euro, États, Investment grade) et du monétaire.</br> Dans un contexte global de moindre aversion au risque, le gérant reste prudent.
+</span></br>
+<div class="valider" id="backToSchool"onclick="backToSchoolFunc()" style="display:none;margin-left:150px">fermer l'explication</div>
+  </div>
+
+		 <div class="valider" id="showPlain"onclick="showPlainFunc()" style="visibility:hidden;margin-left:150px">voir l'explication</div>
+		 
+		  <div class="valider" id="valider"onclick="formaCheck()" style="margin-left:50px">valider</div>
+	 
+  </div>		 
+
+   </body>
+   <div id="dialogoverlay"></div>
+   <div id="dialogbox">
+   <div>
+   <div id="dialogboxfoot"></div>
+   <div id="dialogboxbody"></div>
+   <div id="dialogboxhead"></div>
+</html>

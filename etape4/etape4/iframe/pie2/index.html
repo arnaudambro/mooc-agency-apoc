@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title>jQuery Visualize Plugin</title>
+	 <link rel="stylesheet" type="text/css" href="style.css"/>
+
+    <style>
+
+
+    </style>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="visualize.js"></script>
+
+<script>
+
+var totaltabnot100=function(){Alert.render("LA COMPOSITION DE VOTRE FONDS EST INCOMPLÈTE. RÉESSAYEZ !");};
+var NotPossibleRender=function(){Alert.render("LA COMPOSITION DE FONDS N'EST PAS POSSIBLE. RÉESSAYEZ !");};
+	
+	</script>
+<body>
+
+ <div class="container" style="height:300px;width:708px;">
+ 
+ 
+ <div class="menute">
+ <div id="pieChart" class="chart"></div>
+
+ </div>
+		<div class="menu">
+
+
+		<div class="itemcontainer">
+			<div class="menuico action" id="action" ><span class='minipercent'>25</span><span style="font-size:10px;">ACTIONS</span>
+			</div>
+			<div class='ovalnoir'>
+				<div class='arrowup' id='arrowupcol1'>
+          <button value="actions"></button>
+        </div>
+				<div class='arrowdown' id='arrowdowncol1'>
+          <button value="actions"></button>
+        </div>
+			</div>
+		</div>
+
+	<div class="itemcontainer">
+		<div class="menuico obligataire"id ="obligation" ><span class='minipercent'>25</span><span style="font-size:10px;">OBLIGATIONS</span>
+			</div>
+		<div class='ovalnoir'>
+			<div class='arrowup' id='arrowupcol1'>
+        <button value="obligations"></button>
+      </div>
+			<div class='arrowdown' id='arrowdowncol1'>
+        <button value="obligations"></button>
+      </div>
+		</div>
+	</div>
+		<div class="itemcontainer">
+			<div class="menuico monetaire" id="monetaire"><span class='minipercent'>25</span><span style="font-size:10px;">MONÉTAIRE</span>
+				</div>
+			<div class='ovalnoir'>
+  				<div class='arrowup' id='arrowupcol1'>
+            <button value="monetaire"></button>
+  				</div>
+  				<div class='arrowdown' id='arrowdowncol1'>
+					<button value="monetaire"></button>
+  				</div>
+				</div>
+	</div>
+	<div class="itemcontainer">
+		<div class="menuicoderive titre"id ="titre" style="background-color:#FFC900;	padding-top:21px;	padding-bottom:30px;line-height:0.9" ><span class='minipercent'>25</span><span style="font-size:10px;;">TITRES DE L'ENTREPRISE</span></div>
+		<div class='ovalnoir'>
+						<div class='arrowup' id='arrowupcol1'>
+              <button value="titres"></button>
+						</div>
+						<div class='arrowdown' id='arrowdowncol1'>
+              <button value="titres"></button>
+						</div>
+					</div>
+					</div>
+					
+</div>
+		</div>
+
+
+
+</div>
+<div class="valider" id="actionvalid" onclick="validpie()" style="margin-top:0px;">Valider </div> 
+<div id="dialogoverlay"></div>
+<div id="dialogbox">
+  <div> <div id="dialogboxfoot"></div>
+    
+    <div id="dialogboxbody"></div>
+   <div id="dialogboxhead"></div>
+  </div>
+</div>
+</body>
+</html>

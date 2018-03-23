@@ -1,0 +1,1402 @@
+/*PARAMETRES GENERAUX*/
+@font-face {
+	font-family: 'Helvetica Neue LT Std 55 Roman';
+	font-style: normal;
+	font-weight: normal;
+	src: local('HelveticaNeueLTStd-Roman'), url('police/HelveticaNeueLTStd-Roman.otf') format('opentype');
+}
+@font-face {
+	font-family: 'Helvetica Neue LT Std 75 Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('HelveticaNeueLTStd-Roman'), url('police/Helvetica Neue LT Std 75 Bold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Helvetica Neue LT Std 107 Extra Black Condensed';
+	font-style: normal;
+	font-weight: bold;
+	src: local('HelveticaNeueLTStd-XBlkC'), url('police/HelveticaNeueLTStd-XBlkCn.otf') format('opentype');
+}
+@font-face {font-family: "Helvetica Neue LT Std 93 Black Extended";
+  font-style: normal;
+	font-weight: bold;
+	src: local('Helvetica Neue LT Std 93 Black Extended'), url('police/Helvetica Neue LT Std 93 Black Extended.otf') format('opentype');
+}
+
+
+@font-face {font-family: "Helvetica Neue LT Std 63 Medium Extended";
+font-style: normal;
+	font-weight: lighter;
+	src: local('Helvetica Neue LT Std 63 Medium Extended'), url('police/Helvetica Neue LT Std 63 Medium Extended.otf') format('opentype');
+}
+.orange{color:#FE1E00;font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;}
+.violet{color:#9D159D;font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;}
+.vert{color:#009F00;font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;}
+
+#bodymain{
+	margin: 0 auto;
+	width:708px;
+	font-family:'Helvetica Neue LT Std 55 Roman';
+	text-align: justify;
+
+}
+
+.formNew{font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;font-size:12px;color:#7D7D87;}
+/*FIN DES PARAMETRES GENERAUX*/
+
+
+.containerinfo2{
+
+width:300px;
+height:300px;
+background-color:none;
+position:absolute;
+left:120px;
+width:430px;
+border-radius:25px;
+
+}
+.containerinfo{
+
+width:300px;
+height:300px;
+background-color:none;
+position:absolute;
+left:120px;
+width:430px;
+border-radius:25px;
+
+}
+
+
+
+
+
+/* FIN INFOBULLE */
+
+
+/**************************PAGE INDEX**************************/
+/*CONSIGNES*/
+
+.sequenceimgcontainer{
+	float:left;
+	
+	
+}
+.sequencetextcontainer{
+
+	
+	
+}
+
+.sequenceconsign{
+font-family: 'Helvetica Neue LT Std 55 Roman';
+color:#7D7D7D;	
+font-size:9px;
+margin-top:-10px;
+
+}
+.sequenceimgcontainer{
+	
+	padding:6px;
+}
+	
+	
+.view{
+	margin-left:3px;
+	
+}
+
+#consignesGenerales{
+	margin-bottom :25px;
+	font-size:14px;
+	font-family:'Helvetica Neue LT Std 55 Roman';
+	color:#7D7D7D;
+	padding:15px;
+}
+
+
+.videoIframeContainer{
+	margin-top:25px;
+	margin-bottom:20px;
+	display:block;
+	width:673px;
+	height:353px;
+    color: #666666;
+    text-align: left;
+	background-color: white;
+	margin-left:-10px;
+	padding:10px;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+	
+}
+.consignes{
+	font-size:12px;
+	font-family:'Helvetica Neue LT Std 55 Roman';
+	color:#7D7D7D;
+	margin-bottom :25px;
+}
+/*FIN CONSIGNES*/
+
+/*PLATEAU ET BOUTONS DES MARCHES*/
+.boutonMarche{
+	display: inline-block;
+	width:80px;
+	-moz-border-radius:14px;
+	-webkit-border-radius:14px;
+	border-radius:14px;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:13px;
+	font-weight:bold;
+	padding:30px ;
+	text-decoration:none;
+	text-align:center;
+	font-family:'Helvetica Neue LT Std 55 Roman';
+}
+.boutonAction{
+	background-color:#FF6600;
+}
+.boutonObligataire{
+	background-color:#810082;
+}
+.boutonMonetaire{
+	background-color:#009c00;
+}
+.boutonActive:hover{
+	opacity:0.5;
+}
+.boutonDesactive{
+	opacity:0.2;
+}
+
+.plateaudesmarches{
+	text-align:center;
+}
+#plateaudesmarches1{
+	margin-bottom :75px;
+}
+#plateaudesmarches2{
+	display:block; /*par défaut*/
+	margin-bottom :25px;
+}		
+/*FIN DU PLATEAU ET DES BOUTONS DES MARCHES*/
+
+/*MARCHE COURANT*/
+#marcheCourant{
+	margin-bottom :25px;
+	border:none;
+	width:100%;/*Needed so that the autoresize works*/
+	height:100%;
+}
+/*FIN MARCHE COURANT*/
+
+
+
+
+/*QUESTIONNAIRE*/
+.form{
+width:708px;
+height:400px;
+float:left;
+margin-top:20px;
+background-color:#EFEFEF;
+float:left;
+border-radius:20px;
+display:none;
+}
+
+#formMonetaire{
+	height:300px;
+}
+
+.questioncontainer{margin-top:40px;width:708px;cursor:pointer}
+.buttonquestion{
+cursor:pointer;
+
+width:260px;
+height:40px;
+border-radius:10px;
+background-color:#FAFAFA;
+float:left;
+margin:5px;
+margin-top:0px;
+font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;
+font-size:15px;
+color:#666666;
+
+
+
+}
+.buttonquestion {
+cursor:pointer;
+width:260px;
+height:40px;
+border-radius:10px;
+background-color:#FAFAFA;
+float:left;
+margin:5px;
+margin-top:0px;
+font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;
+font-size:15px;
+vertical-align: middle;
+border:none !important;
+box-shadow:none !important;
+border-top-color: #b5b5b5;
+color: #666677;
+}
+.buttonquestion:hover {
+cursor:pointer;
+width:260px;
+height:40px;
+border-radius:10px;
+background-color:#FAFAFA;
+float:left;
+margin:5px;
+margin-top:0px;
+font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;
+font-size:15px;
+vertical-align: middle;
+border:none !important;
+box-shadow:none !important;
+border-top-color: #b5b5b5;
+color: #ffffff;
+background: #d6d6d6;
+}
+.buttonquestionactive {
+cursor:pointer;
+width:260px;
+height:40px;
+border-radius:10px;
+background-color:white;
+float:left;
+margin:5px;
+margin-top:0px;
+font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;
+font-size:15px;
+color: #666677;
+vertical-align: middle;
+border:solid 2px; !important;
+border-color:silver;
+box-shadow:none !important;
+
+
+
+}
+.questionconsign{
+
+width:150px;
+height:40px;
+margin-top:7px;
+float:left;
+
+
+
+
+}
+.questionconsign2{
+
+width:500px;
+height:40px;
+margin-top:7px;
+margin-bottom:7px;
+
+
+
+
+}
+.question{
+
+width:708px;
+height:50px;
+
+
+}
+.valider{
+font-family:'Helvetica Neue LT Std 55 Roman';
+background-color:black;
+-moz-border-radius:11px;
+-webkit-border-radius:11px;
+border-radius:11px;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-size:12px;
+padding:15px 65px;
+text-decoration:none;
+text-shadow:0px 1px 0px #2f6627;
+margin-left:460px;
+float:clear;
+-moz-box-shadow: -5px 5px 5px 0px silver;
+-webkit-box-shadow: -5px 5px 5px 0px silver;
+-o-box-shadow: -5px 5px 5px 0px silver;
+box-shadow: -5px 5px 5px 0px silver;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#D9D9D9, Direction=224, Strength=5);
+text-transform:uppercase;
+margin-top:40px;
+
+
+}
+.validoff{
+background-color:black;
+-moz-border-radius:11px;
+-webkit-border-radius:11px;
+border-radius:11px;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-size:18px;
+padding:11px 70px;
+text-decoration:none;
+text-shadow:0px 1px 0px #2f6627;
+margin-top:40px;
+margin-left:460px;
+float:clear;
+opacity:0.5;
+
+
+
+
+
+}
+
+
+/* FIN QUESTIONNAIRE */
+
+
+
+
+
+.infobulle {
+
+display:none;
+width:300px;
+height:auto;
+/* On positionne notre infobulle. */
+position:absolute;
+background:#009FE3;
+padding:20px;
+color:#FFFFFF;
+opacity:0.9;
+padding:30px;
+border-radius:20px;
+box-shadow:0 0 2px rgba(0,0,0,.5);
+font-family:'Helvetica Neue LT Std 55 Roman';font-weight:normal;
+font-size:15px;
+left:50%;
+
+}
+
+
+.rubriquetitle{font-weight:bold;}	
+.titlebulle{font-weight:bold;}	
+
+
+#rubriquetab{margin-top:-100px;margin-bottom:100px;height:500px;display:none;}
+#rubriquetaboba{margin-top:100px;margin-bottom:100px;height:500px;display:block;}
+#infobulle {
+
+display:none;
+width:300px;
+height:auto;
+/* On positionne notre infobulle. */
+position:absolute;
+background:#009FE3;
+padding:20px;
+color:#FFFFFF;
+opacity:0.9;
+padding:30px;
+border-radius:20px;
+box-shadow:0 0 2px rgba(0,0,0,.5);
+font-family:'Helvetica Neue LT Std 55 Roman';font-weight:normal;
+font-size:15px;
+left:50%;
+
+}
+
+
+#infobulle2{
+
+display:none;
+width:300px;
+height:auto;
+/* On positionne notre infobulle. */
+position:absolute;
+background:#009FE3;
+padding:20px;
+color:#FFFFFF;
+opacity:0.9;
+padding:30px;
+border-radius:20px;
+box-shadow:0 0 2px rgba(0,0,0,.5);
+font-family:'Helvetica Neue LT Std 55 Roman';font-weight:normal;
+font-size:15px;
+left:50%;
+
+}
+.containerinfo2{
+
+width:300px;
+height:300px;
+background-color:none;
+position:absolute;
+left:120px;
+width:430px;
+border-radius:25px;
+
+}
+.containerinfo{
+
+width:300px;
+height:300px;
+background-color:none;
+position:absolute;
+left:120px;
+width:430px;
+border-radius:25px;
+
+}
+
+
+
+
+
+/* FIN INFOBULLE */
+
+
+
+
+/* POPUP SUCCES */
+
+
+#dialogoverlay{
+display:none;
+width:250px;
+height:170px;
+position:absolute;
+background:#009FE3;
+
+color:#FFFFFF;
+opacity:0.9;
+padding:30px;
+border-radius:20px;
+box-shadow:0 0 2px rgba(0,0,0,.5);
+font-family:'Helvetica Neue LT Std 55 Roman';font-weight:normal;
+font-size:15px;
+left:50%;
+}
+#dialogbox{
+display:none;
+width:300px;
+height:180px;
+position:absolute;
+background:#009FE3;
+
+color:#FFFFFF;
+opacity:0.9;
+border-radius:20px;
+box-shadow:0 0 2px rgba(0,0,0,.5);
+font-family:'Helvetica Neue LT Std 55 Roman';font-weight:normal;
+font-size:15px;
+left:50%;
+bottom:10%;
+}
+#dialogbox > div{ background:#FFF; margin:8px; }
+#dialogbox > div > #dialogboxhead{ background: #009FE3; font-size:19px; padding:10px; color:#CCC; }
+#dialogbox > div > #dialogboxbody{ background:#009FE3; padding:20px; color:#FFF; }
+#dialogbox > div > #dialogboxfoot{ background: #009FE3; padding:10px; text-align:right; }		
+
+
+
+#ok{cursor:pointer;margin:0}
+
+
+
+
+/* FIN POPU SUCCES */
+
+
+
+
+
+
+
+/*FIN MARCHE MONETAIRE*/
+
+
+
+
+/* Iframe drag and drop */
+
+
+.iframedraganddrop{
+margin-left:0;	
+}
+
+
+#monetairedrop1 {
+	display:block;}
+#monetairesynthese {
+	/*display:none;*/
+	display:block;
+}
+#obligatairedrop1{
+	display:block;}
+
+
+#actiondrop1{
+	display:block;}
+
+#actionvideo{
+	display:none;}
+
+
+	
+/*Decommenter en mode normal
+DESACTIVE
+.monetairedrop1 {
+	display:block;}
+.monetairesynthese {
+	display:none;}
+.obligatairedrop1{
+	display:block;}
+.obligatairedrop2{
+	display:none;}
+.obligatairevertical1{
+	display:none;}
+.obligatairevideo{
+	display:none;}
+
+.obligatairevertical2{
+	display:none;}
+.obligatairesynthese{
+	display:none;}
+.actiondrop1{
+	display:block;}
+.actiondrop2{
+	display:none;}
+.actionvertical1{
+	display:none;}
+.actionvideo{
+	display:none;}
+.actionvertical2{
+	display:none;}
+.actionsynthese{
+	display:none;}
+*/
+
+/* A mettre en commentaire activation pour reglages
+ACTIVE*/
+	.monetairedrop1 {
+	display:block;}
+.monetairesynthese {
+	display:block;}
+.obligatairedrop1{
+	display:block;}
+.obligatairedrop2{
+	display:block;}
+.obligatairevertical1{
+	display:block;}
+.obligatairevideo{
+	display:block;}
+
+.obligatairevertical2{
+	display:block;}
+.obligatairesynthese{
+	display:block;}
+.actiondrop1{
+	display:block;}
+.actiondrop2{
+	display:block;}
+.actionvertical1{
+	display:block;}
+.actionvideo{
+	display:block;}
+.actionvertical2{
+	display:block;}
+.actionsynthese{
+	display:block;}
+	
+	
+	
+/* A mettre en commentaire activation pour reglages
+ACTIVE*/
+#monetairedrop1 {
+	display:block;}
+#monetairesynthese {
+	display:block;}
+#obligataireblock1{
+	display:block;}
+#obligatairedrop2{
+	display:block;}
+#obligatairevertical1{
+	display:block;}
+#obligatairevertical2{
+	display:block;}
+#obligatairesynthese{
+	display:block;}
+#actiondrop1{
+	display:block;}
+#actiondrop2{
+	display:block;}
+#actionvertical1{
+	display:block;}
+#actionvertical2{
+	display:block;}
+#actionsynthese{
+	display:block;} 
+	
+
+
+
+.iframevertical{
+margin-left:-20px;	
+
+	
+}
+
+
+.synthese{display:none;}
+
+
+
+.title18{
+font-family:'Helvetica Neue LT Std 55 Roman';
+font-size:18px;
+text-transform:uppercase;	
+font-weight:normal;
+	
+	
+	
+	
+	
+}
+
+
+
+
+li:before {
+    content: "- "; /* caractère UTF-8 */
+	list-style-type: none;
+}
+
+
+li {
+	list-style-type: none;
+}
+
+
+
+
+
+
+/* consignetrue */
+
+
+
+
+.sequenceimgcontainer{
+	float:left;
+	
+	
+}
+.sequencetextcontainer{
+
+	line-height:12px;
+	margin-left:15px;
+	
+	
+}
+.sequencetitle{
+font-family:"Helvetica Neue LT Std 55 Roman" !important;
+text-transform: uppercase;	
+color:#7D7D7D;	
+font-size:14px;	
+font-weight:bold;
+}
+
+
+.sequenceconsign{
+font-family: 'Helvetica Neue LT Std 55 Roman';
+color:#7D7D7D;	
+font-size:10px;
+
+}
+.sequenceimgcontainer{
+	
+	padding:6px;
+}
+
+.sequence{
+	
+	width:708px;
+	height:30px;
+	margin-bottom:-5px;
+}
+.imgcontain{
+	height:34px;
+	width:37px;
+	float:left;
+	margin-left:10px;
+	margin-right:3px;
+	
+}
+
+.horloge{
+	
+	background-image: url("img/horloge.png");
+	background-size:35px 34px;
+	background-repeat:no-repeat;
+	
+	
+	
+}
+
+.secondes{
+	
+	background-image: url("img/10s.png");
+	background-size:30px 30px;
+	background-repeat:no-repeat;
+}
+
+.view{
+	
+	background-image: url("img/view.png");
+	background-size:35px 20px;
+	background-repeat:no-repeat;
+}
+
+
+.chrono{
+	
+	background-image: url("img/chrono.png");
+	background-size:27px 34px;
+	background-repeat:no-repeat;
+
+}
+
+
+
+
+	
+.view{
+	margin-left:3px;
+	
+	
+}
+.consigncontainer{width:708px;
+	height:auto; margin-top:30px;
+
+}
+
+.consigne{
+
+	margin-bottom :25px;
+	font-size:14px;
+	font-family:'Helvetica Neue LT Std 55 Roman';
+	color:#7D7D7D;
+
+}
+
+
+
+.gradient{
+	margin-left:-15px;
+	margin-bottom:30px;
+	width:715px;
+	height:7px;
+opacity:0.2;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5e5e5+8,000000+100 */
+background: rgb(229,229,229); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(229,229,229,1) 8%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(229,229,229,1) 8%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(229,229,229,1) 8%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+
+
+
+
+/* DIAGRAMME */
+
+
+
+.placeholder{
+	float:left;
+	width:130px;
+	
+	
+	
+}
+
+
+.titleblue{font-size:13px;}  .consigne{font-size:13px;}
+      .rubriqueobamona{background: rgba(123,6,123,1);
+      background: -moz-linear-gradient(left, rgba(123,6,123,1) 0%, rgba(91,44,92,1) 42%, rgba(70,70,71,1) 54%, rgba(43,102,44,1) 71%, rgba(4,149,4,1) 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(123,6,123,1)), color-stop(42%, rgba(91,44,92,1)), color-stop(54%, rgba(70,70,71,1)), color-stop(71%, rgba(43,102,44,1)), color-stop(100%, rgba(4,149,4,1)));
+      background: -webkit-linear-gradient(left, rgba(123,6,123,1) 0%, rgba(91,44,92,1) 42%, rgba(70,70,71,1) 54%, rgba(43,102,44,1) 71%, rgba(4,149,4,1) 100%);
+      background: -o-linear-gradient(left, rgba(123,6,123,1) 0%, rgba(91,44,92,1) 42%, rgba(70,70,71,1) 54%, rgba(43,102,44,1) 71%, rgba(4,149,4,1) 100%);
+      background: -ms-linear-gradient(left, rgba(123,6,123,1) 0%, rgba(91,44,92,1) 42%, rgba(70,70,71,1) 54%, rgba(43,102,44,1) 71%, rgba(4,149,4,1) 100%);
+      background: linear-gradient(to right, rgba(123,6,123,1) 0%, rgba(91,44,92,1) 42%, rgba(70,70,71,1) 54%, rgba(43,102,44,1) 71%, rgba(4,149,4,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7b067b', endColorstr='#049504', GradientType=1 );}
+	  
+	  
+	  .formEnonce{width:300px;float:left;font-family:'Helvetica Neue LT Std 55 Roman';padding:5px;
+	  
+	  }
+	  .checkbox33{width:27%;float:left;
+	  
+	  }
+	  
+	 
+	  .formBan{width:708px;height:100px;border:1px solid navy;margin-bottom:15px;}
+	  
+	  .formLiner{width:100%;height:25px;}
+
+	  	.title{
+	border-bottom: 1px solid rgb(13, 60, 125);
+	color: rgb(13, 60, 125);
+	text-align: left;
+	width: 708px;
+	font-weight: bold;
+	font-family: Arial;
+	}
+	
+	.table_style{
+	color: rgb(13, 60, 125);
+	width: 708px;
+		border-collapse: collapse;
+		font-family: Arial;
+	}
+	
+	.tr_style{
+	color: rgb(13, 60, 125);
+		font-family: Arial;
+	}
+	
+	.bold{
+	font-weight: bold;
+	}
+	
+	.td1{
+	border-bottom: 1px solid rgb(13, 60, 125);
+		font-family: Arial;
+	}
+	
+	.th1{
+	text-align: left;
+	width: 18%;
+		font-family: Arial;
+	}
+	.global{
+	width: 708px;
+	color: rgb(13, 60, 125);
+	line-height: 200%;
+	font-family: Arial;
+	}
+	
+	.bold{
+	font-weight: bold;
+	}
+	
+	.cell_left{
+	width: 8.6%;
+	line-height: 100%;
+	height: 32px;
+	float:left;
+	font-size: 180%;
+	border: 1px solid rgb(93, 199, 245);
+	margin: 2px;
+	margin-top: 8px;
+	background-color: rgb(212, 237, 252);
+	text-align: center;
+	font-family: Arial;
+	vertical-align: middle;
+	}
+	 
+	.cell_left2{
+	width: 12.5%;
+	float:left;
+	font-size: 220%;
+	line-height: 130%;
+	border: 3px solid rgb(93, 199, 245);
+	margin: 2px;
+	background-color: rgb(10, 28, 73);
+	text-align: center;
+	height: 40px;
+	color: white;
+	font-family: Arial;
+	vertical-align: middle;
+	}
+	
+	.cell_left3{
+	width: 100%;
+	float:left;
+	}
+	
+	.underline{
+	border-bottom: 1px solid 
+	}
+	
+	.left_table{
+	width: 46%;
+	float: left;}
+	.right_table{
+	width: 54%;
+	float: left;
+	background-color: rgb(223, 242, 253);}
+	
+	.center{
+	text-align: center;
+	}
+	
+	.arrow_color{
+	color: rgb(0, 159, 227);
+	}
+	
+	.title{
+	font-weight: bold;
+	text-align: left;
+	border-bottom: 1px solid rgb(13, 60, 125);
+	}
+.styled-select {
+   background:  url(img/down.png)no-repeat  100% 30%;
+   background-size:50px 40px;
+   height: 40px;
+   overflow: hidden;
+   width: 220px;
+   font-size:11px;
+   cursor:pointer;
+}
+
+.styled-select select {
+   background: transparent;
+   border: none;
+   font-size: 11px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 250px;
+   padding-top:10px;
+   padding-left:15px;cursor:pointer;
+}
+
+.styled-select.slate {
+      background-image: url(img/down.png);
+   height: 34px;
+   width: 240px;
+}
+
+.styled-select.slate select {
+   border: 1px solid #ccc;
+   font-size: 16px;
+   height: 34px;
+   width: 268px;
+}
+
+/* -------------------- Rounded Corners */
+.rounded {
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+}
+
+.semi-square {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+}
+
+
+
+
+/* -------------------- Colors: Background */
+.slate   { background-color: #ddd; }
+.green   { background-color: #779126; }
+.blue    { background-color: #3b8ec2; }
+.yellow  { background-color: #eec111; }
+.black   { background-color:white; 
+}
+
+
+.slate select   { color: #000; }
+.green select   { color: #fff; }
+.blue select    { color: #fff; }
+.yellow select  { color: #000; }
+.black select   { color:black; }
+
+
+#mainselection select {
+   border: 0;
+   color: black;
+   background: transparent;
+   background: transparent;
+   font-size: 20px;
+   font-weight: bold;
+   padding: 2px 10px;
+   width: 170px;
+
+}
+
+#mainselection {
+   overflow:hidden;
+   width:170px;
+   -moz-border-radius: 9px 9px 9px 9px;
+   -webkit-border-radius: 9px 9px 9px 9px;
+   border-radius: 9px 9px 9px 9px;
+   box-shadow: 1px 1px 11px #330033;
+     background-image: url(down.png);
+}
+
+
+select#soflow, select#soflow-color {
+   -webkit-appearance: button;
+   -webkit-border-radius: 2px;
+   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+   -webkit-padding-end: 20px;
+   -webkit-padding-start: 2px;
+   -webkit-user-select: none;
+     background-image: url(down.png);
+   background-position: 97% center;
+   background-repeat: no-repeat;
+   border: 1px solid #AAA;
+   color:black;
+   font-size: inherit;
+   margin: 20px;
+   overflow: hidden;
+   padding: 5px 10px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 150px;
+}
+
+select#soflow-color {
+   color: black;
+   background-image: url(down.png);
+   background-color: #779126;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   padding-left: 25px;
+}
+.formBan{font-size:12px;}	
+td{font-size:12px;width:40px;}	
+tr{font-size:12px;width:40px;}	
+body{background-color;#EFEFEF;}
+
+select{word-wrap: break-word;overflow: hidden;
+  text-overflow: ellipsis; }
+   
+  #dialogoverlay{
+display:none;
+width:200px;
+height:120px;
+position:absolute;
+background:#009FE3;
+
+color:#FFFFFF;
+opacity:0.9;
+padding:0px;
+border-radius:20px;
+box-shadow:0 0 2px rgba(0,0,0,.5);
+font-family:'Helvetica Neue LT Std 55 Roman';font-weight:normal;
+font-size:15px;
+left:50%;
+}
+#dialogbox{
+display:none;
+width:230px;
+height:90px;
+position:absolute;
+background:#009FE3;
+
+color:#FFFFFF;
+opacity:0.9;
+border-radius:20px;
+box-shadow:0 0 2px rgba(0,0,0,.5);
+font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;
+font-size:12px;
+left:50%;
+bottom:30%;
+}
+#dialogbox > div{ background:#FFF; margin:8px; }
+#dialogbox > div > #dialogboxhead{ background: #009FE3; font-size:19px; padding:10px; color:#CCC; }
+#dialogbox > div > #dialogboxbody{ background:#009FE3; padding:15px; color:#FFF; margin-top:-30px;padding-bottom:0px}
+#dialogbox > div > #dialogboxfoot{ background: #009FE3; padding:10px; text-align:right; }		
+
+
+
+#ok{cursor:pointer;margin:0px;} 
+
+.titleblue{font-size:13px;}  .consigne{font-size:13px;}
+   
+      .rubriqueobamona{background: rgba(123,6,123,1);
+      background: -moz-linear-gradient(left, rgba(123,6,123,1) 0%, rgba(91,44,92,1) 42%, rgba(70,70,71,1) 54%, rgba(43,102,44,1) 71%, rgba(4,149,4,1) 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(123,6,123,1)), color-stop(42%, rgba(91,44,92,1)), color-stop(54%, rgba(70,70,71,1)), color-stop(71%, rgba(43,102,44,1)), color-stop(100%, rgba(4,149,4,1)));
+      background: -webkit-linear-gradient(left, rgba(123,6,123,1) 0%, rgba(91,44,92,1) 42%, rgba(70,70,71,1) 54%, rgba(43,102,44,1) 71%, rgba(4,149,4,1) 100%);
+      background: -o-linear-gradient(left, rgba(123,6,123,1) 0%, rgba(91,44,92,1) 42%, rgba(70,70,71,1) 54%, rgba(43,102,44,1) 71%, rgba(4,149,4,1) 100%);
+      background: -ms-linear-gradient(left, rgba(123,6,123,1) 0%, rgba(91,44,92,1) 42%, rgba(70,70,71,1) 54%, rgba(43,102,44,1) 71%, rgba(4,149,4,1) 100%);
+      background: linear-gradient(to right, rgba(123,6,123,1) 0%, rgba(91,44,92,1) 42%, rgba(70,70,71,1) 54%, rgba(43,102,44,1) 71%, rgba(4,149,4,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7b067b', endColorstr='#049504', GradientType=1 );}
+	  
+	  
+	  .formEnonce{width:280px;float:left;font-family:'Helvetica Neue LT Std 55 Roman';
+	  
+	  }
+	  .checkbox30{width:18%;float:left;
+	  
+	  }
+	  .checkbox15{width:6%;float:left;
+	  
+	  }
+	    .checkbox2for{width:30%;float:left;
+	  
+	  }
+	  .line3{margin-top:42px;}
+	  .line4{margin-top:62px;}
+	  .line20{margin-top:18px;}
+	  .line25{margin-top:23px;}
+
+	  .formBan{width:708px;height:300px;border:1px solid navy;margin-bottom:30px;}
+	  
+	  .formLiner{width:100%;height:100px;margin-top:5px;}
+	 
+	  	.title{
+	border-bottom: 1px solid rgb(13, 60, 125);
+	color: rgb(13, 60, 125);
+	text-align: left;
+	width: 708px;
+	height:22px;
+	font-weight: bold;
+	font-family: Arial;
+	}
+	
+	.table_style{
+	color: rgb(13, 60, 125);
+	width: 708px;
+		border-collapse: collapse;
+		font-family: Arial;
+		
+	}
+	
+	.tr_style{
+	color: rgb(13, 60, 125);
+		font-family: Arial;
+		height:25px;
+	}
+	
+	.bold{
+	font-weight: bold;
+	}
+	
+	.td1{
+	border-bottom: 1px solid rgb(13, 60, 125);
+		font-family: Arial;
+		width:40px;
+	}
+	
+	.th1{
+	text-align: left;
+	width: 13%;
+		font-family: Arial;
+	}
+	.global{margin: 0px;
+	width: 708px;
+	color: rgb(13, 60, 125);
+	line-height: 150%;
+	font-family: Arial;
+	}
+	
+	.bold{
+	font-weight: bold;
+	}
+	
+	.cell_left{
+	width: 25%;
+	float:left;margin: 0px;
+	}
+	
+	.cell_left2{
+	width: 17%;
+	float:left;margin: 0px;
+	}
+	
+	.cell_left3{
+	width: 48%;
+	float:left;margin: 0px;
+	}
+	
+	.underline{
+	border-bottom: 1px solid 
+	}
+	
+	.left_table{margin: 0px;margin: 0px;
+	width: 46%;
+	float: left;}
+	.right_table{margin: 0px;
+	width: 54%;
+	float: left;
+	background-color: rgb(223, 242, 253);}
+	
+	.center{
+	text-align: center;
+	}
+	
+	.title{
+	font-weight: bold;
+	text-align: left;
+	border-bottom: 1px solid rgb(13, 60, 125);}
+	
+	
+	
+	.shadowed{box-shadow: -5px 5px 5px 0 silver;}
+		
+	
+	
+	
+	
+	/* -------------------- Page Styles (not required) */
+
+
+/* -------------------- Select Box Styles: bavotasan.com Method (with special adaptations by ericrasch.com) */
+/* -------------------- Source: http://bavotasan.com/2011/style-select-box-using-only-css/ */
+.styled-select {
+   background:  url(img/down.png)no-repeat  100% 30%;
+   background-size:50px 40px;
+   height: 40px;
+   overflow: hidden;
+   width: 220px;
+   font-size:11px;
+   cursor:pointer;
+}
+
+.styled-select select {
+   background: transparent;
+   border: none;
+   font-size: 11px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 250px;
+   padding-top:10px;
+   padding-left:15px;cursor:pointer;
+}
+
+.styled-select.slate {
+      background-image: url(img/down.png);
+   height: 34px;
+   width: 240px;
+}
+
+.styled-select.slate select {
+   border: 1px solid #ccc;
+   font-size: 16px;
+   height: 34px;
+   width: 268px;
+}
+
+/* -------------------- Rounded Corners */
+.rounded {
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+}
+
+.semi-square {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+}
+
+
+
+
+/* -------------------- Colors: Background */
+.slate   { background-color: #ddd; }
+.green   { background-color: #779126; }
+.blue    { background-color: #3b8ec2; }
+.yellow  { background-color: #eec111; }
+.black   { background-color:white; 
+}
+
+
+.slate select   { color: #000; }
+.green select   { color: #fff; }
+.blue select    { color: #fff; }
+.yellow select  { color: #000; }
+.black select   { color:black; }
+
+
+#mainselection select {
+   border: 0;
+   color: black;
+   background: transparent;
+   background: transparent;
+   font-size: 20px;
+   font-weight: bold;
+   padding: 2px 10px;
+   width: 170px;
+
+}
+
+#mainselection {
+   overflow:hidden;
+   width:170px;
+   -moz-border-radius: 9px 9px 9px 9px;
+   -webkit-border-radius: 9px 9px 9px 9px;
+   border-radius: 9px 9px 9px 9px;
+   box-shadow: 1px 1px 11px #330033;
+     background-image: url(img/down.png);
+}
+
+
+select#soflow, select#soflow-color {
+   -webkit-appearance: button;
+   -webkit-border-radius: 2px;
+   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+   -webkit-padding-end: 20px;
+   -webkit-padding-start: 2px;
+   -webkit-user-select: none;
+     background-image: url(down.png);
+   background-position: 97% center;
+   background-repeat: no-repeat;
+   border: 1px solid #AAA;
+   color:black;
+   font-size: inherit;
+   margin: 20px;
+   overflow: hidden;
+   padding: 5px 10px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 150px;
+}
+
+select#soflow-color {
+   color: black;
+   background-image: url(img/down.png);
+   background-color: #779126;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   padding-left: 25px;
+}
+.formBan{font-size:12px;}	
+td{font-size:12px;width:40px;}	
+tr{font-size:12px;width:40px;}	
+body{background-color;#EFEFEF;}
+
+select{word-wrap: break-word;overflow: hidden;
+  text-overflow: ellipsis; }
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,287 @@
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>ÉTAPE 6</title>
+	  <link rel="stylesheet" type="text/css" href="../assets/style/css/fontstyle.css">
+      <script type='text/javascript' src='assets/jquery-2.2.4.min.js'></script>
+      <script type='text/javascript' src='assets/jquery.browser.js'></script>
+      <script type='text/javascript' src='assets/jquery.iframe-auto-height.js'></script>
+      <script type='text/javascript' src='assets/jquery.scrollTo.min.js'></script>
+      <script type="text/javascript" src="assets/etape6_library.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="assets/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/style/marchestyle.css">
+      <!-- fichier css à utiliser -->
+      <link rel="stylesheet" type="text/css" href="../assets/style/marchestyle.css">
+   </head>
+   <style> 
+
+   </style>
+   <body id="bodymaininside">
+   	  <script>
+	  
+var formaCheck1=function(){
+if(
+
+document.getElementById("Mona2q1").value == "1 an"&&
+document.getElementById("Mona2q2").value == "1 mois"&&
+document.getElementById("Mona2q3").value == "1 an"&&
+document.getElementById("Mona2q4").value == "Par la durée des titres détenus"
+
+
+
+
+
+)
+
+{success();valideHide1(); goodAnswer=1;
+	}
+
+else{error();goodAnswer=0;};
+
+
+}
+ var goodAnswer=0;
+function CustomAlert(){
+               
+         var position = document.getElementById('placeholderL3n3');
+         this.render = function(dialog){
+                  var winW = window.innerWidth;
+                  var winH = window.innerHeight;
+                  var dialogoverlay = document.getElementById('dialogoverlay');
+                  var dialogbox = document.getElementById('dialogbox');
+                  dialogoverlay.style.display = "none";
+                  dialogoverlay.style.height = "100px";
+                  dialogbox.style.left = (winW/2) - (300* .5)+"px";
+                  dialogbox.style.top = cursorY-90;
+                  dialogbox.style.display = "block";
+                  
+                  document.getElementById('dialogboxbody').innerHTML = dialog;
+                  document.getElementById('dialogboxfoot').innerHTML = '<p id="ok" onclick="Alert.ok()">X</p>';
+               }
+               this.ok = function(){
+               document.getElementById('dialogbox').style.display = "none";
+               document.getElementById('dialogoverlay').style.display = "none";
+			   if(goodAnswer==1){$('#infoOba1').show();$('#perfSynth').show();}
+         
+               }
+               }
+
+
+
+var Alert = new CustomAlert();
+        var success = function() {
+            Alert.render("BRAVO ! C'EST LA BONNE RÉPONSE.");
+            valideHide1();
+          $('#backToSchool').hide();
+        };
+        var error = function() {
+            Alert.render("CE N'EST PAS LA BONNE RÉPONSE. RÉESSAYEZ !");
+            showPlainTrue();valideHide1();
+        };
+        var valideHide1 = function() {
+            $('#valider1').hide();
+        };
+        var showPlainFunc = function() {
+            $('#showPlain').css("visibility", "hidden");
+            $('#infoOba1').show();
+			$('#backToSchool').show();
+        };
+		    var backToSchoolFunc = function() {
+            $('#showPlain').css("visibility", "hidden");
+            $('#infoOba1').hide();
+			$('#backToSchool').hide();
+			$('#valider1').show();
+        };
+        var showPlainTrue = function() {
+            $('#showPlain').css("visibility", "visible");
+        };
+      
+</script>
+
+			
+			
+		 <div class="consigne" style="margin-left:-12px">
+               <span class="titleblue">PERFORMANCES COMPARÉES </span>
+               <br>
+ Peut-on perdre de l’argent en investissant dans un fonds monétaire ?</br></br>
+               <span>	
+À partir des données fournies ci-dessous, analysez la performance des fonds monétaire court terme et monétaire en sélectionnant les bonnes réponses à l’aide du bouton  <img src="assets/img/down.png" style="width:15px;height:15px;border-top-right-radius:5px;border-bottom-right-radius:5px;">.     
+               </span>             
+               </span>
+ 
+            </div>	
+			
+			
+			<span class="sequencetitle" style="font-size:11px">FONDS A</span>
+		 <div style="background-image:url('monaAnalyse2/jet2.png');height:159px;width:708px;background-size:700px 159px;background-repeat:no-repeat;">
+      </div> 
+			<span class="sequencetitle" style="font-size:11px"><br/>FONDS B</span>			
+		 <div style="background-image:url('monaAnalyse2/jet1.png');height:159px;width:708px;background-size:700px 159px;background-repeat:no-repeat;">
+      </div> 
+			
+
+
+
+
+
+
+
+	
+	<div class="formActa formNew" style="width:708px;height:200px;margin-top:30px;" >
+
+
+
+   
+	
+<div class="formliner" id="line1" >
+<div class="formQuest" style="margin-left:5px">
+Depuis quand la performance absolue
+est-elle négative pour ?
+
+</div>
+</br>
+
+
+<div class="formEnonce">
+
+Pour le fonds monétaire court terme (A)
+</div>
+
+
+<div class="styled-select black rounded shadowed"style="position: relative;width:300px;
+    top: 2px;">
+  <select id="Mona2q1" style="width:450px;">
+    <option>?</option>
+    <option>1 mois</option>
+    <option>3 mois</option>
+    <option>1 an</option>
+    <option>3 ans</option>
+    <option>5 ans</option>
+
+  </select>
+</div>
+
+
+<div class="formEnonce"style="position: relative;
+    top: 10px;">
+
+Pour le fonds monétaire (B)	
+</div>
+
+
+<div class="styled-select black rounded shadowed"style="position: relative;width:300px;
+    top: 10px;">
+  <select id="Mona2q2" style="width:450px;">
+  <option>?</option>
+    <option>1 mois</option>
+    <option>3 mois</option>
+    <option>1 an</option>
+    <option>3 ans</option>
+    <option>5 ans</option>
+
+
+
+  </select>
+</div>
+</div>
+
+<div class="formliner" id="line1" style="clear:both;">
+<div class="formQuest">
+
+</div>
+</br>
+
+
+<div class="formEnonce" style="position: relative;
+    top: 10px;">
+
+Depuis quand la performance de l’indice de référence de ces deux fonds est-elle négative ?
+
+</div>
+
+
+<div class="styled-select black rounded shadowed"style="position: relative;width:300px;
+    top: 10px;">
+  <select id="Mona2q3" style="width:450px;">
+    <option>?</option>
+    <option>1 mois</option>
+    <option>3 mois</option>
+    <option>1 an</option>
+    <option>3 ans</option>
+    <option>5 ans</option>
+
+  </select>
+</div>
+<div class="formEnonce" style="position: relative;
+    top: 10px;clear:both;">
+
+Comment s’explique la différence de </br>performance en faveur du fonds monétaire ?
+
+</div>
+
+
+
+<div class="styled-select black rounded shadowed"style="position: relative;
+    top: 20px;width:300px;">
+  <select id="Mona2q4" style="width:450px;">
+    <option>?</option>
+    <option>Par l’indice de référence
+</option>
+    <option>Par la durée des titres détenus</option>
+
+
+  </select>
+</div>
+
+
+
+</div>
+
+
+		
+<div class="formliner" id="line1"  style="clear:both;">
+<div class="formQuest">
+
+</div>
+</br>
+
+
+
+
+
+</div>
+</div>
+          <div class="consigne" id="infoOba1" style="padding:0px;width:582px;margin-left:-21px;display:none;border-radius: 25px;padding: 20px;margin-top:60px;width:582px;">
+
+			   <span>
+
+Le fonds monétaire est investi à hauteur de près de 75% en titres de maturité supérieure à 90 jours, tandis que le fonds monétaire court terme l’est à hauteur de près de 60% en titres de maturité inférieure à 90 jours (cf. répartition par maturité en page 2 de la fiche de reporting).
+La capacité du fonds monétaire à pouvoir en partie s’investir en titres obligataires lui permet de dégager une performance positive à un moment où le taux des titres de créance négociables est en territoire négatif (cf. indice de référence Eonia). Sa performance ne devient négative qu’à partir du dernier mois, alors que celles du fonds monétaire court terme et de l’indice le sont déjà depuis un an.</br>
+Être investi en monétaire ne garantit pas la préservation du capital investi. 
+
+</span>
+</br>
+<div class="valider" id="backToSchool"onclick="backToSchoolFunc()" style="display:none;margin-left:150px">fermer l'explication</div>
+  </div>
+		 <div class="consigne" id="perfSynth" style="display:none">
+               <span class="titleblue">SYNTHÈSE </span>
+               <br>
+Pour retrouver les extraits analysés, vous pouvez télécharger les fiches complètes des fonds.
+ 		 <div class="valider" id="files"onclick="window.open('indexFichePerf.html', '_blank');" style="margin-left:380px">télécharger</div>
+            </div>	
+			
+		 <div class="valider" id="showPlain"onclick="showPlainFunc()" style="visibility:hidden;margin-left:150px">voir l'explication</div>
+		 
+		  <div class="valider" id="valider1"onclick="formaCheck1()" style="margin-left:480px">valider</div>
+
+	 
+
+   </body>
+   <div id="dialogoverlay"></div>
+   <div id="dialogbox">
+   <div>
+   <div id="dialogboxfoot"></div>
+   <div id="dialogboxbody"></div>
+   <div id="dialogboxhead"></div>
+</html>

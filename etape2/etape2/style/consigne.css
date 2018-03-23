@@ -1,0 +1,121 @@
+/**************************PAGE INDEX**************************/
+/*CONSIGNES*/
+
+
+@font-face {
+font-family: 'Helvetica Neue LT Std 55 Roman';
+font-style: normal;
+font-weight: normal;
+src: local('HelveticaNeueLTStd-Roman'), url('HelveticaNeueLTStd-Roman.otf') format('opentype');
+}
+
+
+
+@font-face {
+font-family: 'Helvetica Neue LT Std 75 Bold';
+font-style: normal;
+font-weight: normal;
+src: local('HelveticaNeueLTStd-Bd'), url('HelveticaNeueLTStd-Bd.otf') format('opentype');
+src:url('HelveticaNeueLTStd-Bd.svg#HelveticaNeueLTStd-Bd') format('svg'),
+       url('HelveticaNeueLTStd-Bd.eot#HelveticaNeueLTStd-Bd') format('embedded-opentype'),
+	    url('HelveticaNeueLTStd-Bd.woff') format('woff'),
+     url('HelveticaNeueLTStd-Bd.ttf') format('truetype');
+
+
+
+
+}
+
+
+
+
+.sequenceimgcontainer{
+	float:left;
+	
+	
+}
+.sequencetextcontainer{
+
+	
+	
+}
+@font-face {
+font-family: 'Helvetica Neue LT Std 75 Bold';
+font-style: normal;
+font-weight: normal;
+src: local('HelveticaNeueLTStd-Bd'), url('HelveticaNeueLTStd-Bd.otf') format('opentype');
+}
+
+
+
+.sequencetitle{
+font-family:"Helvetica Neue LT Std 75 Bold" !important;
+text-transform: uppercase;	
+color:#7D7D7D;	
+font-size:13px;	
+font-weight:lighter;
+}
+.titleblue{
+text-transform: uppercase;
+color:#009FE3;
+font-size:13px;
+font-family:"Helvetica Neue LT Std 75 Bold"  !important;
+font-weight:lighter;
+
+}
+
+
+
+
+
+
+.sequenceconsign{
+font-family: 'Helvetica Neue LT Std 55 Roman';
+color:#7D7D7D;	
+font-size:11px;
+margin-top:-10px;
+
+}
+.sequenceimgcontainer{
+	
+	padding:6px;
+}
+	
+	
+.view{
+	margin-left:3px;
+	
+}
+
+#consignesGenerales{
+	margin-bottom :25px;
+	font-size:14px;
+	font-family:'Helvetica Neue LT Std 55 Roman';
+	color:#7D7D7D;
+	padding:15px;
+}
+
+
+
+.videoIframeContainer{
+	margin-top:25px;
+	margin-bottom:20px;
+	display:block;
+	width:673px;
+	height:353px;
+    color: #666666;
+    text-align: left;
+	background-color: white;
+	margin-left:-10px;
+	padding:10px;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+	
+}
+.consignes{
+	font-size:14px;
+	font-family:'Helvetica Neue LT Std 55 Roman';
+	color:#7D7D7D;
+	margin-bottom :25px;
+}
+/*FIN CONSIGNES*/

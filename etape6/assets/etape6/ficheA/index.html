@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>jQuery Topbar message Plugin Demo</title>
+	<script src="jquery.js" type="text/javascript"></script>
+	<script src="jquery.imageLens.js" type="text/javascript"></script>
+      <link rel="stylesheet" type="text/css" href="assets/style/marchestyle.css">
+      <!-- fichier css à utiliser -->
+      <link rel="stylesheet" type="text/css" href="assets/style/marchestyle.css">
+	<script type="text/javascript" language="javascript">
+		$(function () {
+			$("#imgcontain").imageLens();
+			$("#img_02").imageLens({ lensSize: 400 });
+			$("#img_03").imageLens({ imageSrc: "sample01.jpg" });
+			$("#img_04").imageLens({ borderSize: 8, borderColor: "#06f" });
+		});	
+	</script>
+
+	<style type="text/css">
+.button{background-color:black;color:white;  border-style: none;
+  
+    background-color: white;
+    border-radius: 20px;
+	cursor:pointer;
+	color:#737373;
+	float:left;
+	font-family: 'Helvetica Neue LT Std 55 Roman';
+color:#7D7D7D;	
+font-size:15px;	
+	border: none;
+	text-decoration:underline;
+	}
+.ovalnoir {
+    border-style: none;
+    color: #E9E9E9;
+    width: 55px;
+    height: 25px;
+    margin: auto;
+    margin-left: 35px;
+    background-color: black;
+    border-radius: 20px;
+}
+body{font-family: 'Helvetica Neue LT Std 55 Roman';
+color:#7D7D7D;	
+font-size:15px;
+}
+.socle{width:20px;position:absolute;}
+	</style>
+</head>
+<body style="margin-left: 1px;">
+	<div style="position:absolute;color:white;width:708px;height:30px;">
+	<div style="margin : 0 auto;color:white;width:300px;height:10px;">
+	<div style="margin : 0 auto;color:white;width:300px;height:20px;">
+	
+	
+	
+	
+	
+
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+		<div style="background-color:navy;margin : 0 auto;color:white;width:50x;height:0px;">
+	
+		
+			<div style="background-color:;width:40px;height:30px;float:left;color:#7D7D7D;margin-left:20px;	">Page</div><div class="icone" ><img class="socle" src="assets/style/img/loupe.png";></div>
+			<div style="background-color;height:30px;float:left;color:#7D7D7D;margin-left:135px;	">Loupe</div><div class="icone" ><img class="socle" src="assets/style/img/sheet.png";></div>
+			
+			
+			
+			
+			
+			
+			</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		<div style="margin : 0 auto;color:white;width:50x;height:10px;"></div>
+		</div>
+	<div style="position:absolute;color:white;margin-bottom:50px;width:150px;">
+	<button id="cc1"class="button"onclick="change1()" style="color:#009FE3">1</button>
+	<button id="cc2"class="button"onclick="change2()">2</button>
+
+	</div>
+	<div style="position:absolute;color:white;margin-bottom:50px;margin-left:150px;width:150px;">
+	<button id="cl1"class="button"onclick="changeLoupe1()">200</button>
+	<button id="cl2"class="button"onclick="changeLoupe2()">400</button>
+	<button id="cl3"class="button"onclick="changeLoupe3()">600</button>
+	</div>
+	</div>
+	</div>
+<!-- BuySellAds.com Ad Code -->
+<script type="text/javascript">
+
+	
+(function(){
+  var bsa = document.createElement('script');
+     bsa.type = 'text/javascript';
+     bsa.async = true;
+     bsa.src = '//s3.buysellads.com/ac/bsa.js';
+  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+})();
+
+
+var change1=function(){$('#imgcontain').attr('src','jet1.png');$('.undefined').attr("style","background-image: url('jet1.png'); ");$("#imgcontain").imageLens();
+	
+	$('#cc1').css("color","#009FE3");
+	$('#cc2').css("color","#7D7D7D");
+	$('#cc3').css("color","#7D7D7D");
+	
+	}
+
+
+
+
+
+var change2=function(){$('#imgcontain').attr('src','jet2.png');$('.undefined').attr("style","background-image: url('jet2.png'); ");$("#imgcontain").imageLens();
+	
+		$('#cc1').css("color","#7D7D7D");
+	$('#cc2').css("color","#009FE3");
+	$('#cc3').css("color","#7D7D7D");
+	
+	
+	
+	}	
+var change3=function(){$('#imgcontain').attr('src','jet3.png');$('.undefined').attr("style","background-image: url('jet3.png'); ");$("#imgcontain").imageLens();
+		$('#cc1').css("color","#7D7D7D");
+	$('#cc2').css("color","#7D7D7D");
+	$('#cc3').css("color","#009FE3");
+	
+	
+	
+	
+	
+	}
+var changeLoupe1=function(){$('.undefined').attr("style","width:200px;");OptionLens=100;$("#imgcontain").imageLens();
+	
+		
+	$('#cl1').css("color","#009FE3");
+	$('#cl2').css("color","#7D7D7D");
+	$('#cl3').css("color","#7D7D7D");
+	
+	
+	}		
+var changeLoupe2=function(){$('.undefined').attr("style","width:250px;");OptionLens=200;$("#imgcontain").imageLens();
+		
+		$('#cl1').css("color","#7D7D7D");
+	$('#cl2').css("color","#009FE3");
+	$('#cl3').css("color","#7D7D7D");
+	
+	
+	}	
+var changeLoupe3=function(){$('.undefined').attr("style","width:300px;");OptionLens=300;$("#imgcontain").imageLens();
+	
+		$('#cl1').css("color","#7D7D7D");
+	$('#cl2').css("color","#7D7D7D");
+	$('#cl3').css("color","#009FE3");
+	
+	
+	
+	
+	}
+	
+
+
+
+
+</script>
+<!-- End BuySellAds.com Ad Code -->
+
+<img id="imgcontain" src="jet1.png" width="708" height="900" style="margin-top:50px;"/>
+<pre>$("#jet1.png").imageLens({ lensSize: 400 });</pre>
+<pre>$("#jet2.png").imageLens({ lensSize: 400 });</pre>				
+<pre>$("#jet3.png").imageLens({ lensSize: 400 });</pre>
+	
+	<script type="text/javascript">var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));	</script>	<script type="text/javascript">	try{var pageTracker = _gat._getTracker("UA-2030729-5");pageTracker._initData();pageTracker._trackPageview();}catch(ex){}</script>
+	
+</body>
+</html>

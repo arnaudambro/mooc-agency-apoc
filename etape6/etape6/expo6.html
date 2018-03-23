@@ -1,0 +1,209 @@
+<html>
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="../assets/style/css/fontstyle.css">
+      <script type='text/javascript' src='assets/jquery-2.2.4.min.js'></script>
+      <script type='text/javascript' src='assets/jquery.browser.js'></script>
+      <script type='text/javascript' src='assets/jquery.iframe-auto-height.js'></script>
+      <script type='text/javascript' src='assets/jquery.scrollTo.min.js'></script>
+      <script type="text/javascript" src="assets/etape6_library.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="assets/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/style/marchestyle.css">
+      <!-- fichier css à utiliser -->
+      <link rel="stylesheet" type="text/css" href="../assets/style/marchestyle.css">
+   </head>
+<style>
+.checkbox15 {
+    float: left;
+    width: 100px;
+}</style>
+   <body id="bodymaininside">
+   	  <script>
+	  
+var formaCheck2=function(){
+if(
+
+(
+document.getElementById("Oba5q16").value == "7 ans")&&
+document.getElementById("Oba5q15").value == "5 ans"
+
+
+
+
+)
+
+
+{success();valideHide1(); goodAnswer=1;
+	}
+
+else{error();goodAnswer=0;};
+
+
+}
+ var goodAnswer=0;
+function CustomAlert(){
+               
+         var position = document.getElementById('placeholderL3n3');
+         this.render = function(dialog){
+                  var winW = window.innerWidth;
+                  var winH = window.innerHeight;
+                  var dialogoverlay = document.getElementById('dialogoverlay');
+                  var dialogbox = document.getElementById('dialogbox');
+                  dialogoverlay.style.display = "none";
+                  dialogoverlay.style.height = "100px";
+                  dialogbox.style.left = (winW/2) - (300* .5)+"px";
+                  dialogbox.style.top = cursorY-90;
+                  dialogbox.style.display = "block";
+                  
+                  document.getElementById('dialogboxbody').innerHTML = dialog;
+                  document.getElementById('dialogboxfoot').innerHTML = '<p id="ok" onclick="Alert.ok()">X</p>';
+               }
+               this.ok = function(){
+               document.getElementById('dialogbox').style.display = "none";
+               document.getElementById('dialogoverlay').style.display = "none";
+			   if(goodAnswer==1){$('#infoOba1').show();$('#perfSynth').show();}
+         
+               }
+               }
+
+
+
+var Alert = new CustomAlert();
+        var success = function() {
+            Alert.render("BRAVO ! C'EST LA BONNE RÉPONSE.");
+            valideHide1();
+          $('#backToSchool').hide();
+        };
+        var error = function() {
+            Alert.render("CE N'EST PAS LA BONNE RÉPONSE. RÉESSAYEZ !");
+            showPlainTrue();valideHide1();
+        };
+        var valideHide1 = function() {
+            $('#valider1').hide();
+        };
+        var showPlainFunc = function() {
+            $('#showPlain').css("visibility", "hidden");
+            $('#infoOba1').show();
+			$('#backToSchool').show();
+        };
+		    var backToSchoolFunc = function() {
+            $('#showPlain').css("visibility", "hidden");
+            $('#infoOba1').hide();
+			$('#backToSchool').hide();
+			$('#valider1').show();
+        };
+        var showPlainTrue = function() {
+            $('#showPlain').css("visibility", "visible");
+        };
+      
+      
+      
+</script>
+	 	<div class='consigncontainer'>
+
+
+ <div class="consigne">
+               <span class="titleblue">EN SENSIBILITÉ ET % D’ACTIF PAR MATURITÉ (POUR LES FONDS OBLIGATAIRES ET MONÉTAIRES)  </span></br>
+     <span>	
+La maturité mesure la durée de vie d’un produit de taux (obligation ou titre monétaire), de sa date d’émission à sa date d’échéance (ou de remboursement) : quelles informations en tirer pour le fonds ?
+</br></br>
+À partir des données fournies, analysez l’exposition du fonds obligataire B en sélectionnant les bonnes réponses à l’aide du bouton        
+ <img src="assets/img/down.png" style="width:15px;height:15px;border-top-right-radius:5px;border-bottom-right-radius:5px;">.
+         </span>
+
+ 
+            </div>
+            </div>
+
+		 	 	 <div style="background-image:url('obaAnalyse5ter/jet1.png');height:400px;width:708px;background-size:700px 320px;background-repeat:no-repeat;margin-top:20px;margin-bottom:-20px;">
+      </div> 
+
+	<div class="formQuest" style="clear:both;">
+Sur quelle maturité le fonds est-il le plus
+exposé ?
+
+	</div>
+<div class="formliner" id="line1" >
+
+
+ <div class="checkbox15 marge10" style="clear:both;margin-top:20px;width:320px;">En sensibilité 
+
+
+
+</div>
+<div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;margin-top:20px;
+    top: 2px;">
+
+ <select id="Oba5q16">
+  <option>?</option>
+   <option>Court terme</option>		
+<option>2 ans</option>	
+<option>5 ans</option>	
+<option>7 ans</option>		
+<option>10 ans</option>		
+<option>15 ans</option>	
+<option>20 ans</option>				
+<option>30 ans</option>	
+
+
+ </select>  </div></br></br></br>
+ 
+
+<div class="checkbox15 marge10" style="width:320px;margin-top:15px">En % d’actif	
+
+
+</div>
+<div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;margin-top:15px;
+    top: 2px;">
+
+ <select id="Oba5q15">
+  <option>?</option>
+   <option>Court terme</option>		
+<option>2 ans</option>	
+<option>5 ans</option>	
+<option>7 ans</option>		
+<option>10 ans</option>		
+<option>15 ans</option>	
+<option>20 ans</option>				
+<option>30 ans</option>	
+
+
+ </select>  </div>
+</div>
+</br>
+        <div class="consigne" id="infoOba1" style="padding:0px;width:582px;margin-left:10px;display:none;border-radius: 25px;padding: 20px;">
+
+			   <span>
+
+Dans un contexte où le programme d’achat de la BCE devrait continuer à maintenir les taux à des niveaux historiquement bas, le fonds présente en terme de maturité la même surpondération que son indice de référence : 7 ans en sensibilité et 5 ans en % d’actif.
+</span>
+<div class="valider" id="backToSchool"onclick="backToSchoolFunc()" style="display:none;margin-left:150px">fermer l'explication</div>
+  </div>
+   <div class="consigne" id="perfSynth" style="display:none">
+               <span class="titleblue">SYNTHÈSE </span>
+               <br>
+Pour retrouver les extraits analysés, vous pouvez télécharger les fiches complètes des fonds.
+ 		 <div class="valider" id="check"onclick="window.open('indexFicheExpo.html', '_blank');" style="margin-left:380px">télécharger</div>
+            </div>	
+
+		 <div class="valider" id="showPlain"onclick="showPlainFunc()" style="visibility:hidden;margin-left:150px">voir l'explication</div>
+		 
+		  <div class="valider" id="valider1"onclick="formaCheck2()" style="margin-left:50px">valider</div>
+
+</div>
+
+
+
+
+ 
+
+
+   <div id="dialogoverlay"></div>
+   <div id="dialogbox">
+   <div>
+   <div id="dialogboxfoot"></div>
+   <div id="dialogboxbody"></div>
+   <div id="dialogboxhead"></div>
+      </body>
+</html>

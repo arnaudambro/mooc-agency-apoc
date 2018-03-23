@@ -1,0 +1,140 @@
+<html style='height:7000px;width:708px;'>
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="../assets/style/css/fontstyle.css">
+      <script type='text/javascript' src='assets/jquery-2.2.4.min.js'></script>
+      <script type='text/javascript' src='assets/jquery.browser.js'></script>
+      <script type='text/javascript' src='assets/jquery.iframe-auto-height.js'></script>
+      <script type='text/javascript' src='assets/jquery.scrollTo.min.js'></script>
+      <script type="text/javascript" src="assets/etape6_library.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="assets/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/style/marchestyle.css">
+      <!-- fichier css à utiliser -->
+      <link rel="stylesheet" type="text/css" href="../assets/style/marchestyle.css">
+   </head>
+   <style>  
+
+   </style>
+   <body id="bodymaininside" style='height:auto;width:708px;margin-left:0px;background-color:#EFEFEF'>
+   	  <script>
+	  
+var formaCheck=function(){
+if(
+
+document.getElementById("Diva3q1").value == "74,35%"
+
+
+)
+
+{success();
+	}
+
+else{error();};
+
+
+}
+
+      var Alert = new CustomAlert();
+      // FIN CUSTOM ALERTT
+      // CONGRAT
+       var success=function(){Alert.render("BRAVO ! C'EST LA BONNE RÉPONSE."); valideHide();$('#infoOba1').show();};
+      
+      
+      
+      var error=function(){Alert.render("CE N'EST PAS LA BONNE RÉPONSE. CONTINUEZ !");};
+	  
+	  var valideHide=function(){$('.valider').hide();}
+      
+</script>
+
+			
+			
+		 <div class="consigne">
+               <span class="titleblue">ANALYSE 3</span>
+               <br>
+ 
+               <span>	
+À partir des données fournies ci-dessous, analysez l’exposition du fonds A en sélectionnant les bonnes réponses à l’aide du bouton <img src="assets/img/down.png" style="width:15px;height:15px;border-top-right-radius:5px;border-bottom-right-radius:5px;">.                  
+               </span>
+ 
+            </div>	
+			
+			
+			     <div style="background-image:url('divaAnalyse3/jet1.png');height:300px;width:708px;background-size:450px 300px;background-repeat:no-repeat;">
+      </div> 
+			
+		
+	
+	 <div class="consigne" style="margin-left:350px;font-size:11px;font-style:italic;">
+
+**voir doc word diversifié.                
+               </span>
+ 
+            </div>	
+
+
+
+
+
+
+
+	
+	<div class="formActa formNew" style="width:708px;height:700px;margin-top:00px;" >
+
+
+
+   
+	
+<div class="formliner" id="line1" style="height:120px;" >
+<div class="formQuest">
+
+</div>
+
+</br>
+</br>
+</br>
+<div class="formEnonce">
+Quelle part du fonds ne présente </br>aucun risque de change ?
+</div>
+<div class="styled-select black rounded shadowed"style="position: relative;float:left;
+    top: 2px;">
+  <select id="Diva3q1">
+
+    <option>?</option>
+    <option>0,01%</option>
+    <option>4,13%</option>
+    <option>6,90%</option>
+    <option>14,62%</option>
+    <option>74,35%</option>
+
+  </select>
+</div>
+
+
+
+
+<div class="valider" onclick="formaCheck()">valider</div>
+
+</div>
+
+ <div class="consigne" id="infoOba1" style="display:none;padding:20px;margin-top:32px;">
+        
+               <br><span>
+ 
+Le fonds C est investi en actions européennes et obligations de la Zone euro (indice de référence : 50% BARCLAYS  EURO-AGG TREASURY 1-7 Y + 50% MSCI EUROPE 15) ; 
+il peut donc détenir des titres hors Zone euro, notamment anglais et suisses, qui génèrent un risque de change susceptible d’affecter négativement ou positivement sa performance.
+
+
+</span>
+  </div>		 
+  </div>		 
+
+   </body>
+   <div id="dialogoverlay"></div>
+   <div id="dialogbox">
+   <div>
+   <div id="dialogboxfoot"></div>
+   <div id="dialogboxbody"></div>
+   <div id="dialogboxhead"></div>
+</html>

@@ -1,0 +1,370 @@
+@font-face {
+font-family: 'Helvetica Neue LT Std 55 Roman';
+font-style: normal;
+font-weight: normal;
+src: local('HelveticaNeueLTStd-Roman'), url('HelveticaNeueLTStd-Roman.otf') format('opentype');
+}
+@font-face {
+font-family: 'Helvetica Neue LT Std 75 Bold';
+font-style: normal;
+font-weight: normal;
+src: local('HelveticaNeueLTStd-Bd'), url('Helvetica Neue LT Std 75 Bold.otf') format('opentype');
+}
+
+
+body{width:708px;margin:0px;margin-left:-3px;}
+
+
+.containtitle {
+    text-align: left;
+}
+
+
+/* css de la div contenant les cartes */
+  #contenair {
+    width: 708px;
+    background-color: #EFEFEF;
+    height: 470px;
+  }
+  /* css de la div contenant les cellules drop actives et inactives */
+  #contenair2 {
+    width: 708px;
+    background-color: #EFEFEF;
+    height: 50px;
+    margin-top: 9px;
+  }
+  /* css de la div contenant les textes "MOINS DE RISQUE" et "PLUS DE RISQUE" */
+  #contenair3 {
+    width: 708px;
+    background-color: #EFEFEF;
+    height: 36px;
+    margin-top: 34px;
+  }
+  /* css de la div contenant les boutons VALIDER ET RECOMMENCER */
+  #contenair4 {
+    padding-top: 37px;
+    width: 708px;
+    background-color: #EFEFEF;
+    height: 50px;
+  }
+  /* css de la div definnissant la zone d'utilisation des cartes */
+  #contenair_global {
+    width: 708px;
+    background-color: #EFEFEF;
+	overflow: hidden;
+  }
+  /* css des cartes actives et inactives*/
+  .carte,.carte1 {
+    width: 230px;
+    height: 230px;
+    background-color: white;
+    float: left;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  .carte1 p,.carte p {
+    margin: 0;
+    padding: 0;
+  }
+  .carte1 {
+    width: 224px;
+    height: 224px;
+    border: 4px solid #c6c6c6;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .carte1 .recept {
+    padding-left: 6px;
+    padding-right: 6px;
+	background-color:white;
+  }
+
+  /* css des picto hand noir */
+  .picto_hand {
+      width: calc(100% - 3px);
+      height: 20px;
+      text-align: right;
+      margin-bottom: -23px;
+      margin-right: 3px;
+      margin-top: 3px;
+  }
+  .picto_hand img {
+    width: auto;
+    height: 30px;
+  }
+  /* creation curseur pointeur caete movibles */
+  .carte {
+    cursor: pointer;
+  }
+  /* css des cellules drop */
+  .drop_style {
+    width: 136px;
+    height: 50px;
+    float: left;
+    margin-right: 3px;
+    background-color: #E9E9E9;
+    border-radius: 18px;
+    color: #666666;
+    vertical-align: middle;
+    text-align: center;
+    box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.2) inset;
+	  font-family:'Helvetica Neue LT Std 55 Roman';font-weight:normal;
+	  font-size:9px;
+  }
+  .drop_style span {
+    display:inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  /* css cartes */
+  #carte1, #carte2, #carte3, #carte4, #carte5, #carte6 {
+    display: block;
+	z-index: 10;
+  }
+  #carte1:hover, #carte2:hover, #carte3:hover, #carte4:hover, #carte5:hover, #carte6:hover {
+	z-index: 11;
+  }
+   #carte1, #carte2, #carte3 {
+	   position: absolute;
+	   top: 11px;
+   }
+   #carte4, #carte5, #carte6 {
+	   position: absolute;
+	   top: 246px;
+   }
+   #carte1, #carte4 {
+	   left: -1px;
+   }
+   #carte2, #carte5 {
+	   left: 234px;
+   }
+   #carte3, #carte6 {
+	   left: 469px;
+   }
+  /* css des input receptionnnant les valeurs des cartes  */
+  .drop input{
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 30px;
+    border: none;
+    padding: none;
+    vertical-align: middle;
+    text-align: center;
+    display: block;
+	font-family:'Helvetica Neue LT Std 55 Roman';font-weight:normal;
+	font-size:12px;
+  }
+  /* css des cellules drop inactive ayant pour texte " - " et " + " */
+  .drop_signe {
+    line-height: 50px;
+    font-size: 28px;
+    vertical-align: middle;
+    text-align: center;
+	font-family:'Helvetica Neue LT Std 55 Roman';
+	font-weight:normal;
+	font-size:12px;
+  }
+  /* css div ayant pour texte "MOINS DE RISQUE" */
+  .moins_risque {
+    width: calc(50% - 5px);
+    text-align: left;
+    padding-left: 5px;
+    float: left;
+    color: #666666;
+	font-family:'Helvetica Neue LT Std 55 Roman';
+	font-weight:normal;
+	font-size:12px;
+  }
+  /* css div ayant pour texte "PLUS DE RISQUE" */
+  .plus_risque {
+    width: calc(50% - 5px);
+    text-align: right;
+    padding-right: 5px;
+    float:left;
+    color: #666666;
+	font-family:'Helvetica Neue LT Std 55 Roman';
+	font-weight:normal;
+	font-size:12px;
+  }
+  /* css des 2 boutons recommencer,continuer et valider */
+  .button {
+    color: #ffffff;
+    background-color: #000000;
+    border: none;
+    padding: none;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 13px;
+    width: 193px;
+    height: 50px;
+    cursor: pointer;
+	font-family:'Helvetica Neue LT Std 55 Roman';
+	font-weight:normal;
+	font-size:12px;
+  }
+  .button:first-child {
+    margin-left: 24px;
+  }
+  .button:last-child {
+    margin-left: 10px;
+  }
+  .button:nth-child(2n) {
+
+    margin-left:10px;
+  }
+  /* fin css boutons recommencer et valider */
+
+  /* css exemple de carte */
+
+  /* #### Generated By: http://www.cufonfonts.com #### */
+  @font-face {
+  	font-family: 'Helvetica Neue LT Std 55 Roman';
+  font-style: normal;
+  font-weight: normal;
+  src:  url('HelveticaNeueLTStd-Roman.otf') format('opentype');
+  }
+
+  .emet{
+
+
+
+  	}
+
+  .emetbesoin {
+  	font-family:'Helvetica Neue LT Std 55 Roman';font-weight:normal;
+  	font-size:10px;
+  	width:193px;
+  	height:200px;
+  	border-style :none;
+  	margin-top:10px;
+  	margin-left:20px;
+  	color:#666666;
+
+
+  }
+
+
+  ul{}
+  ul li {
+  font-size:10px;
+      margin-left: 10px;margin-top:5px;
+  }
+  .minititle{font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;margin:10px;margin-left: 0px;}
+  .orange{color:#FE1E00;font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;}
+  .rouge{color:#FE1E00;font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;}
+  .violet{color:#9D159D;font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;}
+  .vert{color:#009F00;font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;}
+
+
+
+
+  .loader {
+
+  position : fixed;
+  z-index: 9999;
+  background : url('spinner.gif') 50% 50% no-repeat;
+  top : 0px;
+  left : 0px;
+  height : 100%;
+  width : 100%;
+  cursor : wait;
+  }
+
+  /* css pop-up alerte */
+  #dialogoverlay{
+  display:none;
+  width:250px;
+  height:170px;
+  position:absolute;
+  background:#009FE3;
+
+  color:#FFFFFF;
+
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 0 2px rgba(0,0,0,.5);
+  font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;
+  font-size:15px;
+  left:50%;
+  }
+  #dialogbox{
+  display:none;
+  width:250px;
+  height:180px;
+  position:absolute;
+  background:#009FE3;
+
+  color:#FFFFFF;
+
+  border-radius:20px;
+  box-shadow:0 0 2px rgba(0,0,0,.5);
+  font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;
+  font-size:15px;
+  left:50%;
+  bottom:10%;
+  z-index: 999999;
+  }
+  #dialogboxbody{margin-top:-9px;}
+  #ok {
+    cursor: pointer;margin:0px
+  }
+  #dialogbox > div{ background:#FFF; margin:8px; }
+  #dialogbox > div > #dialogboxhead{ background: #009FE3; font-size:19px; padding:10px; color:#CCC; }
+  #dialogbox > div > #dialogboxbody{ background:#009FE3; padding:20px; color:#FFF; }
+  #dialogbox > div > #dialogboxfoot{ background: #009FE3; padding:10px; text-align:right; }
+
+  
+  #overlay {
+
+    display : none; /* Par défaut, on cache l'overlay */
+	z-index: 999999;
+
+    position: absolute;
+
+    top: 0; left: -2;
+
+    width: 708px; height: 100%;
+
+    /* Pour centrer l'image que l'overlay contiendra */
+
+
+    /* Ci-dessous, nous appliquons un background de couleur noire et d'opacité 0.6. Il s'agit d'une propriété CSS3. */
+
+    background-color:#efefef;
+}
+.consigne {
+  color: #7d7d7d;
+  font-family: "Helvetica Neue LT Std 55 Roman";
+  font-size: 14px;
+  font-weight:500;
+}
+
+
+.titleblue {
+    color: #009fe3;
+    font-family: "Helvetica Neue LT Std 75 Bold" !important;
+    font-size: 13px;
+    font-weight: lighter;
+    text-transform: uppercase;
+	cursor:pointer;
+}
+.titlegrey {
+    color: grey;
+    font-family: "Helvetica Neue LT Std 75 Bold" !important;
+    font-size: 13px;
+    font-weight: lighter;
+    text-transform: uppercase;
+	cursor:pointer;
+}
+
+
+
+#indice{visibility:hidden;}
+
+
+
+

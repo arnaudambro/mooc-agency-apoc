@@ -1,0 +1,447 @@
+
+
+<!DOCTYPE html>
+<html id='html'>
+   <head>
+      <meta http-equiv="Cache-control" content="no-cache">
+      <meta http-equiv="Expires" content="-1">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,">
+      <script
+         src="https://code.jquery.com/jquery-3.1.1.js"></script>
+      <link rel="stylesheet" type="text/css"href="assets/style/origin.css"/>
+      <script type="text/javascript" src="etape7/assets/etape7_library.js"></script>
+      <link rel="stylesheet" type="text/css"href="assets/style/interfacestyle.css"/>
+      <link rel="stylesheet" href="interface/loader/style.css"/>
+      <link rel="stylesheet" href="interface/loader/boot.css"/>
+	  <link rel="stylesheet" type="text/css"href="assets/style/css/fontstyle.css"/>
+	  <link rel="stylesheet" href="../master/style.css"/>
+   </head>
+   <!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.themoocagency.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '73']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+   
+   <style>
+.valider {
+    background-color: black;
+    border-radius: 11px;
+    box-shadow: -5px 5px 5px 0 silver;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    float:right;
+    margin-top: 00px;
+    padding: 15px 65px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #2f6627;
+    text-transform: uppercase;
+}
+   </style>
+   
+   <script>
+   	 	function getCookie(name){
+			 if(document.cookie.length == 0)
+			   return null;
+
+			 var regSepCookie = new RegExp('(; )', 'g');
+			 var cookies = document.cookie.split(regSepCookie);
+
+			 for(var i = 0; i < cookies.length; i++){
+			   var regInfo = new RegExp('=', 'g');
+			   var infos = cookies[i].split(regInfo);
+			   if(infos[0] == name){
+				 return unescape(infos[1]);
+			   }
+			 }
+			 return null;
+		 }
+	 
+    cookievalue=getCookie('cookie_apoc').replace(/\\054/g, ',').replace(/\L\054/g, ',').replace(/u'/g, "'").replace(/'/g, '"').replace(/L}/g, '}').replace(/True/g, 'true').replace(/False/g, 'false').slice(1, -1);
+	
+			 var ajaxPost=function(){ $.ajax({
+			  url:'/apoc/status_and_score/',
+			  type:'POST',
+			  dataType:'json',
+			  data: data,
+			  success:function(data){
+			  console.log('ok');
+			  }
+			 });
+	;} 
+	
+	
+	
+	 var ury=JSON.parse(cookievalue);
+		var userId=ury.status.user_id;
+			 data = {
+				  user_id:userId,
+				  total_score:0,
+				  status:2,
+				  etape_id:7,
+				  etape_score:200,
+			 };
+   
+   var logtrue=ury.user.username;
+var userName=logtrue;
+
+    var nextStephow=function(){$('#nextStep').show();}
+     var nextStep=function(){ajaxPost();parent.reloadStarter();parent.iframegestion(8);} 
+
+
+   
+   </script>
+   <body id="body" style="background-color:#D5D5D5;height:9000px;">
+      <div id="pointblock" name="pointblock">
+      </div>
+      <div id="pointblock2" style="position: fixed;background-color:green;width: 0px; height: 0px; top: 60%; left: 40%; margin-top: -100px; margin-left: -250px;">
+      </div>
+      <div class="fakeloader">
+      </div>
+      <div style=";width:708px;height:6000px;background-repeat:no-repeat;background-color: #EFEFEF;">
+         <div class="lateralbar3">
+         </div>
+         <div style="background-color:#EFEFEF;width:796px;height:auto;border-radius:0px;-moz-box-shadow: -5px 0px 15px 0px #DCDCDB;                -webkit-box-shadow: -5px 0px 15px 0px #DCDCDB;                -o-box-shadow: -5px 0px 15px 0px #DCDCDB;                box-shadow: -5px 0px 15px 0px #DCDCDB;                filter:progid:DXImageTransform.Microsoft.Shadow(color=#DCDCDB, Direction=180, Strength=15);">
+
+            <div class='consigncontainer' style="float:left;">
+               <div class='consigncontainer'>
+                  <div class="sequence" style="margin-left:27px;position:relative;margin-top:35px;">
+                     <div class='Bigtitle'>
+                        <span style='font-size:35px;font-weight:normal;text-transform:uppercase;color:#000000;'>
+                        RISQUE / PERFORMANCE</span>
+                     </div>
+                  </div>
+               </div>
+               <div class='consigncontainer' style="margin-top:70px;">
+                  <div class="sequence" style="margin-left:9px;">
+                     <div class='imgcontaineye view' style="width:35px;position:relative;top:8px;"><img></div>
+                     <div class='sequencetextcontainer'>
+                        <span class='sequencetitle'>
+                        VIDÉO
+                        </span>
+                        </br></br>
+                        <div class='sequenceconsign'>
+                           Durée : 0.38 min
+                        </div>
+                     </div>
+                  </div>
+                  </br>
+                  <div class="consigne"  style="margin-bottom:0px;line-height:15px;position:relative;top:-7px;">
+                     <span class="titleblue">VIDÉO INTRODUCTIVE </span>
+                     </br>
+                     </span>
+                     <span>	Découvrez l’étape 3 en cliquant sur la vidéo ci-dessous.
+                     </span>
+                     </br>
+                     </br>
+                  </div>
+               </div>
+               <div style="width:655px;height:380px;background-color:white;padding:2px;padding-top:7px;padding-left:-2px;margin-left:25px;margin-bottom:50px;">
+                  <iframe src="https://player.vimeo.com/video/259824604" width="640" height="365" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="margin-left:5px;margin-top:0px;"></iframe>
+               </div>
+               <div class='consigncontainer' style="margin-top:0px;">
+                  <div class="consigne"  style="margin-bottom:0px;position:relative;top:-7px;">
+                     <span>Le document de reporting publié par la société de gestion rend compte de la façon dont le fonds concerné a été géré à court, moyen et long terme. Pour commenter performance et risque du fonds, le gérant s’appuie sur les indicateurs que contient la fiche de reporting. </span>
+                     </br>
+                     </br>
+                  </div>
+                  <div class="consigne" >
+                     <span>	Au cours de l’étape 2, vous avez évalué les fonds actions, obligataires/monétaires et de type mixte, à partir des données et 
+                     indicateurs extraits de leur fiche de reporting. 
+</br>Choisissez la catégorie de fonds sur laquelle vous souhaitez travailler et un commentaire de reporting à compléter vous sera proposé.
+                     
+                     </span>
+                  </div>
+                  <div style="width:708px;height:300px;margin-left:30px;background-color:#EFEFEF;display:block;" id="menu1">
+                     <iframe style="display:block;border:none;" width="709"  height="300" src="etape7/menu.html"  id="frame1"                      align="middle" scrolling='no'>
+                     </iframe> 			
+                  </div>
+                  <div id="scrollPoint1" style="width:1px;height:1px;">
+                  </div>
+				  
+				    <div id="frameContainer"  style="height: 746px;">
+             
+                  <iframe style='display:none ;margin:auto;margin-bottom: 0px;border:none;'
+                     width="709"
+                     height="663"
+                     src="etape7/quiz1.html"
+                     id="acta1"
+                     align="middle"
+                     class="acta"
+                     scrolling="no";>
+                  </iframe>  
+				  <iframe style='display:block ;margin:auto;margin-bottom: 0px;border:none;visibility:hidden;'
+                     width="709"
+                     height="400"
+                     src="etape7/quiz1b.html"
+                     id="acta1b"
+                     align="middle"
+                     class="acta"
+                     scrolling="no";>
+                  </iframe>
+                  <iframe style='display:none ;margin:auto;margin-bottom: 0px;border:none;'
+                     width="709"
+                     height="603"
+                     src="etape7/quiz2.html"
+                     id="acta2"
+                     align="middle"
+                     class="acta"
+                     scrolling="no";>
+                  </iframe>  
+				  <iframe style='display:block ;margin:auto;margin-bottom: 0px;border:none;visibility:hidden;'
+                     width="709"
+                     height="500"
+                     src="etape7/quiz2b.html"
+                     id="acta2b"
+                     align="middle"
+                     class="acta"
+                     scrolling="no";>
+                  </iframe>	 
+	
+				  <iframe style='display:none ;margin:auto;margin-bottom: 0px;border:none;'
+                     width="709"
+                     height="650"
+                     src="etape7/quiz3.html"
+                     id="acta3"
+                     align="middle"
+                     class="acta"
+                     scrolling="no";>
+                  </iframe>
+                    <iframe style='display:block ;margin:auto;margin-bottom: 0px;border:none;visibility:hidden;'
+                     width="709"
+                     height="500"
+                     src="etape7/quiz3b.html"
+                     id="acta3b"
+                     align="middle"
+                     class="acta"
+                     scrolling="no";>
+                  </iframe>
+				  <iframe style='display:none ;margin:auto;margin-bottom: 0px;border:none;'
+                     width="709"
+                     height="700"
+                     src="etape7/quiz4.html"
+                     id="acta4"
+                     align="middle"
+                     class="acta"
+                     scrolling="no";>
+                  </iframe>   
+				
+				  <iframe style='display:block ;margin:auto;margin-bottom: 0px;border:none;visibility:hidden;'
+                     width="709"
+                     height="400"
+                     src="etape7/quiz4b.html"
+                     id="acta4b"
+                     align="middle"
+                     class="acta"
+                     scrolling="no";>
+                  </iframe>
+                  <iframe style='display:none ;margin:auto;margin-bottom: 0px;border:none;'
+                     width="709"
+                     height="600"
+                     src="etape7/quiz5.html"
+                     id="acta5"
+                     align="middle"
+                     class="acta"
+                     scrolling="no";>
+                  </iframe>
+				  <iframe style='display:block ;margin:auto;margin-bottom: 0px;border:none;visibility:hidden;'
+                     width="709"
+                     height="500"
+                     src="etape7/quiz5b.html"
+                     id="acta5b"
+                     align="middle"
+                     class="acta"
+                     scrolling="no";>
+                  </iframe>
+                  <iframe style='display:none ;margin:auto;margin-bottom: 0px;border:none;'
+                     width="709"
+                     height="700"
+                     src="etape7/quiz6.html"
+                     id="oba1"
+                     align="middle"
+                     class="oba"
+                     scrolling="no";>
+                  </iframe>
+				   <iframe style='display:block ;margin:auto;margin-bottom: 0px;border:none;visibility:hidden;'
+                     width="709"
+                     height="700"
+                     src="etape7/quiz6b.html"
+                     id="oba1b"
+                     align="middle"
+                     class="oba"
+                     scrolling="no";>
+                  </iframe>
+                  <iframe style='display:none ;margin:auto;margin-bottom: 0px;border:none;'
+                     width="709"
+                     height="700"
+                     src="etape7/quiz7.html"
+                     id="oba2"
+                     align="middle"
+                     class="oba"
+                     scrolling="no";>
+                  </iframe>
+				     <iframe style='display:block ;margin:auto;margin-bottom: 0px;border:none;visibility:hidden;'
+                     width="709"
+                     height="500"
+                     src="etape7/quiz7b.html"
+                     id="oba2b"
+                     align="middle"
+                     class="oba"
+                     scrolling="no";>
+                  </iframe>
+                  <iframe style='display:none ;margin:auto;margin-bottom: 0px;border:none;'
+                     width="709"
+                     height="600"
+                     src="etape7/quiz8.html"
+                     id="mona1"
+                     align="middle"
+                     class="mona"
+                     scrolling="no";>
+                  </iframe>
+				    <iframe style='display:block ;margin:auto;margin-bottom: 0px;border:none;visibility:hidden;'
+                     width="709"
+                     height="400"
+                     src="etape7/quiz8b.html"
+                     id="mona1b"
+                     align="middle"
+                     class="mona"
+                     scrolling="no";>
+                  </iframe>
+                  <iframe style='display:none ;margin:auto;margin-bottom: 0px;border:none;'
+                     width="709"
+                     height="600"
+                     src="etape7/quiz9.html"
+                     id="mona2"
+                     align="middle"
+                     class="mona"
+                     scrolling="no";>
+                  </iframe>
+				   <iframe style='display:block ;margin:auto;margin-bottom: 0px;border:none;visibility:hidden;'
+                     width="709"
+                     height="500"
+                     src="etape7/quiz9b.html"
+                     id="mona2b"
+                     align="middle"
+                     class="mona"
+                     scrolling="no";>
+                  </iframe>
+                  <iframe style='display:none ;margin:auto;margin-bottom: 0px;border:none;'
+                     width="709"
+                     height="700"
+                     src="etape7/quiz10.html"
+                     id="diva1"
+                     align="middle"
+                     class="diva"
+                     scrolling="no";>
+                  </iframe>
+				   <iframe style='display:block ;margin:auto;margin-bottom: 0px;border:none;visibility:hidden;'
+                     width="709"
+                     height="350"
+                     src="etape7/quiz10b.html"
+                     id="diva1b"
+                     align="middle"
+                     class="diva"
+                     scrolling="no";>
+                  </iframe>
+                  <iframe style='display:none ;margin:auto;margin-bottom: 0px;border:none;'
+                     width="709"
+                     height="700"
+                     src="etape7/quiz11.html"
+                     id="diva2"
+                     align="middle"
+                     class="diva"
+                     scrolling="no";>
+                  </iframe>
+				        <iframe style='display:block ;margin:auto;margin-bottom: 0px;border:none;visibility:hidden;'
+                     width="709"
+                     height="300"
+                     src="etape7/quiz11b.html"
+                     id="diva2b"
+                     align="middle"
+                     class="diva"
+                     scrolling="no";>
+                  </iframe>
+                  <iframe style='display:none ;margin:auto;margin-bottom: 0px;border:none;'
+                     width="709"
+                     height="750"
+                     src="etape7/quiz12.html"
+                     id="diva3"
+                     align="middle"
+                     class="diva"
+                     scrolling="no";>
+                  </iframe>
+				     <iframe style='display:block ;margin:auto;margin-bottom: 0px;border:none;visibility:hidden;'
+                     width="709"
+                     height="500"
+                     src="etape7/quiz12b.html"
+                     id="diva3b"
+                     align="middle"
+                     class="diva"
+                     scrolling="no";>
+                  </iframe>
+                  <iframe style='display:none ;margin:auto;margin-bottom: 0px;border:none;'
+                     width="709"
+                     height="800"
+                     src="etape7/quiz13.html"
+                     id="diva4"
+                     align="middle"
+                     class="diva"
+                     scrolling="no";>
+                  </iframe>
+				       <iframe style='display:block ;margin:auto;margin-bottom: 0px;border:none;visibility:hidden;'
+                     width="709"
+                     height="500"
+                     src="etape7/quiz13b.html"
+                     id="diva4b"
+                     align="middle"
+                     class="diva"
+                     scrolling="no";>
+                  </iframe>
+				  
+				       </div>
+				  <div id="quizPart2" class="quizSpell noacta nooba nodiva nomona">
+
+	  
+	  
+	  </div>
+  
+	 <div style="width:300px;float:left;margin-left:350px;display:none;" id="converter">
+       
+            <div id="quiz" class="valider" onclick="nextStep();" style="width:250px;text-align:center;padding:15px 45px;margin-top:11px;">POURSUIVRE VERS</br>L'ÉTAPE 4</div>
+            </br>
+            </br>
+            
+            <div id="quiz" class="valider" onclick="parent.parent.forum();" style="width:250px;text-align:center;padding:15px 45px;margin-top:11px;">entrer sur le forum
+            </div>
+            </div>	  <!-- </div> -->
+               </div>
+            </div>
+         </div> 
+
+      <!-- menu fixe -->
+      <!-- menu bibli -->
+      <div id="dialogoverlay">
+      </div>
+      <div id="dialogbox">
+         <div>
+            <div id="dialogboxfoot"></div>
+            <div id="dialogboxbody"></div>
+            <div id="dialogboxhead"></div>
+         </div>
+      </div>
+   </body>
+</html>
+

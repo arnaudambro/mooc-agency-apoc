@@ -1,0 +1,488 @@
+<html style='height:7000px;width:708px;'>
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="../assets/style/css/fontstyle.css">
+      <script type='text/javascript' src='assets/jquery-2.2.4.min.js'></script>
+      <script type='text/javascript' src='assets/jquery.browser.js'></script>
+      <script type='text/javascript' src='assets/jquery.iframe-auto-height.js'></script>
+      <script type='text/javascript' src='assets/jquery.scrollTo.min.js'></script>
+      <script type="text/javascript" src="assets/etape6_library.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="assets/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/style/marchestyle.css">
+      <!-- fichier css à utiliser -->
+      <link rel="stylesheet" type="text/css" href="../assets/style/marchestyle.css">
+   </head>
+ <style>
+ .formliner{height:80px;margin-bottom:30px;}
+ .formEnonce{clear:both;width:500px;}
+ 
+.formNew {margin-left:10px;
+ </style>
+
+   <body id="bodymaininside" style='height:auto;width:708px;margin-left:0px;font-family:'>
+   	  <script>
+	  
+var formaCheck1=function(){
+if(
+
+(document.getElementById("Oba3q1").value == "2015"||
+document.getElementById("Oba3q1").value == "2008")&&
+
+(document.getElementById("Oba3q2").value == "2015"||
+document.getElementById("Oba3q2").value == "2008")&&
+
+(
+document.getElementById("Oba3q3").value == "2008"||
+document.getElementById("Oba3q3").value == "2007"||
+document.getElementById("Oba3q3").value == "2006"
+)&&
+
+(
+document.getElementById("Oba3q4").value == "2008"||
+document.getElementById("Oba3q4").value == "2007"||
+document.getElementById("Oba3q4").value == "2006"
+)&&
+
+(
+document.getElementById("Oba3q5").value == "2008"||
+document.getElementById("Oba3q5").value == "2007"||
+document.getElementById("Oba3q5").value == "2006"
+)&&
+
+
+document.getElementById("Oba3q6").value == "2009"&&
+
+(document.getElementById("Oba3q7").value == "2013"||
+document.getElementById("Oba3q7").value == "2010")&&
+
+(document.getElementById("Oba3q8").value == "2013"||
+document.getElementById("Oba3q8").value == "2010")
+
+
+
+
+
+
+
+)
+
+{success();valideHide1();
+	}
+
+else{error();};
+
+
+}
+
+var formaCheck2=function(){
+if(
+
+document.getElementById("Oba3q9").value == "1 an"&&
+document.getElementById("Oba3q10").value == "Non"&&
+document.getElementById("Oba3q11").value == "Oui"&&
+document.getElementById("Oba3q12").value == "3 mois"&&
+document.getElementById("Oba3q13").value == "1 mois"
+
+
+)
+
+{success(); $('#infoOba1').show();valideHide2();
+	}
+
+else{error();};
+
+
+}
+
+
+      var Alert = new CustomAlert();
+      // FIN CUSTOM ALERTT
+      // CONGRAT
+      var success=function(){Alert.render("BRAVO ! C'EST LA BONNE RÉPONSE."); };
+      
+      
+      
+      var error=function(){Alert.render("CE N'EST PAS LA BONNE RÉPONSE. CONTINUEZ !");}
+	  
+	  var valideHide1=function(){$('#valider1').hide();}
+	  var valideHide2=function(){$('#valider2').hide();}
+	
+      
+</script>
+  <div class="consigne">
+               <span class="titleblue">ANALYSE 3</span>         <br>
+<span>À partir des données fournies ci-dessous, analyser la performance du fonds B en sélectionnant les bonnes réponses à l’aide du bouton <img src="assets/img/down.png" style="width:15px;height:15px;border-top-right-radius:5px;border-bottom-right-radius:5px;">. </span>
+      </br>
+      </br>
+		
+		 	 <div style="background-image:url('obaAnalyse3/jet1.png');height:570px;width:708px;background-size:700px 500px;background-repeat:no-repeat;">
+      </div> 
+		 
+               <br>
+ 
+            </div>
+
+			
+	<div class="formActa formNew" style="width:708px;height:350px;" >
+
+<div class="formQuest">
+Quelle(s) année(s) la performance
+du marché obligataire euro crédit
+est-elle négative ?	
+	</div>
+<div class="formliner" id="line1" style="">
+
+<div class="formEnonce" style="margin-bottom:20px;display:none;">
+
+
+
+</div>
+</br>
+
+ <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba3q1">
+    <option>?</option>
+    <option>2015</option>
+    <option>2014</option>
+    <option>2013</option>
+    <option>2012</option>
+    <option>2011</option>
+    <option>2010</option>
+    <option>2009</option>
+    <option>2008</option>
+    <option>2007</option>
+    <option>2006</option>
+
+
+ </select>  </div>
+  <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba3q2">
+    <option>?</option>
+    <option>2015</option>
+    <option>2014</option>
+    <option>2013</option>
+    <option>2012</option>
+    <option>2011</option>
+    <option>2010</option>
+    <option>2009</option>
+    <option>2008</option>
+    <option>2007</option>
+    <option>2006</option>
+
+
+ </select>  </div>
+
+</div>
+
+<div class="formQuest" style="clear:both;">
+Quelles sont les 3 années successives
+où la performance relative du fonds
+est négative ?
+
+	</div>
+<div class="formliner" id="line1" style="">
+
+
+
+ <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba3q3">
+    <option>?</option>
+    <option>2015</option>
+    <option>2014</option>
+    <option>2013</option>
+    <option>2012</option>
+    <option>2011</option>
+    <option>2010</option>
+    <option>2009</option>
+    <option>2008</option>
+    <option>2007</option>
+    <option>2006</option>
+
+ </select>  </div>
+  <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba3q4">
+    <option>?</option>
+    <option>2015</option>
+    <option>2014</option>
+    <option>2013</option>
+    <option>2012</option>
+    <option>2011</option>
+    <option>2010</option>
+    <option>2009</option>
+    <option>2008</option>
+    <option>2007</option>
+    <option>2006</option>
+
+
+ </select>  </div>
+  <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba3q5">
+    <option>?</option>
+    <option>2015</option>
+    <option>2014</option>
+    <option>2013</option>
+    <option>2012</option>
+    <option>2011</option>
+    <option>2010</option>
+    <option>2009</option>
+    <option>2008</option>
+    <option>2007</option>
+    <option>2006</option>
+
+ </select>  </div></div>
+<div class="formQuest" style="clear:both;">
+Quelle année permet de rattraper cette
+sous-performance et de creuser l’écart
+par rapport à l’indice ?
+
+	</div>
+<div class="formliner" id="line1" style="">
+
+  <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba3q6">
+    <option>?</option>
+    <option>2015</option>
+    <option>2014</option>
+    <option>2013</option>
+    <option>2012</option>
+    <option>2011</option>
+    <option>2010</option>
+    <option>2009</option>
+    <option>2008</option>
+    <option>2007</option>
+    <option>2006</option>
+
+
+ </select>  </div></div>
+<div class="formQuest" style="clear:both;">
+Quelle(s) autre(s) année(s) contribue(nt)
+à la surperformance du fonds ?
+
+	</div>
+<div class="formliner" id="line1" style="">
+
+
+  <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba3q7">
+    <option>?</option>
+    <option>2015</option>
+    <option>2014</option>
+    <option>2013</option>
+    <option>2012</option>
+    <option>2011</option>
+    <option>2010</option>
+    <option>2009</option>
+    <option>2008</option>
+    <option>2007</option>
+    <option>2006</option>
+
+ </select>  </div>
+
+  <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba3q8">
+    <option>?</option>
+    <option>2015</option>
+    <option>2014</option>
+    <option>2013</option>
+    <option>2012</option>
+    <option>2011</option>
+    <option>2010</option>
+    <option>2009</option>
+    <option>2008</option>
+    <option>2007</option>
+    <option>2006</option>
+
+
+ </select>  </div>
+
+</div>
+
+    <br>
+               <br>
+			   
+			   
+			   
+<div class="valider" id="valider1"onclick="formaCheck1()" >VALIDER</div>				    </br>    </br>	   
+	  <div class="consigne">
+               <span class="titleblue">ANALYSE 3 (SUITE)</span>         <br>
+<span>À partir des données fournies ci-dessous, analyser la performance du fonds B en sélectionnant les bonnes réponses à l’aide du bouton <img src="assets/img/down.png" style="width:15px;height:15px;border-top-right-radius:5px;border-bottom-right-radius:5px;">. </span>
+      </br>
+
+               <br>
+ 
+            </div>
+		   
+			   
+			   
+			  		
+		 	 <div style="background-image:url('obaAnalyse3bis/jet1.png');height:220px;width:708px;background-size:700px 150px;background-repeat:no-repeat;margin-top:20px;">
+      </div> 
+		  
+
+		 
+	<div class="formQuest" style="clear:both;">
+
+
+	</div>
+	<div class="formliner" id="line1" style="">
+
+<div class="formEnonce" style="margin-bottom:20px;width:180px;">
+
+Sur quelle période la prise de risque est-elle la plus forte ?	
+
+</div>
+  <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba3q9">
+    <option>?</option>
+    <option>1 mois</option>
+    <option>3 mois</option>
+    <option>1 an</option>
+    <option>3 ans</option>
+    <option>5 ans</option>
+
+
+ </select>  </div>
+ </br>
+ </br>
+	
+		<div class="formQuest" style="clear:both;">
+Cette prise de risque génère-t-elle :
+
+	</div>
+<div class="formliner" id="line1" style="">
+
+<div class="formEnonce" style="margin-bottom:-20px;margin-top:15px;width:180px;">
+
+-	de la surperformance ?	
+
+</div>
+
+
+  <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba3q10">
+    <option>?</option>
+    <option>Oui</option>
+    <option>Non</option>
+ 
+
+
+ </select>  </div> </div>
+	 
+	<div class="formliner" id="line1" style="">
+
+<div class="formEnonce" style="margin-bottom:-20px;margin-top:15px;width:180px;">
+
+-	de la sous - performance ?	
+
+</div>
+
+ <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba3q11">
+    <option>?</option>
+    <option>Oui</option>
+    <option>Non</option>
+ 
+
+
+
+ </select>  </div> </div>
+		 
+		 
+		 <div class="formQuest" style="clear:both;">
+Sur quelle période cet écart :
+
+	</div>
+<div class="formliner" id="line1" style="">
+
+<div class="formEnonce" style="margin-bottom:-20px;margin-top:15px;width:180px;">
+
+-	se réduit-il ?	
+
+</div>
+
+
+ <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba3q12">
+    <option>?</option>
+    <option>1 mois</option>
+    <option>3 mois</option>
+    <option>1 an</option>
+    <option>3 ans</option>
+    <option>5 ans</option>
+
+
+ </select>  </div> </div>
+	 
+	<div class="formliner" id="line1" style="">
+
+<div class="formEnonce" style="margin-bottom:-20px;margin-top:15px;width:180px;">
+-	s’inverse-t-il ?	
+
+</div>
+
+
+
+
+ <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba3q13">
+    <option>?</option>
+    <option>1 mois</option>
+    <option>3 mois</option>
+    <option>1 an</option>
+    <option>3 ans</option>
+    <option>5 ans</option>
+
+
+ </select>  </div> </div>
+		 
+  <div class="consigne" id="infoOba1" style="display:none;padding:20px;margin-top:-120px;">
+        
+         
+			   <span>
+ 
+La performance d’un fonds obligataire, comme celle du marché obligataire, peut être négative. La prise de risque par le gérant doit être analysée dans la durée ; elle peut se révéler défavorable à court terme et plus favorable à moyen terme ; tous les cas de figures sont ainsi possibles.
+			   .</span>
+  </div>		 
+		 
+		 
+		 
+		 
+
+
+<div class="valider" id="valider2"onclick="formaCheck2()" >VALIDER</div>		 
+
+   </body>
+   <div id="dialogoverlay"></div>
+   <div id="dialogbox">
+   <div>
+   <div id="dialogboxfoot"></div>
+   <div id="dialogboxbody"></div>
+   <div id="dialogboxhead"></div>
+</html>

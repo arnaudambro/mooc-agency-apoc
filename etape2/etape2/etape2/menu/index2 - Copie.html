@@ -1,0 +1,86 @@
+<html style="height:300px">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,">
+      <script   src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+      <script type= "text/javascript" src="../../js/starter.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css"/>
+	  <link rel="stylesheet" type="text/css"
+		href="../../style/consigne.css"/>
+   </head>
+   <body style="height:300px" onload='stopderivecolor();stopderivesrc()'>
+   
+   <style>
+
+	
+.valider {
+    background-color: black;
+	font-weight:normal;
+    border-radius: 11px;
+    box-shadow: -5px 5px 5px 0 silver;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 0px;
+    padding: 7px 3px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #2f6627;
+    text-transform: uppercase;
+	width:165px;
+	 text-align: center;
+      font-family: "Helvetica Neue LT Std 55 Roman";
+	
+	
+	}   
+.ou{
+    margin-top: 15px;
+      font-family: "Helvetica Neue LT Std 55 Roman";
+	  font-size:12px;
+	  color:#7C7C7C;
+	
+	
+	}  	
+.converter{position:absolute;top:175px;left:410}
+	
+	   </style>
+      <script>
+  
+ 	var goToQuiz=function(){
+							parent.$('#frame2').hide();
+							parent.$('#frame8').hide();
+							parent.$('#quiz').show();}
+							
+							
+	
+
+	window.ScrollToTop = function(){
+	$('html,body', window.document, window.document).animate({
+    scrollTop: '0px'
+	}, 'slow');
+	};
+						
+var stopQuiz=function(){parent.$('#quiz').hide();}
+		
+      </script>
+
+	  
+	  
+	   <div style="width:300px;float:left;" class="converter">
+		<div style="width:20px;float:left;"class="ou">OU
+		</div>
+		<div class="valider" onclick="goToQuiz();parent.parent.parent.reScroll();">POURSUIVRE VERS</br>le quiz de fin d'étape
+	   </div>
+	   </div>
+ 
+   <iframe src="etape2/quiz/quiz1.html" id="quiz"  align="middle" style='display:none;margin-bottom:30px;border:none;margin-top:0px;'
+         width="708" 
+         height="400" frameborder="0" scrolling="no"  >
+      </iframe> 
+ 
+ 
+ 
+ 
+ 
+</html>

@@ -1,0 +1,64 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,">
+<script   src="https://code.jquery.com/jquery-1.12.3.min.js"   integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="   crossorigin="anonymous"></script>
+
+ <link rel="stylesheet" type="text/css"
+          href="style.css"/>
+</head>
+<body>
+	
+<div class="container">
+		<div class="consigne">
+		<span class="bold">Plateau des marchés (choix entre Marché des actions, Marché obligataire, Marché monétaire ; Marché des
+		produits dérivés flouté car choix possible que si un des trois marchés précédents fait jusqu’au en savoir
+		plus )
+		</span>
+		</br>
+		<span>L’ensemble des acteurs des marchés financiers peuvent agir à la fois sur le marché réglementé (coté) et sur le marché de gré à
+		gré (non coté), sur le marché primaire (titres nouveaux) et le marché secondaire (titres existants). Hormis les Etats qui ne peuvent
+		émettre des actions, les autres acteurs peuvent être présents sur les différentes classes d’actifs, à savoir le marché des actions,
+		le marché obligataire et le marché monétaire. S’y ajoute le marché des dérivés dont le fonctionnement spécifique sera détaillé au
+		cours de l’étape 2.</br>
+		Choisissez la classe d’actifs que vous souhaitez d’abord approfondir à l’aide du bouton 
+		</span><img src="" class="icon">
+
+		</div>
+		<div class="menu">
+		<div class="menuico" id="monetaire"></div>
+		<div class="menuico" id="action"></div>
+		<div class="menuico"id ="obligataire"></div>
+		<div class="menuico"id ="derive"></div>
+		</div>
+		<div class="contenuMarche">
+			<div class="lignesacteur">
+				<div class="ligneacteur">	</div>
+				<div class="ligneacteur">	</div>
+				<div class="ligneacteur">	</div>
+			</div>
+			<div class="transaction">
+				<div class="carteTransation">	</div>
+				<div class="carteTransation">	</div>
+				<div class="carteTransation">	</div>
+			</div>
+			<div class="quiz">
+				<div class="itemQ">
+					<div class="titre"></div><div class="popuptitrequiz"></div><div class="cochePresence"></div><div class="cocheIdentique"></div>
+				</div>
+				<div class="itemQ">	</div>
+				<div class="itemQ">	</div>
+				<div class="itemQ">	</div>
+				<div class="itemQ">	</div>	
+			</div>
+			<div class="En savoir +"></div>
+			<div class="Vidéo"></div>
+		</div>
+</div>
+<script>
+$( document ).ready(function() {
+	$(".contenuMarche .lignesacteur .ligneacteur").eq(2)[0].innerHTML="";
+});
+</script>
+</body>
+</html>

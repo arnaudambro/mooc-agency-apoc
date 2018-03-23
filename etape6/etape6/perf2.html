@@ -1,0 +1,313 @@
+<html>
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="../assets/style/css/fontstyle.css">
+      <script type='text/javascript' src='assets/jquery-2.2.4.min.js'></script>
+      <script type='text/javascript' src='assets/jquery.browser.js'></script>
+      <script type='text/javascript' src='assets/jquery.iframe-auto-height.js'></script>
+      <script type='text/javascript' src='assets/jquery.scrollTo.min.js'></script>
+      <script type="text/javascript" src="assets/etape6_library.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="assets/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/style/marchestyle.css">
+      <!-- fichier css à utiliser -->
+      <link rel="stylesheet" type="text/css" href="../assets/style/marchestyle.css">
+   </head>
+ <style>
+ .formliner{height:80px;margin-bottom:30px;}
+ .formEnonce{clear:both;width:500px;}
+ 
+.formNew {margin-left:10px;
+ </style>
+
+   <body id="bodymaininside" style='height:auto;width:708px;margin-left:0px;font-family:'>
+   	  <script>
+	  
+var formaCheck1=function(){
+if(
+
+(document.getElementById("Oba3q1").value == "2015"||
+document.getElementById("Oba3q1").value == "2008")&&
+
+(document.getElementById("Oba3q2").value == "2015"||
+document.getElementById("Oba3q2").value == "2008")&&
+
+(
+document.getElementById("Oba3q3").value == "2008"||
+document.getElementById("Oba3q3").value == "2007"||
+document.getElementById("Oba3q3").value == "2006"
+)
+&&
+
+(
+document.getElementById("Oba3q4").value == "2008"||
+document.getElementById("Oba3q4").value == "2007"||
+document.getElementById("Oba3q4").value == "2006"
+)
+
+&&
+
+(
+document.getElementById("Oba3q5").value == "2008"||
+document.getElementById("Oba3q5").value == "2007"||
+document.getElementById("Oba3q5").value == "2006"
+)&&
+
+
+document.getElementById("Oba3q6").value == "2009"
+
+
+
+
+
+
+)
+
+{success();valideHide1(); goodAnswer=1;
+	}
+
+else{error();goodAnswer=0;};
+
+
+}
+ var goodAnswer=0;
+function CustomAlert(){
+               
+         var position = document.getElementById('placeholderL3n3');
+         this.render = function(dialog){
+                  var winW = window.innerWidth;
+                  var winH = window.innerHeight;
+                  var dialogoverlay = document.getElementById('dialogoverlay');
+                  var dialogbox = document.getElementById('dialogbox');
+                  dialogoverlay.style.display = "none";
+                  dialogoverlay.style.height = "100px";
+                  dialogbox.style.left = (winW/2) - (300* .5)+"px";
+                  dialogbox.style.top = cursorY-90;
+                  dialogbox.style.display = "block";
+                  
+                  document.getElementById('dialogboxbody').innerHTML = dialog;
+                  document.getElementById('dialogboxfoot').innerHTML = '<p id="ok" onclick="Alert.ok()">X</p>';
+               }
+               this.ok = function(){
+               document.getElementById('dialogbox').style.display = "none";
+               document.getElementById('dialogoverlay').style.display = "none";
+			   if(goodAnswer==1){$('#infoOba1').show();}
+         
+               }
+               }
+
+
+
+var Alert = new CustomAlert();
+        var success = function() {
+            Alert.render("BRAVO ! C'EST LA BONNE RÉPONSE.");
+            valideHide1();
+          $('#backToSchool').hide();
+        };
+        var error = function() {
+            Alert.render("CE N'EST PAS LA BONNE RÉPONSE. RÉESSAYEZ !");
+            showPlainTrue();valideHide1();
+        };
+        var valideHide1 = function() {
+            $('#valider1').hide();
+        };
+        var showPlainFunc = function() {
+            $('#showPlain').css("visibility", "hidden");
+            $('#infoOba1').show();
+			$('#backToSchool').show();
+        };
+		    var backToSchoolFunc = function() {
+            $('#showPlain').css("visibility", "hidden");
+            $('#infoOba1').hide();
+			$('#backToSchool').hide();
+			$('#valider1').show();
+        };
+        var showPlainTrue = function() {
+            $('#showPlain').css("visibility", "visible");
+        };
+      
+</script>
+  <div class="consigne" style="margin-bottom:0px">
+               <span class="titleblue">SUR / SOUS-PERFORMANCE </span>         <br>
+			   Peut-on perdre de l’argent en investissant dans un fonds obligataire ?</br></br>
+<span>À partir des données fournies ci-dessous, analysez la performance du fonds obligataire B en sélectionnant les bonnes réponses à l’aide du bouton  <img src="assets/img/down.png" style="width:15px;height:15px;border-top-right-radius:5px;border-bottom-right-radius:5px;">. </span>
+      </br>
+      </br>
+		
+		 	 <div style="background-image:url('obaAnalyse3/jet1.png');height:570px;width:708px;background-size:700px 420px;background-repeat:no-repeat;">
+      </div> 
+		 
+               <br>
+ 
+            </div>
+
+			
+	<div class="formActa formNew" style="width:708px;height:350px;margin-top:-66px" >
+
+<div class="formQuest" style="width:25%;float:left">
+Quelles années la performance de l’indice (marché obligataire euro crédit) est-elle négative ?
+	</div>
+<div class="formliner" id="line1" style="">
+
+<div class="formEnonce" style="margin-bottom:20px;display:none;">
+
+
+
+</div>
+</br>
+
+ <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba3q1">
+    <option>?</option>
+    <option>2015</option>
+    <option>2014</option>
+    <option>2013</option>
+    <option>2012</option>
+    <option>2011</option>
+    <option>2010</option>
+    <option>2009</option>
+    <option>2008</option>
+    <option>2007</option>
+    <option>2006</option>
+
+
+ </select>  </div>
+  <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba3q2">
+    <option>?</option>
+    <option>2015</option>
+    <option>2014</option>
+    <option>2013</option>
+    <option>2012</option>
+    <option>2011</option>
+    <option>2010</option>
+    <option>2009</option>
+    <option>2008</option>
+    <option>2007</option>
+    <option>2006</option>
+
+
+ </select>  </div>
+
+</div>
+
+<div class="formQuest" style="width:25%;float:left;">
+Quelles sont les 3 années successives
+où la performance relative du fonds
+est négative ?
+
+	</div>
+<div class="formliner" id="line1" style="">
+
+
+
+ <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba3q3">
+    <option>?</option>
+    <option>2015</option>
+    <option>2014</option>
+    <option>2013</option>
+    <option>2012</option>
+    <option>2011</option>
+    <option>2010</option>
+    <option>2009</option>
+    <option>2008</option>
+    <option>2007</option>
+    <option>2006</option>
+
+ </select>  </div>
+  <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba3q4">
+    <option>?</option>
+    <option>2015</option>
+    <option>2014</option>
+    <option>2013</option>
+    <option>2012</option>
+    <option>2011</option>
+    <option>2010</option>
+    <option>2009</option>
+    <option>2008</option>
+    <option>2007</option>
+    <option>2006</option>
+
+
+ </select>  </div>
+  <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba3q5">
+    <option>?</option>
+    <option>2015</option>
+    <option>2014</option>
+    <option>2013</option>
+    <option>2012</option>
+    <option>2011</option>
+    <option>2010</option>
+    <option>2009</option>
+    <option>2008</option>
+    <option>2007</option>
+    <option>2006</option>
+
+ </select>  </div></div>
+<div class="formQuest" style="width:25%;float:left">
+Quelle année permet de rattraper cette
+sous-performance et de creuser l’écart
+par rapport à l’indice ?
+
+	</div>
+<div class="formliner" id="line1" style="">
+
+  <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+    top: 2px;">
+
+ <select id="Oba3q6">
+    <option>?</option>
+    <option>2015</option>
+    <option>2014</option>
+    <option>2013</option>
+    <option>2012</option>
+    <option>2011</option>
+    <option>2010</option>
+    <option>2009</option>
+    <option>2008</option>
+    <option>2007</option>
+    <option>2006</option>
+
+
+ </select>  </div></div>
+</div>
+
+    <div class="consigne" id="infoOba1" style="padding:0px;width:582px;margin-left:-11px;display:none;border-radius: 25px;padding: 20px;width:582px;">
+
+			   <span>
+
+La performance d’un fonds obligataire, comme celle du marché obligataire, peut être négative, en l’occurrence sur la période analysée :   2008 et 2015 pour le marché obligataire euro crédit (indice BARCLAYS EURO AGG CORPORATE) et, en absolu, 2007, 2008 et 2015 pour le fonds B.</br>
+La  performance relative du fonds B est négative trois années de suite, en 2006, 2007 et 2008, et c’est en 2009 que le fonds rattrape cette sous-performance et surperforme.</br> 
+La  sur ou sous-performance du fonds par rapport à son indice de référence est ici matérialisée par l’écart.
+
+
+</span></br></br>
+<div class="valider" id="backToSchool"onclick="backToSchoolFunc()" style="display:none;margin-left:150px">fermer l'explication</div>
+  </div>
+
+		 <div class="valider" id="showPlain"onclick="showPlainFunc()" style="visibility:hidden;margin-left:150px">voir l'explication</div>
+		 
+		  <div class="valider" id="valider1"onclick="formaCheck1()" style="margin-left:50px">valider</div>
+	  
+
+   </body>
+   <div id="dialogoverlay"></div>
+   <div id="dialogbox">
+   <div>
+   <div id="dialogboxfoot"></div>
+   <div id="dialogboxbody"></div>
+   <div id="dialogboxhead"></div>
+</html>

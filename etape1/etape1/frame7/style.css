@@ -1,0 +1,125 @@
+
+@font-face {
+font-family: 'Helvetica Neue LT Std 55 Roman';
+font-style: normal;
+src: url('helveticaneueltstd-roman.otf') format('opentype');
+src:url('helveticaneueltstd-roman.svg#helveticaneueltstd-roman') format('svg'),
+       url('helveticaneueltstd-roman.eot#helveticaneueltstd-roman') format('embedded-opentype'),
+	    url('helveticaneueltstd-roman.woff') format('woff'),
+     url('helveticaneueltstd-roman.ttf') format('truetype');
+
+}
+
+
+
+@font-face {
+font-family: 'Helvetica Neue LT Std 75 Bold';
+font-style: normal;
+font-weight: normal;
+src: local('helveticaneueltstd-bd'), url('helveticaneueltstd-bd.otf') format('opentype');
+src:url('helveticaneueltstd-bd.svg#helveticaneueltstd-bd') format('svg'),
+       url('helveticaneueltstd-bd.eot#helveticaneueltstd-bd') format('embedded-opentype'),
+	    url('helveticaneueltstd-bd.woff') format('woff'),
+     url('helveticaneueltstd-bd.ttf') format('truetype');
+
+
+
+
+}
+
+
+
+.title1
+{
+	font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;font-size:11px;
+
+	
+}
+.emet{
+	font-family:'Helvetica Neue LT Std 55 Roman';font-weight:normal;
+	font-size:11px;
+	width:182px;
+	height:190px;
+	border-style :none;
+	margin-top:10px;
+	margin-left:20px;
+	color:#666666;
+	line-height:12px;
+
+	
+}
+
+.emetbesoin {
+	font-family:'Helvetica Neue LT Std 55 Roman';font-weight:normal;
+	font-size:11px;
+	width:182px;
+	height:200px;
+	border-style :none;
+	margin-top:10px;
+	margin-left:20px;
+	color:#666666;
+	line-height:12px;
+
+	
+}
+.cuta {
+	font-family:'Helvetica Neue LT Std 55 Roman';font-weight:normal;
+	font-size:18px;
+	color:#AA5EAA;
+
+	
+}
+
+
+
+
+
+
+.minititle{font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;margin:10px;margin-left: 0px;}
+.orange{color:#FE1E00;font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;}
+.violet{color:#9D159D;font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;}
+.vert{color:#009F00;font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;}
+
+
+.textcontainer{width:200px;float:left;height:50px;margin-top:10px;}
+.imgcontainer{width:75px;height:50px;float:left;}
+.menulicontainer{width:300px;height:65px;cursor:pointer;}
+.menutitle{font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;margin:10px;margin-left: 0px;text-transform:uppercase;font-size:14px;color:#727272;cursor:pointer;}
+
+.menutext{font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;margin-left: 0px;text-transform:uppercase;font-size:11px;color:#727272;}
+.menulicontainer:hover{
+	opacity:0.9;
+	mix-blend-mode: exclusion;
+	
+}
+
+.menub:hover{
+	cursor:pointer;
+}
+
+
+.menub:hover{
+	opacity:0.8;
+mix-blend-mode: exclusion;
+	
+}
+
+
+
+
+.nb{font-size:8px;font-style:italic;line-height:9px;margin-top:15px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,196 @@
+
+
+<html style='height:7000px;width:708px;'>
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="../assets/style/css/fontstyle.css">
+      <script type='text/javascript' src='assets/jquery-2.2.4.min.js'></script>
+      <script type='text/javascript' src='assets/jquery.browser.js'></script>
+      <script type='text/javascript' src='assets/jquery.iframe-auto-height.js'></script>
+      <script type='text/javascript' src='assets/jquery.scrollTo.min.js'></script>
+      <script type="text/javascript" src="assets/etape6_library.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="assets/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/style/marchestyle.css">
+      <!-- fichier css à utiliser -->
+      <link rel="stylesheet" type="text/css" href="../assets/style/marchestyle.css">
+   </head>
+   <style>  
+   </style>
+   <body id="bodymaininside" style='height:auto;width:708px;margin-left:0px;background-color:#EFEFEF'>
+      <script>
+  var formaCheck = function() {
+      if (
+
+          document.getElementById("Diva1q1").value == "SRRI de 4" &&
+          document.getElementById("Diva1q2").value == "SRRI de 6" &&
+          document.getElementById("Diva1q3").value == "SRRI de 5" &&
+          document.getElementById("Diva1q4").value == "SRRI de 3"
+
+      )
+
+      {
+          success();
+      } else {
+          error();
+      };
+
+
+  }
+
+  var Alert = new CustomAlert();
+  
+  var success = function() {
+      Alert.render("BRAVO ! C'EST LA BONNE RÉPONSE.");
+      valideHide();
+      $('#infoOba1').show();
+  };
+
+
+
+  var error = function() {
+      Alert.render("CE N'EST PAS LA BONNE RÉPONSE. CONTINUEZ !");explainShow();
+  };
+
+  var valideHide = function() {
+          $('.valider').hide()
+	};
+	
+	var explainShow=function(){
+			$('.explain').css('visibility','visible');
+	
+	}
+	var showPSue=function(){
+			$('#explication').show();
+			$('#questionCorp').hide();
+	
+	}
+	var closeExp=function(){
+			$('#questionCorp').show();
+			$('#explication').hide();
+	
+	}
+	
+               
+      </script>
+      <div class='consigncontainer' style="margin-top:-9px;">
+         <div class="sequence">
+            <div class="imgcontain horloge"><img></div>
+            <div class="sequencetextcontainer">
+               <span class="sequencetitle">
+               EN SAVOIR PLUS
+               </span>
+               <br>
+               <div class="sequenceconsign">
+                  Durée : 2 min
+               </div>
+            </div>
+         </div>
+         </br>
+         <div class="consigne" >
+            <span class="titleblue">SRRI ET APPROCHES DE GESTION</span>
+         </div>
+      </div>
+      <div class="consigne" style="margin-top:-15px;">
+         Quatre fonds diversifiés représentatifs des principales approches de gestion découvertes à l’étape 5 vous sont proposés. Affectez à chaque fonds le SRRI qui lui correspond à l’aide du bouton  <img src="assets/img/down.png" style="width:15px;height:15px;border-top-right-radius:5px;border-bottom-right-radius:5px;">    et en fonction de plusieurs paramètres :</br>
+        </br> -	la proportion d’actions indiquée rend-elle le fonds plus ou moins risqué ?
+        </br> -	l’objectif d’investissement vise-t-il à encadrer ou limiter le risque du fonds ?</br></br>
+         Pour plus de détail sur l’objectif d’investissement, passez la souris sur les fonds concernés. Puis validez.
+         En cas de doute, visionnez à nouveau la toute fin de la vidéo MODE D’EMPLOI DU DICI. 
+      </div>
+	  <div class="consigne" style="margin-top:-15px;display:none;" id="explication">
+       FONDS A</br>Réaliser une performance supérieure à son indice de référence constitué de 50% du MSCI Europe (actions européennes) et 50% du Barclays Euro Aggregate Treasury 1-7 years (obligations d’État émises en euro et de maturité inférieure à 7 ans)</br></br>
+	   FONDS B</br>
+	   Rechercher la valorisation du capital par une gestion flexible de l’exposition aux différentes classes d’actifs (de 0 à 120% en actions et de 0 à 100% en produits de taux)</br></br>
+	   FONDS C</br>
+	   Réaliser une performance annualisée de 5% sur 5 ans au-delà de l’EONIA capitalisé par une gestion flexible de l’exposition aux différentes classes d’actifs (de 0 à 100%)</br></br>
+	   FONDS D</br>
+	   Préserver à tout moment le capital à hauteur de 90% de la plus élevée des valeurs liquidatives constatées</br></br>
+	   
+	   <div class="explain valider" onclick="closeExp();" style="margin-left:400px;">RETOUR À L’EXERCICE</div>
+
+      </div>
+      <div class="consigne" id="questionCorp">
+      <div class="formActa formNew" style="width:708px;height:200px;margin-top:0px;margin-left:5px;" >
+         <div class="formliner" id="line1" >
+            <div class="formQuest">
+               Quel est le SRRI du fonds diversifié?
+            </div>
+            </br>
+            <div class="formEnonce" style="position: relative;
+               margin-top: 10px;">
+               Profilé
+            </div>
+            <div class="styled-select black rounded shadowed"style="position: relative;
+               margin-top: 10px;">
+               <select id="Diva1q1">
+                  <option>?</option>
+                  <option>SRRI de 3</option>
+                  <option>SRRI de 4</option>
+                  <option>SRRI de 5</option>
+                  <option>SRRI de 6</option>
+               </select>
+            </div>
+            <div class="formEnonce" style="position: relative;
+               margin-top: 10px;">
+               Flexible
+            </div>
+            <div class="styled-select black rounded shadowed"style="position: relative;
+               margin-top: 10px;">
+               <select id="Diva1q2">
+                  <option>?</option>
+                  <option>SRRI de 3</option>
+                  <option>SRRI de 4</option>
+                  <option>SRRI de 5</option>
+                  <option>SRRI de 6</option>
+               </select>
+            </div>
+            <div class="formEnonce" style="position: relative;
+               margin-top: 10px;">
+               De performance absolue
+            </div>
+            <div class="styled-select black rounded shadowed"style="position: relative;
+               margin-top: 10px;">
+               <select id="Diva1q3">
+                  <option>?</option>
+                  <option>SRRI de 3</option>
+                  <option>SRRI de 4</option>
+                  <option>SRRI de 5</option>
+                  <option>SRRI de 6</option>
+               </select>
+            </div>
+            <div class="formEnonce" style="position: relative;
+               margin-top: 10px;">
+               Structuré
+            </div>
+            <div class="styled-select black rounded shadowed"style="position: relative;
+               margin-top: 10px;">
+               <select id="Diva1q4">
+                  <option>?</option>
+                  <option>SRRI de 3</option>
+                  <option>SRRI de 4</option>
+                  <option>SRRI de 5</option>
+                  <option>SRRI de 6</option>
+               </select>
+            </div>
+         </div>
+      </div>
+	  
+      <div class="explain valider" onclick="showPSue();" style="margin-left:230px; visibility:hidden;">voir l'explication</div>
+      <div class="valider" onclick="formaCheck()" style="margin-left:20px">valider</div>
+      <div class="consigne" id="infoOba1" style="display:none;padding:20px;margin-top:32px;">
+         <br><span>
+         Le fonds structuré garantissant 90% de la plus élevée des valeurs liquidatives constatées, le risque de perte ne peut excéder 10%. Son SRRI est donc plus faible que celui des trois autres fonds diversifiés qui sont tous exposés aux fluctuations des marchés financiers sans garantie.</br>
+         Le fonds profilé présente un SRRI de 4 dans la mesure où il est investi sur la zone euro/Europe, moins risquée que le monde, et où sa gestion est encadrée par un indice de référence composé pour moitié d’actions et d’obligations.</br>
+         Quant au fonds flexible dont les investissements ne sont limités ni en terme géographique ni en terme de classe d’actifs, il présente un SRRI de 6, plus élevé que celui du fonds de performance absolue dont la gestion dispose de la même flexibilité en terme d’investissement mais doit répondre à un objectif de performance annualisé sur 5 ans de 5% au-delà de l’indice du marché monétaire, à savoir l’EONIA capitalisé.
+         </span>
+      </div>
+   </body>
+   <div id="dialogoverlay"></div>
+   <div id="dialogbox">
+   <div>
+   <div id="dialogboxfoot"></div>
+   <div id="dialogboxbody"></div>
+   <div id="dialogboxhead"></div>
+</html>
+

@@ -1,0 +1,432 @@
+<html>
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="../assets/style/css/fontstyle.css">
+      <script type='text/javascript' src='assets/jquery-2.2.4.min.js'></script>
+      <script type='text/javascript' src='assets/jquery.browser.js'></script>
+      <script type='text/javascript' src='assets/jquery.iframe-auto-height.js'></script>
+      <script type='text/javascript' src='assets/jquery.scrollTo.min.js'></script>
+      <script type="text/javascript" src="assets/etape6_library.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="assets/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/style/marchestyle.css">
+      <!-- fichier css à utiliser -->
+      <link rel="stylesheet" type="text/css" href="../assets/style/marchestyle.css">
+   </head>
+   <style>
+   .checkbox15{width:100px;margin-left:15px;}
+   </style>
+
+   <body id="bodymaininside">
+   	  <script>
+	  
+var formaCheck1=function(){
+if
+
+(
+
+(
+document.getElementById("Oba4q17").value == "AA"||
+document.getElementById("Oba4q17").value == "BBB"
+)
+
+&&
+
+(
+document.getElementById("Oba4q18").value == "AA"||
+document.getElementById("Oba4q18").value == "BBB"
+)
+
+&&
+
+(
+document.getElementById("Oba4q19").value == "A"||
+document.getElementById("Oba4q19").value == "BBB"
+)
+
+&&
+
+
+(
+
+document.getElementById("Oba4q20").value == "A"||
+document.getElementById("Oba4q20").value == "BBB"
+
+)
+
+)
+
+{success();valideHide1();
+
+	}
+
+else{error();};
+
+
+}
+var formaCheck2=function(){
+if
+
+(
+
+
+
+(
+document.getElementById("Oba4q5").value == "Espagne"||
+document.getElementById("Oba4q5").value == "Italie"||
+document.getElementById("Oba4q5").value == "Pays-Bas"
+)
+&&
+(
+document.getElementById("Oba4q6").value == "Espagne"||
+document.getElementById("Oba4q6").value == "Italie"||
+document.getElementById("Oba4q6").value == "Pays-Bas"
+)
+
+&&
+
+(
+document.getElementById("Oba4q7").value == "Espagne"||
+document.getElementById("Oba4q7").value == "Italie"||
+document.getElementById("Oba4q7").value == "Pays-Bas"
+
+)
+
+&&
+
+
+
+(
+
+document.getElementById("Oba4q8").value == "Espagne"||
+document.getElementById("Oba4q8").value == "France"||
+document.getElementById("Oba4q8").value == "Italie"
+
+)
+
+&&
+(
+
+document.getElementById("Oba4q9").value == "Espagne"||
+document.getElementById("Oba4q9").value == "France"||
+document.getElementById("Oba4q9").value == "Italie"
+
+)
+
+&&
+
+
+(
+document.getElementById("Oba4q10").value == "Espagne"||
+document.getElementById("Oba4q10").value == "France"||
+document.getElementById("Oba4q10").value == "Italie"
+
+)
+
+
+
+
+&&
+(
+document.getElementById("Oba4q11").value == "Allemagne"||
+document.getElementById("Oba4q11").value == "Belgique"||
+document.getElementById("Oba4q11").value == "France"
+)
+
+&&
+
+
+(
+document.getElementById("Oba4q12").value == "Allemagne"||
+document.getElementById("Oba4q12").value == "Belgique"||
+document.getElementById("Oba4q12").value == "France"
+
+)
+
+&&
+
+(
+document.getElementById("Oba4q13").value == "Allemagne"||
+document.getElementById("Oba4q13").value == "Belgique"||
+document.getElementById("Oba4q13").value == "France"
+
+)
+
+&&
+
+
+(
+document.getElementById("Oba4q14").value == "Allemagne"||
+document.getElementById("Oba4q14").value == "Autriche"||
+document.getElementById("Oba4q14").value == "Belgique"
+)
+
+&&
+
+(
+document.getElementById("Oba4q15").value == "Allemagne"||
+document.getElementById("Oba4q15").value == "Autriche"||
+document.getElementById("Oba4q15").value == "Belgique"
+
+)
+
+&&
+(
+
+document.getElementById("Oba4q16").value == "Allemagne"||
+document.getElementById("Oba4q16").value == "Autriche"||
+document.getElementById("Oba4q16").value == "Belgique"
+)
+
+)
+
+
+
+{success();valideHide2();
+	}
+	
+	
+	
+
+else{error();};
+
+
+}
+var formaCheck3=function(){
+if
+
+(
+
+
+(
+document.getElementById("Oba4q17").value == "AA"||
+document.getElementById("Oba4q17").value == "BBB"
+)
+
+&&
+
+(
+document.getElementById("Oba4q18").value == "AA"||
+document.getElementById("Oba4q18").value == "BBB"
+)
+
+&&
+
+(
+document.getElementById("Oba4q19").value == "A"||
+document.getElementById("Oba4q19").value == "BBB"
+)
+
+&&
+
+
+(
+
+document.getElementById("Oba4q20").value == "A"||
+document.getElementById("Oba4q20").value == "BBB"
+
+)
+)
+
+
+
+
+{success();valideHide1(); goodAnswer=1;
+	}
+
+else{error();goodAnswer=0;};
+
+
+}
+ var goodAnswer=0;
+function CustomAlert(){
+               
+         var position = document.getElementById('placeholderL3n3');
+         this.render = function(dialog){
+                  var winW = window.innerWidth;
+                  var winH = window.innerHeight;
+                  var dialogoverlay = document.getElementById('dialogoverlay');
+                  var dialogbox = document.getElementById('dialogbox');
+                  dialogoverlay.style.display = "none";
+                  dialogoverlay.style.height = "100px";
+                  dialogbox.style.left = (winW/2) - (300* .5)+"px";
+                  dialogbox.style.top = cursorY-90;
+                  dialogbox.style.display = "block";
+                  
+                  document.getElementById('dialogboxbody').innerHTML = dialog;
+                  document.getElementById('dialogboxfoot').innerHTML = '<p id="ok" onclick="Alert.ok()">X</p>';
+               }
+               this.ok = function(){
+               document.getElementById('dialogbox').style.display = "none";
+               document.getElementById('dialogoverlay').style.display = "none";
+			   if(goodAnswer==1){$('#infoOba1').show();$('#perfSynth').show();}
+         
+               }
+               }
+
+
+
+var Alert = new CustomAlert();
+        var success = function() {
+            Alert.render("BRAVO ! C'EST LA BONNE RÉPONSE.");
+            valideHide1();
+          $('#backToSchool').hide();goodAnswer=1;
+        };
+        var error = function() {
+            Alert.render("CE N'EST PAS LA BONNE RÉPONSE. RÉESSAYEZ !");
+            showPlainTrue();valideHide1();
+        };
+        var valideHide1 = function() {
+            $('#valider1').hide();
+        };
+        var showPlainFunc = function() {
+            $('#showPlain').css("visibility", "hidden");
+            $('#infoOba1').show();
+			$('#backToSchool').show();
+        };
+		    var backToSchoolFunc = function() {
+            $('#showPlain').css("visibility", "hidden");
+            $('#infoOba1').hide();
+			$('#backToSchool').hide();
+			$('#valider1').show();
+        };
+        var showPlainTrue = function() {
+            $('#showPlain').css("visibility", "visible");
+        };
+      
+      
+</script>
+  <div class="consigne">
+               <span class="titleblue">EN SENSIBILITÉ ET % D’ACTIF PAR NOTATION (POUR LES FONDS OBLIGATAIRES ET MONÉTAIRES)  </span>
+			   <span></br>
+			  La notation est l’appréciation du risque de solvabilité financière d’une entreprise ou d’un État par une agence de notation financière : quelles informations en tirer pour le fonds ?
+</br></br>
+À partir des données fournies ci-dessous, analysez l’exposition du fonds obligataire A en sélectionnant les bonnes réponses à l’aide du bouton       
+<img src="assets/img/down.png" style="width:15px;height:15px;border-top-right-radius:5px;border-bottom-right-radius:5px;">. </span>
+               <br>
+	
+
+
+
+     <div class="consigne">
+       
+
+
+
+
+
+	<div style="background-image:url('obaAnalyse4ter/jet1.png');height:300px;width:708px;background-size:700px 300px;background-repeat:no-repeat;margin-top:20px;margin-bottom:30px;">
+      </div> 
+      </div> 
+
+             
+
+	
+
+<div class="formQuest" style="clear:both;">
+Quelles sont les 2 notations les plus représentées dans le fonds ?
+	</div>
+	<div class="formliner" id="line1" style="margin-top:20px;margin-left:-14px">
+
+
+
+<div class="checkbox15 marge10" style='clear:both;margin-top:10px;'>En sensibilité
+
+
+</div>
+<div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;margin-top:0px;
+    top: 2px;">
+
+ <select id="Oba4q19">
+  <option>?</option>
+<option>AAA</option>		
+<option>AA</option>	
+<option>A</option>	
+<option>BBB</option>		
+	
+
+
+
+ </select>  </div>
+ <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;margin-top:0px;
+    top: 2px;">
+
+ <select id="Oba4q20">
+  <option>?</option>
+<option>AAA</option>		
+<option>AA</option>	
+<option>A</option>	
+<option>BBB</option>		
+	
+
+
+ </select>  </div>  
+ 
+
+
+</div>
+<div class="formliner" id="line1" style="margin-top:0px;margin-left:-14px">
+
+
+
+<div class="checkbox15 marge10">En % d’actif
+
+
+</div>
+<div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;margin-top:-20px;
+    top: 2px;">
+
+ <select id="Oba4q17">
+  <option>?</option>
+<option>AAA</option>		
+<option>AA</option>	
+<option>A</option>	
+<option>BBB</option>
+
+
+
+
+
+ </select>  </div>
+ <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;margin-top:-20px;
+    top: 2px;">
+
+ <select id="Oba4q18">
+  <option>?</option>
+<option>AAA</option>		
+<option>AA</option>	
+<option>A</option>	
+<option>BBB</option>
+
+
+
+
+ </select>  </div>
+ </div>
+
+
+
+
+
+       <div class="consigne" id="infoOba1" style="padding:0px;width:582px;margin-left:10px;display:none;border-radius: 25px;padding: 20px;">
+
+			   <span>
+Le fonds obligataire A n’est pas concentré sur les titres les mieux notés (AAA), c’est-à-dire les moins risqués. Au 31/03/2016, il surpondère nettement  en terme de sensibilité et d’actif les émetteurs notés BBB, et s’expose en % d’actif aux émetteurs notés A, qui ne sont pas représentés dans l’indice de référence, avec un niveau de sensibilité quasi identique à celui des émetteurs notés AA qui eux sont présents dans l’indice.
+</span></br>
+<div class="valider" id="backToSchool"onclick="backToSchoolFunc()" style="display:none;margin-left:150px">fermer l'explication</div>
+  </div>
+
+		 <div class="valider" id="showPlain"onclick="showPlainFunc()" style="visibility:hidden;margin-left:150px">voir l'explication</div>
+		 
+		  <div class="valider" id="valider1"onclick="formaCheck1()" style="margin-left:50px">valider</div>
+
+		  
+		  
+   </body>
+   <div id="dialogoverlay"></div>
+   <div id="dialogbox">
+   <div>
+   <div id="dialogboxfoot"></div>
+   <div id="dialogboxbody"></div>
+   <div id="dialogboxhead"></div>
+</html>

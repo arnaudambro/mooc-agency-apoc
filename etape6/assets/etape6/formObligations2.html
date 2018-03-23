@@ -1,0 +1,230 @@
+
+
+<html style='height:7000px;width:708px;'>
+   <head>
+      <meta charset="utf-8">
+      <title>ÉTAPE 6</title>
+      <script type='text/javascript' src='assets/jquery-2.2.4.min.js'></script>
+      <script type='text/javascript' src='assets/jquery.browser.js'></script>
+      <script type='text/javascript' src='assets/jquery.iframe-auto-height.js'></script>
+      <script type='text/javascript' src='assets/jquery.scrollTo.min.js'></script>
+      <script type="text/javascript" src="assets/etape6_library.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="assets/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/style/marchestyle.css">
+      <!-- fichier css à utiliser -->
+      <link rel="stylesheet" type="text/css" href="../assets/style/marchestyle.css">
+   </head>
+   <style>.formQuest{margin-top:20px;margin-bottom:10px;}</style>
+   <body id="bodymaininside" style='height:auto;width:708px;margin-left:0px;font-family:'>
+      <script>
+         var formaCheck=function(){
+         if(
+         document.getElementById("Oba5q1da").value == "Supérieur"&&
+         document.getElementById("Oba5q1db").value == "Inférieur"&&
+         document.getElementById("Oba5q1dc").value == "Mieux notés"&&
+         document.getElementById("Oba5q1dd").value == "Moins bien notés"&&
+         document.getElementById("Oba5q1de").value == "Cohérent avec la notation"&&
+         document.getElementById("Oba5q1df").value == "Cohérent avec la notation"&&
+         document.getElementById("Oba5q1dg").value == "Supérieur"&&
+         document.getElementById("Oba5q1dh").value == "Supérieur"&&
+         document.getElementById("Oba5q1di").value == "SPS"
+         
+         
+         )
+         
+         {success();
+         	}
+         
+         else{error();};
+         
+         
+         }
+         
+               var Alert = new CustomAlert();
+               // FIN CUSTOM ALERTT
+               // CONGRAT
+               var success=function(){Alert.render("BRAVO ! C'EST LA BONNE RÉPONSE."); valideHide();$('#infoOba1').show();};
+               
+               
+               
+               var error=function(){Alert.render("CE N'EST PAS LA BONNE RÉPONSE. CONTINUEZ !");};
+         	  
+         	  var valideHide=function(){$('.valider').hide();}
+               
+      </script>
+      <div class="consigne">
+         <span class="titleblue">ANALYSE 2</span>
+         <br><span>Comparez les extraits proposés ci-dessous et analyser la nature des fonds A et B en sélectionnant les bonnes réponses à l’aide du bouton <img src="assets/img/down.png" style="width:15px;height:15px;border-top-right-radius:5px;border-bottom-right-radius:5px;">. 
+         </span>
+      </div>		 <div class="consigne">
+     
+ <div class="fondTitle sequencetitle" style="float:left">FONDS A
+            </div>	
+<div class="fondTitle sequencetitle" style="float:right;margin-right:280px;" >FONDS B
+            </div>
+            </div>
+      <div style="background-image:url('obaAnalyse2/jet1.png');height:300px;width:708px;background-size:700px 250px;background-repeat:no-repeat;">
+      </div>
+      </br> </br> </br>			
+      <div class="formActa formNew" style="width:708px;height:350px;" >
+      <div class="formQuest">
+         Le nombre de lignes en portefeuille est-il ?
+      </div>
+      <div class="formliner" id="line1" style="height:50px;">
+         <div class="formEnonce" style="margin-bottom:20px;">
+            Dans le fonds A	
+         </div>
+         <div class="styled-select black rounded shadowed"style="position: relative;width:200px;float:left;margin-left:15px;
+            top: 2px;">
+            <select id="Oba5q1da">
+               <option>?</option>
+               <option>Supérieur</option>
+               <option>Égal</option>
+               <option>Inférieur</option>
+            </select>
+         </div>
+      </div>
+      <div class="formliner" id="line2" style="height:50px;">
+         <div class="formEnonce" style="margin-bottom:20px;">
+            Dans le fonds B	
+         </div>
+         <div class="styled-select black rounded shadowed"style="position: relative;width:200px;float:left;margin-left:15px;
+            top: 2px;">
+            <select id="Oba5q1db">
+               <option>?</option>
+               <option>Supérieur</option>
+               <option>Égal</option>
+               <option>Inférieur</option>
+            </select>
+         </div>
+      </div>
+      <!-- :::::::::::::::::::::::::::::::::::::::: -->
+      <div class="formQuest">
+       Les émetteurs des titres en portefeuille sont-ils globalement ?
+      </div>
+      <div class="formliner" id="line1" style="height:50px;">
+         <div class="formEnonce" style="margin-bottom:20px;">
+            Dans le fonds A	
+         </div>
+         <div class="styled-select black rounded shadowed"style="position: relative;width:200px;float:left;margin-left:15px;
+            top: 2px;">
+            <select id="Oba5q1dc">
+               <option>?</option>
+               <option>Mieux notés</option>
+               <option>Moins bien notés</option>
+            </select>
+         </div>
+      </div>
+      <div class="formliner" id="line2" style="height:50px;">
+         <div class="formEnonce" style="margin-bottom:20px;">
+            Dans le fonds B	
+         </div>
+         <div class="styled-select black rounded shadowed"style="position: relative;width:200px;float:left;margin-left:15px;
+            top: 2px;">
+            <select id="Oba5q1dd">
+                <option>?</option>
+               <option>Mieux notés</option>
+               <option>Moins bien notés</option>
+            </select>
+         </div>
+      </div>
+      <!-- :::::::::::::::::::::::::::::::::::::::: -->
+      <div class="formQuest">
+         Le niveau du spread moyen des titres en portefeuille est-il ?
+      </div>
+      <div class="formliner" id="line1" style="height:50px;">
+         <div class="formEnonce" style="margin-bottom:20px;">
+            Dans le fonds A	
+         </div>
+         <div class="styled-select black rounded shadowed"style="position: relative;width:200px;float:left;margin-left:15px;
+            top: 2px;">
+            <select id="Oba5q1de">
+               <option>?</option>
+               <option>Cohérent avec la notation</option>
+               <option>Pas cohérent avec la notation </option>
+            </select>
+         </div>
+      </div>
+      <div class="formliner" id="line2" style="height:50px;">
+         <div class="formEnonce" style="margin-bottom:20px;">
+            Dans le fonds B	
+         </div>
+         <div class="styled-select black rounded shadowed"style="position: relative;width:200px;float:left;margin-left:15px;
+            top: 2px;">
+            <select id="Oba5q1df">
+                <option>?</option>
+               <option>Cohérent avec la notation</option>
+               <option>Pas cohérent avec la notation </option>
+            </select>
+         </div>
+      </div>
+      <!-- :::::::::::::::::::::::::::::::::::::::: -->
+      <div class="formQuest">
+         Le risque crédit (lié aux émetteurs des titres en portefeuille) est-il ?
+      </div>
+      <div class="formliner" id="line1" style="height:50px;">
+         <div class="formEnonce" style="margin-bottom:20px;">
+            Dans le fonds A	
+         </div>
+         <div class="styled-select black rounded shadowed"style="position: relative;width:200px;float:left;margin-left:15px;
+            top: 2px;">
+            <select id="Oba5q1dg">
+               <option>?</option>
+               <option>Supérieur</option>
+               <option>Égal</option>
+               <option>Inférieur</option>
+            </select>
+         </div>
+      </div>
+      <div class="formliner" id="line2" style="height:50px;">
+         <div class="formEnonce" style="margin-bottom:20px;">
+            Dans le fonds B	
+         </div>
+         <div class="styled-select black rounded shadowed"style="position: relative;width:200px;float:left;margin-left:15px;
+            top: 2px;">
+            <select id="Oba5q1dh">
+               <option>?</option>
+               <option>Supérieur</option>
+               <option>Égal</option>
+               <option>Inférieur</option>
+            </select>
+         </div>
+      </div>
+      <!-- :::::::::::::::::::::::::::::::::::::::: -->
+      <div class="formQuest">
+      Quel indicateur lie l’exposition des fonds à la fois aux mouvements des
+taux d’intérêt et au risque des émetteurs ?	
+
+      </div>
+      <div class="formliner" id="line1" style="height:50px;">
+         <div class="formEnonce" style="margin-bottom:20px;">
+           
+         </div>
+         <div class="styled-select black rounded shadowed"style="position: relative;width:200px;float:left;margin-left:15px;
+            top: 2px;">
+            <select id="Oba5q1di">
+               <option>?</option>
+               <option>Sensibilité</option>
+               <option>SPS</option>
+               <option>Spread</option>
+            </select>
+         </div>
+      </div>
+      <div class="consigne" id="infoOba1" style="display:none;padding:20px;margin-top:12px;">
+         <br><span>
+         Le nombre de lignes détenues dans le fonds peut être supérieur, égal ou inférieur à celui de l’indice, sachant qu’à un même émetteur peuvent se rattacher plusieurs émissions de date et/ou maturité différentes, et donc plusieurs lignes, et que le gérant peut acheter des titres en dehors de ceux de l’indice.</br>
+         Quant au spread, il mesure l’écart de rendement entre l’obligation et son emprunt d’Etat de référence, en l’occurrence l’Allemagne, qui est considéré comme le moins risqué ; c’est donc, comme la notation établie par les agences, un indicateur du risque de l’émetteur. Il est ainsi cohérent qu’à une notation globale du fonds inférieure à celle de l’indice, corresponde un spread moyen supérieur.</br>
+         La sensibilité pondérée par le spread (SPS) présente l’intérêt de mesurer l’exposition du fonds aux mouvements des taux d’intérêt (sensibilité) en fonction du risque pris sur les émetteurs (spread). Le fonds B présente par exemple un indicateur SPS beaucoup plus élevé que celui de l’indice, à sensibilité quasi identique. La seule sensibilité n’est pas suffisante pour mesurer l’exposition d’un fonds obligataire.
+         </span>
+      </div>
+      <div class="valider" onclick="formaCheck()" >VALIDER</div>
+   </body>
+   <div id="dialogoverlay"></div>
+   <div id="dialogbox">
+   <div>
+   <div id="dialogboxfoot"></div>
+   <div id="dialogboxbody"></div>
+   <div id="dialogboxhead"></div>
+</html>
+

@@ -1,0 +1,411 @@
+/*PARAMETRES GENERAUX*/
+@font-face {
+	font-family: 'Helvetica Neue LT Std 55 Roman';
+	font-style: normal;
+	font-weight: normal;
+	src: local('HelveticaNeueLTStd-Roman'), url('../police/HelveticaNeueLTStd-Roman.otf') format('opentype');
+}
+@font-face {
+	font-family: 'Helvetica Neue LT Std 75 Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('HelveticaNeueLTStd-Roman'), url('../police/Helvetica Neue LT Std 75 Bold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Helvetica Neue LT Std 107 Extra Black Condensed';
+	font-style: normal;
+	font-weight: bold;
+	src: local('HelveticaNeueLTStd-XBlkC'), url('../police/HelveticaNeueLTStd-XBlkCn.otf') format('opentype');
+}
+@font-face {font-family: "Helvetica Neue LT Std 93 Black Extended";
+  font-style: normal;
+	font-weight: bold;
+	src: local('Helvetica Neue LT Std 93 Black Extended'), url('../police/Helvetica Neue LT Std 93 Black Extended.otf') format('opentype');
+}
+
+@font-face {font-family: "Helvetica Neue LT Com 73 Bold Extended V1";
+font-style: normal;
+	font-weight: lighter;
+	src: local('Helvetica Neue LT Com 73 Bold Extended V1'), url('../police/Helvetica Neue LT Com 73 Bold Extended V1.otf') format('opentype');
+}
+
+@font-face {font-family: "Helvetica Neue LT Std 63 Medium Extended";
+font-style: normal;
+	font-weight: lighter;
+	src: local('Helvetica Neue LT Std 63 Medium Extended'), url('../police/Helvetica Neue LT Std 63 Medium Extended.otf') format('opentype');
+}
+.title1
+{
+	font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;font-size:10px;
+
+	
+}
+.rubriquetitle{font-weight:bold;}	
+.glossary {
+
+
+/* On positionne notre infobulle. */
+
+font-family:'Helvetica Neue LT Std 55 Roman';font-weight:normal;
+font-size:11px;
+
+
+}
+
+
+.containerinfo{
+
+width:300px;
+height:300px;
+background-color:none;
+position:absolute;
+left:220px;
+width:470px;
+border-radius:25px;
+
+}
+
+
+.containerinfo2{
+
+width:300px;
+height:270px;
+background-color:none;
+position:relative;
+left:calc(40%);
+width:300px;
+border-radius:25px;
+bottom:340px;
+display:block;
+}
+
+
+
+
+.minititle{font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;margin:10px;margin-left: 0px;}
+.orange{color:#FE1E00;font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;}
+.violet{color:#9D159D;font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;}
+.vert{color:#009F00;font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;}
+
+
+.textcontainer{width:200px;float:left;height:50px;margin-top:10px;}
+.imgcontainer{width:75px;height:50px;float:left;}
+.menulicontainer{width:300px;height:65px;cursor:pointer;}
+.menutitle{font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;margin:10px;margin-left: 0px;text-transform:uppercase;font-size:14px;color:#727272;cursor:pointer;}
+
+.menutext{font-family:'Helvetica Neue LT Std 55 Roman';font-weight:bold;margin-left: 0px;text-transform:uppercase;font-size:11px;color:#727272;}
+.menulicontainer:hover{
+	opacity:0.9;
+	mix-blend-mode: exclusion;
+	
+}
+
+.menub:hover{
+	cursor:pointer;
+}
+
+
+.menub:hover{
+	opacity:0.8;
+mix-blend-mode: exclusion;
+	
+}
+
+
+/**************************PAGE INDEX**************************/
+/*CONSIGNES*/
+
+.sequenceimgcontainer{
+	float:left;
+	
+	
+}
+.sequencetextcontainer{
+
+	line-height:12px;
+	margin-left:15px;
+	
+	
+}
+.sequencetitle{
+font-family:"Helvetica Neue LT Std 63 Medium Extended" !important;
+text-transform: uppercase;	
+color:#7D7D7D;	
+font-size:12px;	
+font-weight:normal;
+}
+.sequenceconsign{
+font-family: 'Helvetica Neue LT Std 55 Roman';
+color:#7D7D7D;	
+font-size:9px;
+
+}
+.sequenceimgcontainer{
+	
+	padding:6px;
+}
+
+.sequence{
+	
+	width:708px;
+	height:30px;
+}
+.imgcontain{
+	height:30px;
+	width:30px;
+	float:left;
+	margin-left:10px;
+	margin-right:3px;
+	background-image: url("img/horloge.png");
+	background-size:30px 30px;
+}		
+	
+.view{
+	margin-left:3px;
+	
+	
+}
+.consigncontainer{width:708px;height:auto}
+
+
+#consignesGenerales{
+	margin-bottom :25px;
+	font-size:14px;
+	font-family:'Helvetica Neue LT Std 55 Roman';
+	color:#7D7D7D;
+	padding:15px;
+}
+.consigne{
+
+	margin-bottom :25px;
+	font-size:14px;
+	font-family:'Helvetica Neue LT Std 55 Roman';
+	color:#7D7D7D;
+	padding:1px 13px;
+}
+
+
+
+
+.placeholdermenu{
+	
+	width:177px;
+	height:50px;
+	float:left;
+	text-align: center;
+	padding:8px;
+	border-right: 1px solid white;
+	line-height:16px;
+	cursor:pointer;
+	
+	
+}
+
+.placeholdermenu:hover{
+	opacity:0.8;
+
+
+cursor:pointer;
+	
+}
+
+
+.sdt_link{
+	color:#fff;
+	font-size:12px;
+	font-family:'Helvetica Neue LT Std 55 Roman';font-weight:normal;
+	align:center;
+	height:30px;
+	line-height:1px;
+	cursor:pointer;
+	color:#FEFEFE;
+	
+}
+
+
+
+
+
+.sdt_descr{
+	color:#fff;
+	width:155px;
+	font-size:9px;
+	font-family:'Helvetica Neue LT Std 55 Roman';font-weight:normal;
+	align:center;
+	cursor:pointer;
+	color:#FEFEFE;
+}
+
+
+.houseicon{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cdcdcd+0,fafafa+50,e2e2e2+100 */
+background:#FAFAFA;
+
+	
+	
+	
+}
+
+
+
+.lateralbar{
+	width:708px;height:80px;margin:auto;border-radius:80px;margin:30px;margin-bottom:0px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efefef+0,fcfcfc+95 */
+background: #EFEFEF;
+
+z-index:-2;
+}
+
+
+
+.lateralbar2{
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d2d2d2+0,fcfcfc+93 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efefef+1,f9f9f9+92 */
+background: rgb(239,239,239); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(239,239,239,1) 1%, rgba(249,249,249,1) 92%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(239,239,239,1) 1%,rgba(249,249,249,1) 92%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(239,239,239,1) 1%,rgba(249,249,249,1) 92%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#f9f9f9',GradientType=1 ); /* IE6-9 */
+
+
+
+}
+
+.lateralbar4{
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d2d2d2+0,fcfcfc+93 */
+
+width:796px;
+height:10px;
+position:absolute;
+ /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(black,#828282 ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(black,#828282 ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(black,#828282 ); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(black,#828282 ); /* Standard syntax */
+opacity:0.1;
+}
+
+
+.biblispan{
+	font-family:'Helvetica Neue LT Std 55 Roman';
+	
+	
+}
+
+.biblispanmini{
+	font-family:'Helvetica Neue LT Std 55 Roman';
+	font-size: 11px;
+	
+
+	
+	
+}.biblispanminibig{
+	font-family:'Helvetica Neue LT Std 55 Roman';
+	font-size: 11px;
+	text-transform:uppercase;
+	font-size: 15px;
+
+	
+	
+}
+.biblispanminibold{
+	font-family:'Helvetica Neue LT Std 55 Roman';
+	font-size: 13px;
+	font-weight:bold;
+	
+	
+}
+.biblispanbig{
+	font-family:'Helvetica Neue LT Std 55 Roman';
+	font-size:18px;
+	font-weight:bold;
+	
+}
+
+
+.menub{
+	
+	margin-left:15px;
+	width:180px;
+}
+.menub2{
+	
+	margin-left:15px;
+	width:180px;
+
+	
+}
+
+
+.start{
+	
+position:relative;	
+right:-50px;
+	
+	
+}
+
+
+
+
+.imgcontainer:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.bibliimg{
+	width:17px;
+	height:17px;
+	float:left;
+
+	background-image: url("../img/miniflech.png");
+	background-repeat:no-repeat;
+	
+	
+}.bibliimgright{
+	width:17px;
+	height:17px;
+	float:right;
+	background-image: url("../img/croix.png");
+	background-repeat:no-repeat;
+	
+	
+}
+.biblitext{
+	width:130px;
+	height:35px;
+	float:left;
+	background-color:white;
+	line-height:10px;
+	padding:3px;
+	border-bottom:dotted 1px green;
+	
+}
+
+
+
+.title18{
+font-family:'Helvetica Neue LT Std 55 Roman';
+font-size:18px;
+text-transform:uppercase;	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+

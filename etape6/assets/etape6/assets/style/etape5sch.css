@@ -1,0 +1,134 @@
+    @font-face {
+	font-family: 'Helvetica Neue LT Std 55 Roman';
+	font-style: normal;
+	font-weight: normal;
+	src: local('HelveticaNeueLTStd-Roman'), url('..assets/police/HelveticaNeueLTStd-Roman.otf') format('opentype');
+}
+
+
+@font-face {
+	font-family: 'Helvetica Neue LT Std 107 Extra Black Condensed';
+	font-style: normal;
+	font-weight: bold;
+	src: local('HelveticaNeueLTStd-XBlkC'), url('..assets/police/HelveticaNeueLTStd-XBlkCn.otf') format('opentype');
+}
+@font-face {font-family: "Helvetica Neue LT Std 93 Black Extended";
+  font-style: normal;
+	font-weight: bold;
+	src: local('Helvetica Neue LT Std 93 Black Extended'), url('..assets/police/Helvetica Neue LT Std 93 Black Extended.otf') format('opentype');
+}
+
+	
+	.nonActiv{color:white;}
+	
+	.fondschema{font-family: 'Helvetica Neue LT Std 55 Roman';}
+
+	
+	.insidetouch {font-size:11px;
+			font-family: 'Helvetica Neue LT Std 55 Roman';}
+      #form2, #form3, #form4{display:;}
+      .form{height:auto;}
+      .buttonquestionactive {
+      background-color: white;
+      border: 2px solid silver;
+      border-radius: 10px;
+      box-shadow:  !important;
+    
+      cursor: pointer;
+      float: left;
+      font-family: "Helvetica Neue LT Std 55 Roman";
+      font-size: 15px;
+      font-weight: bold;
+      height: 40px;
+      margin: 0 5px 5px;
+      vertical-align: middle;
+      width: 690px;
+      }
+	  .insidesemitouch{font-size:11px;
+			font-family: 'Helvetica Neue LT Std 55 Roman';color: #666677;}
+      .bigtouch,.semitouch {
+      background: white;
+      }  
+      .touchactive {
+      background: white;
+	  color:grey;
+      }  
+      .specialInside{width:130px;}
+      .rubriqueparent{margin-bottom:5px;margin-right:5px;}
+      #fdacta, #fdobamona, #fdactaobamona{display:;}
+	  
+	  
+      .rubriqueobamona{background: rgba(123,6,123,1);
+      background: -moz-linear-gradient(left, rgba(123,6,123,1) 0%, rgba(91,44,92,1) 42%, rgba(70,70,71,1) 54%, rgba(43,102,44,1) 71%, rgba(4,149,4,1) 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(123,6,123,1)), color-stop(42%, rgba(91,44,92,1)), color-stop(54%, rgba(70,70,71,1)), color-stop(71%, rgba(43,102,44,1)), color-stop(100%, rgba(4,149,4,1)));
+      background: -webkit-linear-gradient(left, rgba(123,6,123,1) 0%, rgba(91,44,92,1) 42%, rgba(70,70,71,1) 54%, rgba(43,102,44,1) 71%, rgba(4,149,4,1) 100%);
+      background: -o-linear-gradient(left, rgba(123,6,123,1) 0%, rgba(91,44,92,1) 42%, rgba(70,70,71,1) 54%, rgba(43,102,44,1) 71%, rgba(4,149,4,1) 100%);
+      background: -ms-linear-gradient(left, rgba(123,6,123,1) 0%, rgba(91,44,92,1) 42%, rgba(70,70,71,1) 54%, rgba(43,102,44,1) 71%, rgba(4,149,4,1) 100%);
+      background: linear-gradient(to right, rgba(123,6,123,1) 0%, rgba(91,44,92,1) 42%, rgba(70,70,71,1) 54%, rgba(43,102,44,1) 71%, rgba(4,149,4,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7b067b', endColorstr='#049504', GradientType=1 );}
+	  
+	  
+      .rubriqueactaobamona{background: rgba(235,85,20,1);
+      background: -moz-linear-gradient(left, rgba(235,85,20,1) 0%, rgba(177,39,78,1) 23%, rgba(132,4,123,1) 52%, rgba(94,40,95,1) 79%, rgba(29,119,30,1) 100%);
+      background: -webkit-gradient(left top, right top, color-stop(0%, rgba(235,85,20,1)), color-stop(23%, rgba(177,39,78,1)), color-stop(52%, rgba(132,4,123,1)), color-stop(79%, rgba(94,40,95,1)), color-stop(100%, rgba(29,119,30,1)));
+      background: -webkit-linear-gradient(left, rgba(235,85,20,1) 0%, rgba(177,39,78,1) 23%, rgba(132,4,123,1) 52%, rgba(94,40,95,1) 79%, rgba(29,119,30,1) 100%);
+      background: -o-linear-gradient(left, rgba(235,85,20,1) 0%, rgba(177,39,78,1) 23%, rgba(132,4,123,1) 52%, rgba(94,40,95,1) 79%, rgba(29,119,30,1) 100%);
+      background: -ms-linear-gradient(left, rgba(235,85,20,1) 0%, rgba(177,39,78,1) 23%, rgba(132,4,123,1) 52%, rgba(94,40,95,1) 79%, rgba(29,119,30,1) 100%);
+      background: linear-gradient(to right, rgba(235,85,20,1) 0%, rgba(177,39,78,1) 23%, rgba(132,4,123,1) 52%, rgba(94,40,95,1) 79%, rgba(29,119,30,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb5514', endColorstr='#1d771e', GradientType=1 );}
+      .ou {
+      background-color: grey;
+      border-radius: 12px;
+      color: white;
+      font-size: 11px;
+      height: 17px;
+      margin: -24px 53px 0;
+      position: absolute;
+      width: 32px;
+      z-index: 1;
+	  padding-top:3px;
+      }
+      .ou2 {
+      background-color: grey;
+      border-radius: 12px;
+      color: white;
+      font-size: 11px;
+      height: 17px;
+      margin: 3px 53px 0;
+      position: absolute;
+      width: 32px;
+      z-index: 1;
+	  padding-top:3px;
+      }
+      .ou3{
+      background-color: grey;
+      border-radius: 12px;
+      color: white;
+      font-size: 11px;
+      height: 17px;
+      margin: -34px 53px 0;
+      position: absolute;
+      width: 32px;
+      z-index: 1;
+	  padding-top:3px;
+      }
+      .ou4{
+      background-color: grey;
+      border-radius: 12px;
+      color: white;
+      font-size: 11px;
+      height: 17px;
+      margin: 15px 53px 0;
+      position: absolute;
+      width: 32px;
+      z-index: 1;
+	  padding-top:3px;
+}
+
+.refpopup{
+width:500px;
+
+}
+
+
+

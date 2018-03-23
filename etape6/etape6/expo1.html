@@ -1,0 +1,516 @@
+
+
+<html>
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="../assets/style/css/fontstyle.css">
+      <script type='text/javascript' src='assets/jquery-2.2.4.min.js'></script>
+      <script type='text/javascript' src='assets/jquery.browser.js'></script>
+      <script type='text/javascript' src='assets/jquery.iframe-auto-height.js'></script>
+      <script type='text/javascript' src='assets/jquery.scrollTo.min.js'></script>
+      <script type="text/javascript" src="assets/etape6_library.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="assets/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/style/marchestyle.css">
+      <!-- fichier css à utiliser -->
+      <link rel="stylesheet" type="text/css" href="../assets/style/marchestyle.css">
+   </head>
+   <style> 
+.formLiner {
+    height: 72px;
+    margin-top: 5px;
+    width: 100%;
+}   
+   </style>
+   <body id="bodymaininside">
+      <script>
+         var formaCheck1=function(){
+         if(
+         ((
+         document.getElementById("Acta5q1a").value == "Finance"&&
+         document.getElementById("Acta5q1b").value == "Informatique"&&
+         document.getElementById("Acta5q1c").value == "Industrie"
+         
+         )
+         ||
+         (
+         document.getElementById("Acta5q1a").value == "Finance"&&
+         document.getElementById("Acta5q1b").value == "Industrie"&&
+         document.getElementById("Acta5q1c").value == "Informatique"
+         
+         )
+         
+         ||
+         (
+         document.getElementById("Acta5q1a").value == "Industrie"&&
+         document.getElementById("Acta5q1b").value == "Finance"&&
+         document.getElementById("Acta5q1c").value == "Informatique"
+         
+         )
+         ||
+         (
+         document.getElementById("Acta5q1a").value == "Industrie"&&
+         document.getElementById("Acta5q1b").value == "Informatique"&&
+         document.getElementById("Acta5q1c").value == "Finance"
+         
+         )
+         ||
+         (
+         document.getElementById("Acta5q1a").value == "Informatique"&&
+         document.getElementById("Acta5q1b").value == "Finance"&&
+         document.getElementById("Acta5q1c").value == "Industrie"
+         
+         )
+         ||
+         (
+         document.getElementById("Acta5q1a").value == "Informatique"&&
+         document.getElementById("Acta5q1b").value == "Industrie"&&
+         document.getElementById("Acta5q1c").value == "Finance"
+         
+         )
+         )&&((
+         document.getElementById("Acta5q2a").value == "Finance"&&
+         document.getElementById("Acta5q2b").value == "Matériaux"&&
+         document.getElementById("Acta5q2c").value == "Industrie"
+         
+         )
+         ||
+         (
+         document.getElementById("Acta5q2a").value == "Finance"&&
+         document.getElementById("Acta5q2b").value == "Industrie"&&
+         document.getElementById("Acta5q2c").value == "Matériaux"
+         
+         )
+         
+         ||
+         (
+         document.getElementById("Acta5q2a").value == "Industrie"&&
+         document.getElementById("Acta5q2b").value == "Finance"&&
+         document.getElementById("Acta5q2c").value == "Matériaux"
+         
+         )
+         ||
+         (
+         document.getElementById("Acta5q2a").value == "Industrie"&&
+         document.getElementById("Acta5q2b").value == "Matériaux"&&
+         document.getElementById("Acta5q2c").value == "Finance"
+         
+         )
+         ||
+         (
+         document.getElementById("Acta5q2a").value == "Matériaux"&&
+         document.getElementById("Acta5q2b").value == "Finance"&&
+         document.getElementById("Acta5q2c").value == "Industrie"
+         
+         )
+         ||
+         (
+         document.getElementById("Acta5q2a").value == "Matériaux"&&
+         document.getElementById("Acta5q2b").value == "Industrie"&&
+         document.getElementById("Acta5q2c").value == "Finance"
+         
+         )
+         )&&
+         ((
+         document.getElementById("Acta5q3a").value == "Santé"&&
+         document.getElementById("Acta5q3b").value == "Informatique"&&
+         document.getElementById("Acta5q3c").value == "Conso. non cyclique"
+         
+         )
+         ||
+         (
+         document.getElementById("Acta5q3a").value == "Santé"&&
+         document.getElementById("Acta5q3b").value == "Conso. non cyclique"&&
+         document.getElementById("Acta5q3c").value == "Informatique"
+         
+         )
+         
+         ||
+         (
+         document.getElementById("Acta5q3a").value == "Conso. non cyclique"&&
+         document.getElementById("Acta5q3b").value == "Santé"&&
+         document.getElementById("Acta5q3c").value == "Informatique"
+         
+         )
+         ||
+         (
+         document.getElementById("Acta5q3a").value == "Conso. non cyclique"&&
+         document.getElementById("Acta5q3b").value == "Informatique"&&
+         document.getElementById("Acta5q3c").value == "Santé"
+         
+         )
+         ||
+         (
+         document.getElementById("Acta5q3a").value == "Informatique"&&
+         document.getElementById("Acta5q3b").value == "Santé"&&
+         document.getElementById("Acta5q3c").value == "Conso. non cyclique"
+         
+         )
+         ||
+         (
+         document.getElementById("Acta5q3a").value == "Informatique"&&
+         document.getElementById("Acta5q3b").value == "Conso. non cyclique"&&
+         document.getElementById("Acta5q3c").value == "Santé"
+         
+         )
+         )
+
+         &&(document.getElementById("Acta5q4a").value == "Finance"
+
+         )
+
+         &&(document.getElementById("Acta5q5a").value =="Non"
+
+         )
+         
+         
+         )
+         
+         
+    
+         
+       {success();valideHide1(); goodAnswer=1;
+	}
+
+else{error();goodAnswer=0;};
+
+
+}
+ var goodAnswer=0;
+function CustomAlert(){
+               
+         var position = document.getElementById('placeholderL3n3');
+         this.render = function(dialog){
+                  var winW = window.innerWidth;
+                  var winH = window.innerHeight;
+                  var dialogoverlay = document.getElementById('dialogoverlay');
+                  var dialogbox = document.getElementById('dialogbox');
+                  dialogoverlay.style.display = "none";
+                  dialogoverlay.style.height = "100px";
+                  dialogbox.style.left = (winW/2) - (300* .5)+"px";
+                  dialogbox.style.top = cursorY-90;
+                  dialogbox.style.display = "block";
+                  
+                  document.getElementById('dialogboxbody').innerHTML = dialog;
+                  document.getElementById('dialogboxfoot').innerHTML = '<p id="ok" onclick="Alert.ok()">X</p>';
+               }
+               this.ok = function(){
+               document.getElementById('dialogbox').style.display = "none";
+               document.getElementById('dialogoverlay').style.display = "none";
+			   if(goodAnswer==1){$('#infoOba1').show();$('#perfSynth').show();}
+         
+               }
+               }
+
+
+
+var Alert = new CustomAlert();
+        var success = function() {
+            Alert.render("BRAVO ! C'EST LA BONNE RÉPONSE.");
+            valideHide1();
+			showPlainTrue();
+        };
+        var error = function() {
+            Alert.render("CE N'EST PAS LA BONNE RÉPONSE. RÉESSAYEZ !");
+            showPlainTrue();valideHide1();
+        };
+        var valideHide1 = function() {
+            $('#valider1').hide();
+        };
+        var showPlainFunc = function() {
+            $('#showPlain').css("visibility", "hidden");
+            $('#infoOba1').show();
+			$('#backToSchool').show();
+        };
+		    var backToSchoolFunc = function() {
+            $('#showPlain').css("visibility", "hidden");
+            $('#infoOba1').hide();
+			$('#backToSchool').hide();
+			$('#valider1').show();
+        };
+        var showPlainTrue = function() {
+            $('#showPlain').css("visibility", "visible");
+        };
+               
+      </script>
+      <div class="consigne">
+         <span class="titleblue">EN % DE L’ACTIF PAR SECTEUR (POUR LES FONDS ACTIONS)  </span>
+      <br>La stratégie d’investissement du fonds actions est-elle défensive ou offensive ?</br></br>
+À partir des données fournies ci-dessous, identifiez les principaux choix sectoriels faits par le gérant du fonds actions C en sélectionnant la bonne réponse à l’aide du bouton 
+ <img src="assets/img/down.png" style="width:15px;height:15px;border-top-right-radius:5px;border-bottom-right-radius:5px;">.  
+      </div>
+     <div style="background-image:url('actaAnalyse5/jet1.png');height:400px;width:708px;background-size:700px 350px;background-repeat:no-repeat;">
+      </div> 
+      <div class="formActa formNew" style="width:708px;height:450px;" >
+         <div class="formQuest">
+            Quels sont les 3 secteurs ?
+         </div>
+         </br>
+         </br>
+         <div class="formliner" id="line1" >
+            <div class="formEnonce" style="width:200px;">
+               Auxquels le fonds est le plus exposé 
+            </div>
+            <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+               top: 2px;">
+               <select id="Acta5q1a">
+                  <option>?</option>
+                <option>Finance</option> 
+				<option>Informatique</option> 
+				<option>Industrie</option> 
+				<option>Conso. Cyclique</option>
+				<option>Matériaux</option>
+				<option>Énergie</option>
+				<option>Santé</option>
+				<option>Conso. non cyclique</option>
+				<option>Services publics</option>
+
+               </select>
+            </div>
+            <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+               top: 2px;">
+               <select id="Acta5q1b">
+                   <option>?</option>
+                <option>Finance</option> 
+				<option>Informatique</option> 
+				<option>Industrie</option> 
+				<option>Conso. Cyclique</option>
+				<option>Matériaux</option>
+				<option>Énergie</option>
+				<option>Santé</option>
+				<option>Conso. non cyclique</option>
+				<option>Services publics</option>
+
+               </select>
+            </div>
+            <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+               top: 2px;">
+               <select id="Acta5q1c">
+             <option>?</option>
+                <option>Finance</option> 
+				<option>Informatique</option> 
+				<option>Industrie</option> 
+				<option>Conso. Cyclique</option>
+				<option>Matériaux</option>
+				<option>Énergie</option>
+				<option>Santé</option>
+				<option>Conso. non cyclique</option>
+				<option>Services publics</option>
+
+               </select>
+            </div>
+         </div>
+         <div class="formliner" id="line1" >
+            <div class="formEnonce" style="width:200px;">
+               Qui sont les plus
+               surpondérés 
+            </div>
+            <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+               top: 2px;">
+               <select id="Acta5q2a">
+              <option>?</option>
+                <option>Finance</option> 
+				<option>Informatique</option> 
+				<option>Industrie</option> 
+				<option>Conso. Cyclique</option>
+				<option>Matériaux</option>
+				<option>Énergie</option>
+				<option>Santé</option>
+				<option>Conso. non cyclique</option>
+				<option>Services publics</option>
+               </select>
+            </div>
+            <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+               top: 2px;">
+               <select id="Acta5q2b">
+                    <option>?</option>
+                <option>Finance</option> 
+				<option>Informatique</option> 
+				<option>Industrie</option> 
+				<option>Conso. Cyclique</option>
+				<option>Matériaux</option>
+				<option>Énergie</option>
+				<option>Santé</option>
+				<option>Conso. non cyclique</option>
+				<option>Services publics</option>
+
+               </select>
+            </div>
+            <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+               top: 2px;">
+               <select id="Acta5q2c">
+               <option>?</option>
+                <option>Finance</option> 
+				<option>Informatique</option> 
+				<option>Industrie</option> 
+				<option>Conso. Cyclique</option>
+				<option>Matériaux</option>
+				<option>Énergie</option>
+				<option>Santé</option>
+				<option>Conso. non cyclique</option>
+				<option>Services publics</option>
+>
+               </select>
+            </div>
+         </div>
+         <div class="formliner" id="line1" >
+            <div class="formEnonce" style="width:200px;">
+               Qui sont les plus sous-pondérés 
+            </div>
+            <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+               top: 2px;">
+               <select id="Acta5q3a">
+                <option>?</option>
+                <option>Finance</option> 
+				<option>Informatique</option> 
+				<option>Industrie</option> 
+				<option>Conso. Cyclique</option>
+				<option>Matériaux</option>
+				<option>Énergie</option>
+				<option>Santé</option>
+				<option>Conso. non cyclique</option>
+				<option>Services publics</option>
+
+               </select>
+            </div>
+            <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+               top: 2px;">
+               <select id="Acta5q3b">
+              <option>?</option>
+                <option>Finance</option> 
+				<option>Informatique</option> 
+				<option>Industrie</option> 
+				<option>Conso. Cyclique</option>
+				<option>Matériaux</option>
+				<option>Énergie</option>
+				<option>Santé</option>
+				<option>Conso. non cyclique</option>
+				<option>Services publics</option>
+
+               </select>
+            </div>
+            <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+               top: 2px;">
+               <select id="Acta5q3c">
+                   <option>?</option>
+                <option>Finance</option> 
+				<option>Informatique</option> 
+				<option>Industrie</option> 
+				<option>Conso. Cyclique</option>
+				<option>Matériaux</option>
+				<option>Énergie</option>
+				<option>Santé</option>
+				<option>Conso. non cyclique</option>
+				<option>Services publics</option>
+
+               </select>
+            </div>
+         </div>
+         <div class="formliner" id="line1" >
+            <div class="formEnonce" style="width:200px;">
+               A quel secteur appartiennent
+               les 3 titres les plus
+               surpondérés ? 
+            </div>
+            <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;float:left;
+               top: 2px;">
+               <select id="Acta5q4a">
+                  <option>?</option>
+                <option>Finance</option> 
+				<option>Informatique</option> 
+				<option>Industrie</option> 
+				<option>Conso. Cyclique</option>
+				<option>Matériaux</option>
+				<option>Énergie</option>
+				<option>Santé</option>
+				<option>Conso. non cyclique</option>
+				<option>Services publics</option>
+
+               </select>
+            </div>
+            <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;float:left;visibility:hidden;
+               top: 2px;">
+               <select id="Acta5q4b">
+  <option>?</option>
+                <option>Finance</option> 
+				<option>Informatique</option> 
+				<option>Industrie</option> 
+				<option>Conso. Cyclique</option>
+				<option>Matériaux</option>
+				<option>Énergie</option>
+				<option>Santé</option>
+				<option>Conso. non cyclique</option>
+				<option>Services publics</option>
+
+               </select>
+            </div>
+            <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;float:left;visibility:hidden;
+               top: 2px;">
+               <select id="Acta5q4c">
+                <option>?</option>
+                <option>Finance</option> 
+				<option>Informatique</option> 
+				<option>Industrie</option> 
+				<option>Conso. Cyclique</option>
+				<option>Matériaux</option>
+				<option>Énergie</option>
+				<option>Santé</option>
+				<option>Conso. non cyclique</option>
+				<option>Services publics</option>
+
+               </select>
+            </div>
+         </div>
+         <div class="formliner" id="line1" >
+            <div class="formEnonce" style="width:200px;">
+            Font-ils partie de l’indice de référence ?
+            </div>
+            <div class="styled-select black rounded shadowed"style="position: relative;width:300px;float:left;margin-left:15px;float:left;
+               top: 2px;">
+               <select id="Acta5q5a" style="width:350px;">
+      <option>? </option>
+                  <option>
+                   Oui
+                  </option>
+                  <option>Non</option>
+               </select>
+            </div>
+            <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;float:left;display:none;
+               top: 2px;">
+               top: 2px;">
+               <select id="Acta5q5b
+                  <option>? </option>
+               </select>
+            </div>
+            <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;float:left;visibility:hidden;
+               top: 2px;">
+               <select id="Acta5q5c">
+                  <option>? </option>
+               </select>
+            </div>
+         </div>
+          <div class="consigne" id="infoOba1" style="padding:0px;width:582px;margin-left:-14px;display:none;border-radius: 25px;padding: 20px;">
+
+			   <span>
+
+Le fonds actions C est un fonds géré selon un indice de référence (gestion benchmarkée). Sa composition reflète donc pour une part significative celle de son indice de référence, pour l’autre les choix faits par le gérant et mesurés par les sur et sous-pondérations du fonds par rapport à son indice.
+Le gérant a ainsi choisi au 31/03/2016 de surpondérer la Finance et les secteurs cycliques (Industrie, Matériaux) au détriment de secteurs défensifs comme la Santé, la Consommation non cyclique et même l’Informatique. Ces informations, croisées avec les plus fortes expositions (Finance, Informatique, Industrie), positionnent le fonds dans la perspective d’un environnement économique et financier porteur.
+
+</span>
+<div class="valider" id="backToSchool"onclick="backToSchoolFunc()" style="display:none;margin-left:150px">fermer l'explication</div>
+  </div>
+
+		 <div class="valider" id="showPlain"onclick="showPlainFunc()" style="visibility:hidden;margin-left:150px">voir l'explication</div>
+		 
+		  <div class="valider" id="valider1"onclick="formaCheck1()" style="margin-left:50px">valider</div>
+
+      </div>
+   </body>
+   <div id="dialogoverlay"></div>
+   <div id="dialogbox">
+   <div>
+   <div id="dialogboxfoot"></div>
+   <div id="dialogboxbody"></div>
+   <div id="dialogboxhead"></div>
+</html>
+

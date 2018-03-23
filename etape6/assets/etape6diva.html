@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html id='html' style="height:6000px;">
+   <head>
+      <meta http-equiv="Cache-control" content="no-cache">
+      <meta http-equiv="Expires" content="-1">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <link rel="stylesheet" type="text/css"href="assets/style/origin.css"/>
+      <link rel="stylesheet" type="text/css"href="assets/style/etape3style.css"/>
+      <!--NOS PROPRES SCRIPTS-->
+      <!--NOS PROPRES SCRIPTS-->
+      <script type="text/javascript" src="etape5/assets/etape5_library.js"></script>
+
+      <script type="text/javascript" src="jquery.easing.1.3.js"></script>
+      <script type="text/javascript" src="js/px.js"></script>
+      <script src="interface/loader/loader.js"></script>
+      <script src="interface/loader/fakeLoader.js"></script>
+      <script src="interface/loader/fakeLoader.min.js"></script>
+      <link rel="stylesheet" type="text/css"href="assets/style/interfacestyle.css"/>
+      <link rel="stylesheet" href="interface/loader/style.css"/>
+      <link rel="stylesheet" href="interface/loader/boot.css"/>
+	  </head>
+   </head>
+   <script type="text/javascript">
+<!--       $(document).ready(function(){                $(".fakeloader").fakeLoader({                    timeToHide:4000,                    bgColor:"#CECECE",                                                  spinner:"spinner5"                }); -->
+      	  
+      	  localStorage.clear();
+      	  localStorage.setItem('actionEnCours','false' );
+      	  localStorage.setItem('monetaireEnCours','false') ;
+      	  localStorage.setItem('obligataireEnCours', 'false');
+      	   localStorage.setItem('actionTermine','false' );
+      	  localStorage.setItem('monetaireTermine','false') ;
+      	  localStorage.setItem('obligataireTermine', 'false');
+      	  
+               });
+      	  
+      	  var rotonda=localStorage.getItem('actionEnCours' )+localStorage.getItem('monetaireEnCours') +localStorage.getItem('obligataireEnCours' )+ localStorage.getItem('actionTermine' )+localStorage.getItem('monetaireTermine') + localStorage.getItem('obligataireTermine' );
+      
+      	  
+      var openmenu=0;
+      	  
+      var gestionmenu=function(){
+      
+      if(openmenu==0){$('.bclose').fadeOut("slow");openmenu=1;$('.icoclose').css("filter","contrast(200%)");}
+      else{$('.bclose').fadeIn("slow");openmenu=0;$('.icoclose').css("filter","contrast(100%)") ;}
+      
+      
+      } 
+      	  
+        
+   </script>
+   <script type="text/javascript" src="jquery.easing.1.3.js"></script>
+   <script type="text/javascript"> 
+      $('.placeholdermenu').bind('mouseenter',function(){ 
+      	 
+      	 var $elem = $(this);
+         $elem.stop(true);
+       
+           $elem.animate({'height':'300px'},1000)
+           
+           $elem.find('.sdt_link').hide();
+           
+           
+           
+           
+           
+      	 
+      	})
+      
+      
+      $('.placeholdermenu').bind('mouseleave',function(){ 
+      	 
+      	 var $elem = $(this);
+        $elem.stop(true)
+       
+           $elem.animate({'height':'50px'},1000)
+           
+           $elem.find('.sdt_link').show();
+           
+           
+           
+           
+           
+      	 
+      	})
+      	
+      	
+      		   
+
+      	
+      	
+      	
+      		
+   </script>
+   <body id="body" style="background-color:#D5D5D5;height:3000px;">
+      <div id="pointblock" name="pointblock"></div>
+      <div class="fakeloader"></div>
+      <div style="background-color:#EFEFEF;width:1200px;height:14000px;margin:auto;background-repeat:no-repeat;">
+         <div style="background-color:#FFFFFF;width:1200px;height:300px;margin:auto;background-repeat:no-repeat;">
+            <div style="background-image:url('assets/img/bann.png');width:1200px;height:130px;margin:auto;">
+            </div>
+            <div style="background-color:#EFEFEF;width:796px;height:13500px;margin:auto;border-radius:80px;-moz-box-shadow: -5px 0px 15px 0px #DCDCDB;
+               -webkit-box-shadow: -5px 0px 15px 0px #DCDCDB;
+               -o-box-shadow: -5px 0px 15px 0px #DCDCDB;
+               box-shadow: -5px 0px 15px 0px #DCDCDB;
+               filter:progid:DXImageTransform.Microsoft.Shadow(color=#DCDCDB, Direction=180, Strength=15);">
+               <div class="lateralbar">
+                  </br>
+                  <span class='title18' style='margin-left:85px;color:#7d7d7d;font-size:20px;'>les clés de la gestion financière</span></br></br>
+               </div>
+               <div class="lateralbar4">
+               </div>
+               <div style="background-color:;width:796px;height:50px;margin:auto;margin:auto;-moz-box-shadow: 0px 15px 15px 0px #DCDCDB;
+                  -webkit-box-shadow: 0px 15px 15px 0px #DCDCDB;
+                  -o-box-shadow: 0px 15px 15px 0px #DCDCDB;
+                  box-shadow: 0px 15px 15px 0px #DCDCDB;
+                  filter:progid:DXImageTransform.Microsoft.Shadow(color=#DCDCDB, Direction=180, Strength=15);">
+                  <div style="background-color:;width:88px;height:50px;float:left;-moz-box-shadow: 0px 15px 15px 0px #DCDCDB;
+                     -webkit-box-shadow: 0px 15px 15px 0px #DCDCDB;
+                     -o-box-shadow: 0px 15px 15px 0px #DCDCDB;
+                     box-shadow: 0px 15px 15px 0px #DCDCDB;
+                     filter:progid:DXImageTransform.Microsoft.Shadow(color=#DCDCDB, Direction=180, Strength=15);" class='houseicon'>
+					 
+						 <img src="assets/img/house.png" alt="Smiley face" height="27" width="34" style='margin-left:27px;margin-top:9px;cursor:pointer;'> 
+                  </div>
+                  <div style="background-color:#68D3F9;" class='placeholdermenu' >
+                     <span class="sdt_link">COMMENT JOUER</span></br>
+                     <span class="sdt_descr">TUTORIEL</span>
+                  </div>
+                  <div style="background-color:#AA5EAA;" class='placeholdermenu' >
+                     <span class="sdt_link">FORUM</span></br>
+                     <span class="sdt_descr">VOS ÉCHANGES</span>
+                  </div>
+                  <div style="background-color:#8BC045;" class='placeholdermenu'>
+                     <span class="sdt_link">GLOSSAIRE</span></br>
+                     <span class="sdt_descr">GESTION FIANCIÈRE</span>
+                  </div>
+                  <div style="background-color:#666666;border:none" class='placeholdermenu'>
+                     <span class="sdt_link">BIBLIOTHÈQUE</span></br>
+                     <span class="sdt_descr">A TÉLÉCHARGER</span>
+                  </div>
+               </div>
+               <div style="width:88px;height:8000px;float:left;" class='lateralbar2'>
+               </div>
+               <div class="lateralbar4">
+               </div>
+			    <div style="width:708px;height:5200px;float:left;background-color:#EFEFEF;height:12000px;margin-top:50px;" class='lateralbar3' id="divaframe">
+                  <iframe style='display:block ;margin:auto;margin-bottom: 0px;border:none;margin-left:0px;'
+                     width="709" 
+                     height="1200"
+                     src="etape6/formDiva1.html" 
+                     id="frame1"
+                     align="middle" scrolling='no'>
+                  </iframe>
+			
+				  <iframe style='display:block ;margin:auto;margin-bottom: 0px;border:none;margin-left:0px;'
+                     width="709" 
+                     height="1260"
+                     src="etape6/formDiva2.html" 
+                     id="frame1"
+                     align="middle" scrolling='no'>
+                  </iframe> 
+				  <iframe style='display:block ;margin:auto;margin-bottom: 0px;border:none;margin-left:0px;'
+                     width="709" 
+                     height="700"
+                     src="etape6/formDiva3.html" 
+                     id="frame1"
+                     align="middle" scrolling='no'>
+                  </iframe> 
+				  <iframe style='display:block ;margin:auto;margin-bottom: 0px;border:none;margin-left:0px;'
+                     width="709" 
+                     height="800"
+                     src="etape6/formDiva4.html" 
+                     id="frame1"
+                     align="middle" scrolling='no'>
+                  </iframe> 
+				  <iframe style='display:block ;margin:auto;margin-bottom: 0px;border:none;margin-left:0px;'
+                     width="709" 
+                     height="800"
+                     src="etape6/formDiva5.html" 
+                     id="frame1"
+                     align="middle" scrolling='no'>
+                  </iframe> 
+                  <!-- BODY -->
+               </div>
+      
+            </div>
+         </div>
+      </div>
+      <!-- menu fixe -->
+      <div class="menu" style="position : fixed;width:250px;height:772px;left:calc(50% + 395px);bottom:-350px;">
+         <div class='menulicontainer' id="icoclose" onclick="gestionmenu();">
+            <div class='imgcontainer' >
+               <img src="assets/img/icoclose.png">
+            </div>
+            <div class='textcontainer'>
+               <span class='menutitle'>fermer</span></br>
+               <span class='menutext'>menu</span> 
+            </div>
+         </div>
+         <div class='menulicontainer bclose'>
+            <div class='imgcontainer' >
+               <img src="assets/img/icoaccount.png">
+            </div>
+            <div class='textcontainer'>
+               <span class='menutitle'>accueil
+               </span></br>
+               <span class='menutext'>mon 	compte
+               </span> 
+            </div>
+         </div>
+         <div class='menulicontainer bclose'>
+            <div class='imgcontainer' >
+               <img src="assets/img/icotuto.png">
+            </div>
+            <div class='textcontainer'>
+               <span class='menutitle'>comment jouer
+               </span></br>
+               <span class='menutext'>tutoriel
+               </span> 
+            </div>
+         </div>
+         <div class='menulicontainer bclose'>
+            <div class='imgcontainer' >
+               <img src="assets/img/icoforum.png">
+            </div>
+            <div class='textcontainer'>
+               <span class='menutitle'>forum
+               </span></br>
+               <span class='menutext'>vos échanges
+               </span> 
+            </div>
+         </div>
+         <div class='menulicontainer bclose'>
+            <div class='imgcontainer' >
+               <img src="assets/img/icoglossary.png">
+            </div>
+            <div class='textcontainer'>
+               <span class='menutitle'>glossaire
+               </span></br>
+               <span class='menutext'>gestion financière
+               </span> 
+            </div>
+         </div>
+         <div class='menulicontainer bclose'>
+            <div class='imgcontainer' >
+               <img src="assets/img/icobibli.png">
+            </div>
+            <div class='textcontainer'>
+               <span class='menutitle'>
+               bibliothèque
+               </span></br>
+               <span class='menutext'>
+               à télecharger
+               </span> 
+            </div>
+         </div>
+      </div>
+      <!-- menu bibli -->
+     
+      </div>
+      <div id="dialogoverlay"></div>
+      <div id="dialogbox">
+         <div>
+            <div id="dialogboxfoot"></div>
+            <div id="dialogboxbody"></div>
+            <div id="dialogboxhead"></div>
+         </div>
+      </div>
+   </body>
+</html>

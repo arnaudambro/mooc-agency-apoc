@@ -1,0 +1,225 @@
+<html>
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="../assets/style/css/fontstyle.css">
+      <script type='text/javascript' src='assets/jquery-2.2.4.min.js'></script>
+      <script type='text/javascript' src='assets/jquery.browser.js'></script>
+      <script type='text/javascript' src='assets/jquery.iframe-auto-height.js'></script>
+      <script type='text/javascript' src='assets/jquery.scrollTo.min.js'></script>
+      <script type="text/javascript" src="assets/etape6_library.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="assets/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/style/marchestyle.css">
+      <!-- fichier css à utiliser -->
+      <link rel="stylesheet" type="text/css" href="../assets/style/marchestyle.css">
+   </head>
+ 
+   <body id="bodymaininside">
+   	  <script>
+	  
+var formaCheck1=function(){
+if(
+
+document.getElementById("Diva5q1").value == "À tout moment"&&
+document.getElementById("Diva5q2").value == "Au moins 90% du capital investi"
+
+
+)
+
+  {success();valideHide1(); goodAnswer=1;
+	}
+
+else{error();goodAnswer=0;};
+
+
+}
+ var goodAnswer=0;
+function CustomAlert(){
+               
+         var position = document.getElementById('placeholderL3n3');
+         this.render = function(dialog){
+                  var winW = window.innerWidth;
+                  var winH = window.innerHeight;
+                  var dialogoverlay = document.getElementById('dialogoverlay');
+                  var dialogbox = document.getElementById('dialogbox');
+                  dialogoverlay.style.display = "none";
+                  dialogoverlay.style.height = "100px";
+                  dialogbox.style.left = (winW/2) - (300* .5)+"px";
+                  dialogbox.style.top = cursorY-90;
+                  dialogbox.style.display = "block";
+                  
+                  document.getElementById('dialogboxbody').innerHTML = dialog;
+                  document.getElementById('dialogboxfoot').innerHTML = '<p id="ok" onclick="Alert.ok()">X</p>';
+               }
+               this.ok = function(){
+               document.getElementById('dialogbox').style.display = "none";
+               document.getElementById('dialogoverlay').style.display = "none";
+			   if(goodAnswer==1){$('#infoOba1').show();$('#perfSynth').show();}
+         
+               }
+               }
+
+
+
+var Alert = new CustomAlert();
+        var success = function() {
+            Alert.render("BRAVO ! C'EST LA BONNE RÉPONSE.");
+            valideHide1();
+          $('#backToSchool').hide();
+        };
+        var error = function() {
+            Alert.render("CE N'EST PAS LA BONNE RÉPONSE. RÉESSAYEZ !");
+            showPlainTrue();valideHide1();
+        };
+        var valideHide1 = function() {
+            $('#valider1').hide();
+        };
+        var showPlainFunc = function() {
+            $('#showPlain').css("visibility", "hidden");
+            $('#infoOba1').show();
+			$('#backToSchool').show();
+        };
+		    var backToSchoolFunc = function() {
+            $('#showPlain').css("visibility", "hidden");
+            $('#infoOba1').hide();
+			$('#backToSchool').hide();
+			$('#valider1').show();
+        };
+        var showPlainTrue = function() {
+            $('#showPlain').css("visibility", "visible");
+        };
+</script>
+   <div class='consigncontainer'>
+               <div class="sequence">
+                  <div style="background-size: 31px 27px;background-position: 0px 3px;"class="imgcontain horloge "><img></div>
+                  <div class="sequencetextcontainer">
+                     <span class="sequencetitle">
+                     ANALYSE COMPARATIVE 
+                     </span>
+                     <br>
+                     <div class="sequenceconsign">
+                        Durée : 1 min
+                     </div>
+                  </div>
+               </div>
+               </br>
+			
+			
+		 <div class="consigne">
+               <span class="titleblue">MÉCANISME DE GARANTIE DES FONDS STRUCTURÉS</span>
+               <br>
+ 
+               <span>	
+En quoi consistent les mécanismes de garantie ?</br>
+Ils font souvent référence à la Valeur Liquidative (ou VL) qui représente le prix auquel s’effectuent les achats et les ventes de parts du fonds.
+</br>
+</br>
+À partir des données fournies ci-dessous, analysez la performance du fonds de type mixte D en sélectionnant les bonnes réponses à l’aide du bouton 
+  <img src="assets/img/down.png" style="width:15px;height:15px;border-top-right-radius:5px;border-bottom-right-radius:5px;">.                           
+               </span>
+ 
+            </div>	
+            </div>	
+			
+			
+			
+					
+	 <div style="background-image:url('divaAnalyse5/jet1.png');height:300px;width:708px;background-size:650px 300px;background-repeat:no-repeat;">
+      </div> 
+			
+
+
+
+
+
+
+
+
+	
+	<div class="formActa formNew" style="width:708px;height:700px;margin-top:00px;" >
+
+
+
+   
+	
+<div class="formliner" id="line1" style="height:120px;" >
+<div class="formQuest">
+
+</div>
+</br>
+
+
+<div class="formEnonce">
+Quel type de garantie offre le fonds ?
+
+</div>
+
+
+<div class="styled-select black rounded shadowed"style="position: relative;
+    top: 2px;width:320px;">
+  <select id="Diva5q1"style="width:350px;">
+
+    <option>?</option>
+    <option>À l’échéance</option>
+    <option>Annuelle</option>
+    <option>À tout moment</option>
+
+
+
+  </select>
+</div>
+
+<div class="formEnonce" style='margin-top:10px;'>
+Sur quoi porte la garantie ?
+
+</div>
+
+
+<div class="styled-select black rounded shadowed"style="position: relative;width:320px;margin-top:10px;
+    top: 2px;">
+  <select id="Diva5q2"style="width:350px;">
+
+    <option>?</option>
+    <option>100% du capital investi</option>
+    <option>90 %  du capital investi</option>
+    <option>Au moins 90% du capital investi</option>
+
+
+
+  </select>
+</div>
+
+</br>
+    <div class="consigne" id="infoOba1" style="padding:0px;width:582px;margin-left:-12px;display:none;border-radius: 25px;padding: 20px;">
+
+			   <span>
+La garantie porte sur 90% de la plus haute valeur de part du fonds diversifié B (VL ou Valeur Liquidative) constatée historiquement. L’investisseur ne peut donc jamais perdre plus de 10% du capital qu’il a investi mais, en fonction de la date d’investissement, il peut bénéficier d’une garantie susceptible d’aller jusqu’à 100% de ce capital puisque calculée sur une VL historique. En fin de période (cf. graphique ci-dessus), l’investisseur acquiert ainsi la part du fonds à 118,4€ et bénéficie d’une garantie à hauteur de 112,67€, soit 95% du capital investi.</br>
+Cette garantie s’applique à tout moment. Mais il existe aussi des fonds où la garantie ne s’applique qu’à l’échéance (cf. Fiche du fonds actions E qui garantit à l’échéance 90% du capital investi, le risque de perte sur 8 ans ne pouvant excéder 10%, soit -1,31% par an) ; si l’investisseur vend ses parts avant l’échéance, le prix sera fonction des marchés et pourra être différent de la formule annoncée.
+
+</span>
+<div class="valider" id="backToSchool"onclick="backToSchoolFunc()" style="display:none;margin-left:150px">fermer l'explication</div>
+  </div>
+   <div class="consigne" id="perfSynth" style="display:none">
+               <span class="titleblue">SYNTHÈSE </span>
+               <br>
+Pour retrouver les les mécanismes de garantie analysés, vous pouvez télécharger les fiches complètes des fonds concernés.
+ 		 <div class="valider" id="check"onclick="window.open('indexFicheGar.html', '_blank');" style="margin-left:380px">télécharger</div>
+            </div>	
+
+		 <div class="valider" id="showPlain"onclick="showPlainFunc()" style="visibility:hidden;margin-left:150px">voir l'explication</div>
+		 
+		  <div class="valider" id="valider1"onclick="formaCheck1()" >valider</div>
+
+
+         </div>
+  </div>		 
+  </div>		 
+
+   </body>
+   <div id="dialogoverlay"></div>
+   <div id="dialogbox">
+   <div>
+   <div id="dialogboxfoot"></div>
+   <div id="dialogboxbody"></div>
+   <div id="dialogboxhead"></div>
+</html>

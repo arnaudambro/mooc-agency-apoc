@@ -1,0 +1,345 @@
+
+
+<html style='height:7000px;width:708px;'>
+   <head>
+      <meta charset="utf-8">
+      <title>ÉTAPE 6</title>
+      <script type='text/javascript' src='assets/jquery-2.2.4.min.js'></script>
+      <script type='text/javascript' src='assets/jquery.browser.js'></script>
+      <script type='text/javascript' src='assets/jquery.iframe-auto-height.js'></script>
+      <script type='text/javascript' src='assets/jquery.scrollTo.min.js'></script>
+      <script type="text/javascript" src="assets/etape6_library.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="assets/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/style/marchestyle.css">
+      <!-- fichier css à utiliser -->
+      <link rel="stylesheet" type="text/css" href="../assets/style/marchestyle.css">
+   </head>
+   <style>
+      .formLiner{height:100px;}
+   </style>
+   <body id="bodymaininside" style='height:auto;width:708px;margin-left:0px;font-family:'>
+      <script>
+         var formaCheck=function(){
+         if(
+         ((
+         document.getElementById("Acta4q1a").value == "Allemagne"&&
+         document.getElementById("Acta4q1b").value == "Italie"&&
+         document.getElementById("Acta4q1c").value == "France"
+         
+         )
+         ||
+         (
+         document.getElementById("Acta4q1a").value == "Allemagne"&&
+         document.getElementById("Acta4q1b").value == "France"&&
+         document.getElementById("Acta4q1c").value == "Italie"
+         
+         )
+         
+         ||
+         (
+         document.getElementById("Acta4q1a").value == "France"&&
+         document.getElementById("Acta4q1b").value == "Allemagne"&&
+         document.getElementById("Acta4q1c").value == "Italie"
+         
+         )
+         ||
+         (
+         document.getElementById("Acta4q1a").value == "France"&&
+         document.getElementById("Acta4q1b").value == "Italie"&&
+         document.getElementById("Acta4q1c").value == "Allemagne"
+         
+         )
+         ||
+         (
+         document.getElementById("Acta4q1a").value == "Italie"&&
+         document.getElementById("Acta4q1b").value == "Allemagne"&&
+         document.getElementById("Acta4q1c").value == "France"
+         
+         )
+         ||
+         (
+         document.getElementById("Acta4q1a").value == "Italie"&&
+         document.getElementById("Acta4q1b").value == "France"&&
+         document.getElementById("Acta4q1c").value == "Allemagne"
+         
+         )
+         )&&
+         ((
+         document.getElementById("Acta4q2a").value == "Belgique"&&
+         document.getElementById("Acta4q2b").value == "Italie"&&
+         document.getElementById("Acta4q2c").value == "Royaume-Uni"
+         
+         )
+         ||
+         (
+         document.getElementById("Acta4q2a").value == "Belgique"&&
+         document.getElementById("Acta4q2b").value == "Royaume-Uni"&&
+         document.getElementById("Acta4q2c").value == "Italie"
+         
+         )
+         
+         ||
+         (
+         document.getElementById("Acta4q2a").value == "Royaume-Uni"&&
+         document.getElementById("Acta4q2b").value == "Belgique"&&
+         document.getElementById("Acta4q2c").value == "Italie"
+         
+         )
+         ||
+         (
+         document.getElementById("Acta4q2a").value == "Royaume-Uni"&&
+         document.getElementById("Acta4q2b").value == "Italie"&&
+         document.getElementById("Acta4q2c").value == "Belgique"
+         
+         )
+         ||
+         (
+         document.getElementById("Acta4q2a").value == "Italie"&&
+         document.getElementById("Acta4q2b").value == "Belgique"&&
+         document.getElementById("Acta4q2c").value == "Royaume-Uni"
+         
+         )
+         ||
+         (
+         document.getElementById("Acta4q2a").value == "Italie"&&
+         document.getElementById("Acta4q2b").value == "Royaume-Uni"&&
+         document.getElementById("Acta4q2c").value == "Belgique"
+         
+         )
+         )
+         
+         &&((
+         document.getElementById("Acta4q3a").value == "Espagne"&&
+         document.getElementById("Acta4q3b").value == "Allemagne"
+         
+         )
+         ||
+         (
+         document.getElementById("Acta4q3a").value == "Allemagne"&&
+         document.getElementById("Acta4q3b").value == "Espagne"
+         
+         )
+         
+         
+         )
+         
+         &&(document.getElementById("Acta4q4a").value == "Espagne"
+         
+         
+         
+         
+         
+         
+         )
+         
+         )
+         
+         {success();;
+         	}
+         
+         else{error();};
+         
+         
+         }
+
+               var Alert = new CustomAlert();
+               // FIN CUSTOM ALERTT
+               // CONGRAT
+               var success=function(){Alert.render("BRAVO ! C'EST LA BONNE RÉPONSE."); valideHide();};
+               
+               
+               
+               var error=function(){Alert.render("CE N'EST PAS LA BONNE RÉPONSE. CONTINUEZ !");};
+         	  
+         	  var valideHide=function(){$('.valider').hide();}
+               
+      </script>
+      <div class="consigne">
+         <span class="titleblue">ANALYSE 4</span>
+         <br>À partir des données fournies ci-dessous, identifiez les principaux paris géographiques pris par le gérant du fonds B en sélectionnant la bonne réponse grâce au bouton  <img src="assets/img/down.png" style="width:15px;height:15px;border-top-right-radius:5px;border-bottom-right-radius:5px;">.    
+      </div>
+      <div style="background-image:url('actaAnalyse4/jet1.png');height:600px;width:500px;background-size:450px 500px;background-repeat:no-repeat;">
+      </div> 
+      <div class="formActa formNew" style="width:708px;height:450px;" >
+      <div class="formQuest">
+         Quels sont les 3 pays : 
+      </div>
+      </br>
+      </br>
+      <div class="formliner" id="line1" >
+         <div class="formEnonce" style="width:200px;">
+            - auxquels le fonds est le plus exposé ? 
+         </div>
+         <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+            top: 2px;">
+            <select id="Acta4q1a">
+               <option>? </option>
+               <option>Allemagne </option>
+               <option>Belgique </option>
+               <option>Espagne </option>
+               <option>France </option>
+               <option>Italie</option>
+               <option>Royaume-Uni</option>
+            </select>
+         </div>
+         <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+            top: 2px;">
+            <select id="Acta4q1b">
+               <option>? </option>
+               <option>Allemagne </option>
+               <option>Belgique </option>
+               <option>Espagne </option>
+               <option>France </option>
+               <option>Italie</option>
+               <option>Royaume-Uni</option>
+            </select>
+         </div>
+         <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+            top: 2px;">
+            <select id="Acta4q1c">
+               <option>? </option>
+               <option>Allemagne </option>
+               <option>Belgique </option>
+               <option>Espagne </option>
+               <option>France </option>
+               <option>Italie</option>
+               <option>Royaume-Uni</option>
+            </select>
+         </div>
+      </div>
+      <div class="formliner" id="line1" >
+         <div class="formEnonce" style="width:200px;">
+            - qui sont les plus surpondérés ? 
+         </div>
+         <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+            top: 2px;">
+            <select id="Acta4q2a">
+               <option>? </option>
+               <option>Allemagne </option>
+               <option>Belgique </option>
+               <option>Espagne </option>
+               <option>France </option>
+               <option>Italie</option>
+               <option>Royaume-Uni</option>
+            </select>
+         </div>
+         <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+            top: 2px;">
+            <select id="Acta4q2b">
+               <option>? </option>
+               <option>Allemagne </option>
+               <option>Belgique </option>
+               <option>Espagne </option>
+               <option>France </option>
+               <option>Italie</option>
+               <option>Royaume-Uni</option>
+            </select>
+         </div>
+         <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+            top: 2px;">
+            <select id="Acta4q2c">
+               <option>? </option>
+               <option>Allemagne </option>
+               <option>Belgique </option>
+               <option>Espagne </option>
+               <option>France </option>
+               <option>Italie</option>
+               <option>Royaume-Uni</option>
+            </select>
+         </div>
+      </div>
+      <div class="formliner" id="line1" >
+         <div class="formEnonce" style="width:200px;">
+            Quels sont les 2 pays les plus
+            sous-pondérés ? 
+         </div>
+         <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+            top: 2px;">
+            <select id="Acta4q3a">
+               <option>? </option>
+               <option>Allemagne </option>
+               <option>Belgique </option>
+               <option>Espagne </option>
+               <option>France </option>
+               <option>Italie</option>
+               <option>Royaume-Uni</option>
+            </select>
+         </div>
+         <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;
+            top: 2px;">
+            <select id="Acta4q3b">
+               <option>? </option>
+               <option>Allemagne </option>
+               <option>Belgique </option>
+               <option>Espagne </option>
+               <option>France </option>
+               <option>Italie</option>
+               <option>Royaume-Uni</option>
+            </select>
+         </div>
+         <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;visibility:hidden;
+            top: 2px;">
+            <select id="Acta4q3c">
+               <option>? </option>
+               <option>Allemagne </option>
+               <option>Belgique </option>
+               <option>Espagne </option>
+               <option>France </option>
+               <option>Italie</option>
+               <option>Royaume-Uni</option>
+            </select>
+         </div>
+      </div>
+      <div class="formliner" id="line1" >
+         <div class="formEnonce" style="width:200px;">
+            Quel est le pays auquel le fonds est
+            le moins exposé ? 
+         </div>
+         <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;float:left;
+            top: 2px;">
+            <select id="Acta4q4a">
+               <option>? </option>
+               <option>Allemagne </option>
+               <option>Belgique </option>
+               <option>Espagne </option>
+               <option>France </option>
+               <option>Italie</option>
+               <option>Royaume-Uni</option>
+            </select>
+         </div>
+         <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;float:left;visibility:hidden;
+            top: 2px;">
+            <select id="Acta4q4b">
+               <option>? </option>
+               <option>Allemagne </option>
+               <option>Belgique </option>
+               <option>Espagne </option>
+               <option>France </option>
+               <option>Italie</option>
+               <option>Royaume-Uni</option>
+            </select>
+         </div>
+         <div class="styled-select black rounded shadowed"style="position: relative;width:150px;float:left;margin-left:15px;float:left;visibility:hidden;
+            top: 2px;">
+            <select id="Acta4q4c">
+               <option>? </option>
+               <option>Allemagne </option>
+               <option>Belgique </option>
+               <option>Espagne </option>
+               <option>France </option>
+               <option>Italie</option>
+               <option>Royaume-Uni</option>
+            </select>
+         </div>
+         <div class="valider" onclick="formaCheck()">valider</div>
+      </div>
+   </body>
+   <div id="dialogoverlay"></div>
+   <div id="dialogbox">
+   <div>
+   <div id="dialogboxfoot"></div>
+   <div id="dialogboxbody"></div>
+   <div id="dialogboxhead"></div>
+</html>
+

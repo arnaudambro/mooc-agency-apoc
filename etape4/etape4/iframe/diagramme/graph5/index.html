@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title>jQuery Visualize Plugin</title>
+	 <link rel="stylesheet" type="text/css" href="../assets/style.css"/>
+	
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="visualize.js"></script>
+
+
+<body>
+
+ <div class="container" >
+ <div class="menute">
+
+ <div id="pieChart" class="chart"> </div>
+ <div id='monetaire' style="left:27px;top:37px;font-size:9px;"class='monad'>durée de vie</br>moy.pondérée</br><span style='font-weight:bold'>  ≤ 120 jours </span></br>durée de vie</br><span style="font-weight:bold">  ≤ max 397 jours</span></br>maturité moy.</br> pondérée</br> <span style="font-weight:bold"> ≤ 60 jours </span></br></div>
+ 
+  <div id='monetaireCT' style="left:32px;top:37px;font-size:9px;"class='monad'>durée de vie</br>moy.pondérée</br><span style='font-weight:bold'>  ≤ 12 mois </span></br>durée de vie</br><span style="font-weight:bold">  ≤ max 2 ans</span></br>maturité moy.</br> pondérée</br> <span style="font-weight:bold">  ≤ 6 mois </span></br></div>
+  
+
+ <div id='pi' style=" font-family:'Helvetica Neue LT Std 55 Roman';top:43px;left:48px;color:#7f7f7f;display:block;position:absolute;font-size:75px;"> ?</div>
+
+ 
+ </div>
+		<div class="menu">
+	
+			<div class='ovalnoir'>
+  				<div class='arrowup' id='arrowupcol1'>
+            <button value="actions"></button>
+  				</div>
+  				<div class='arrowdown' id='arrowdowncol1'>
+            <button value="actions"></button>
+  				</div>
+			</div>
+			<div class='titledown'>
+  			fonds monétaire
+			</div>
+		</div>
+
+
+
+</div>
+ <div style='color:white;width:50px;height:50px;position:absolute;top:50px;left:50px;display:none;'>test</div>
+   <svg height="150" width="400">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F85F00;stop-opacity:1" />
+	  <stop offset="50%" style="stop-color:#239200;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6C136C;stop-opacity:1" />
+	  
+    </linearGradient>
+  </defs>
+  <ellipse cx="0" cy="0" rx="0" ry="0" fill="url(#grad1)" />
+     <defs>
+<linearGradient id="grad2" x1="0%" y1="100%" x2="100%" y2="0%" >
+<stop offset="0%" style="stop-color:rgb(129,0,130);stop-opacity:1" />
+<stop offset="100%" style="stop-color:rgb(0,152,0);stop-opacity:1" />
+</linearGradient>
+</defs>
+
+ <defs>
+<linearGradient id="grad3" x1="0%" y1="100%" x2="100%" y2="0%" >
+<stop offset="0%" style="stop-color:rgb(255,102,0);stop-opacity:1" />
+<stop offset="46%" style="stop-color:rgb(129,0,130);stop-opacity:1" />
+<stop offset="100%" style="stop-color:rgb(0,156,0);stop-opacity:1" />
+</linearGradient>
+</defs>
+
+<rect x="0" y="0" width="00%" height="00%" fill="url(#grad2)"/>
+  
+</svg> 
+</body>
+</html>

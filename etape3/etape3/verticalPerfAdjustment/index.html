@@ -1,0 +1,261 @@
+<html style='height:auto'>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="../assets/etape3_library.js"></script>
+
+	<script type= "text/javascript" src="assets/starter.js"></script>
+ <link rel="stylesheet" type="text/css"
+          href="assets/style.css"/>
+</head>
+
+
+
+
+<style>
+	@font-face {
+	font-family: 'Helvetica Neue LT Std 55 Roman';
+	src: url('css/HelveticaLTStd-Roman.eot');
+	src: url('css/HelveticaLTStd-Roman.eot?#iefix') format('embedded-opentype'),
+		url('css/HelveticaLTStd-Roman.woff2') format('woff2'),
+		url('css/HelveticaLTStd-Roman.woff') format('woff'),
+		url('css/HelveticaLTStd-Roman.ttf') format('truetype'),
+		url('css/HelveticaNeueLTStd-Roman.otf') format('opentype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Helvetica Neue LT Std 75 Bold';
+	src: url('css/HelveticaNeueLTStd-Bd.eot');
+	src: url('css/HelveticaNeueLTStd-Bd.eot?#iefix') format('embedded-opentype'),
+		url('css/HelveticaNeueLTStd-Bd.woff2') format('woff2'),
+		url('css/HelveticaNeueLTStd-Bd.woff') format('woff'),
+		url('css/Helvetica Neue LT Std 75 Bold.otf') format('otf'),
+		url('css/HelveticaNeueLTStd-Bd.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+	</style>
+
+<body style='height:500px;font-family:Helvetica Neue LT Std 55 Roman' onload="start();colonscreen();">
+	<div id="overlay">
+	<div class='titleblue' onclick="closeOverlay();">Fermer</div>
+		<img id="imgSol"src="" >
+
+	</div>
+ <div class="container">
+ 
+	<!-- 	<div class='consign'>
+
+	
+		<span class='titreconsigngrey'>SÉQUENCE DRAG AND DROP</span>
+		</br>
+		<span class='miniconsign'>Durée 10 min/ 10 points</span>
+		</br>
+		</br>
+		<span class='titreconsignblue'>MARCHÉ DES ACTIONS</span>
+		</br>
+A la lumière de ce qui s’est réellement passé, déplacez sur l’axe vertical ci-dessous, « de moins à plus de performance », les actions précédemment classées sur l’axe horizontal du risque, à l’aide du bouton  , puis validez.
+</div> -->
+		<div class="placeholderlignstart" id="placeholderlign0">
+			<div class="placeholderbutton">
+				<div class='insideplaceholder'style='width:100px;text-align:center;margin-left:15px;'>
+				<span class='textinsideplaceholder' style='width:260px;' >PLUS DE PERFORMANCE 
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="placeholderlign" id="placeholderlign1">
+			<div id="placeholderL1n5" class="placeholder"></div>
+			<div id="placeholderL1n4" class="placeholder"></div>
+			<div id="placeholderL1n3" class="placeholder"></div>
+			<div id="placeholderL1n2" class="placeholder"></div>
+			<div id="placeholderL1n1" class="placeholder"></div>
+				<div class="placeholderbutton">
+				<div class='insideplaceholder'style='width:200px;text-align:left;'><span class='textinsideplaceholder' style="margin-left:43px">MOINS</span>
+				</div>
+				<div class='insideplaceholder'>
+					
+				</div>
+			</div>
+			
+			<div class="placeholderbutton">
+				<div class='insideplaceholder'><span class='textinsideplaceholder'></span>
+				</div>
+				<div class='insideplaceholder'>
+					<div class='ovalnoir'>
+						<div class='arrowup' id='arrowupcol1'>
+						</div>
+						<div class='arrowdown' id='arrowdowncol1'>
+						</div>
+					</div>
+				</div>
+			</div>	
+			
+		</div>
+			<div class="placeholderlign" id="placeholderlign2">
+			<div id="placeholderL2n5" class="placeholder"></div>
+			<div id="placeholderL2n4" class="placeholder"></div>
+			<div id="placeholderL2n3" class="placeholder"></div>
+			<div id="placeholderL2n2" class="placeholder"></div>
+			<div id="placeholderL2n1" class="placeholder"></div>
+			<div class="placeholderbutton">
+			
+				<div class='insideplaceholder'>
+					
+				</div>
+			</div>
+					<div class="placeholderbutton">
+				<div class='insideplaceholder'>
+				</div>
+				<div class='insideplaceholder'>
+					<div class='ovalnoir'>
+						<div class='arrowup' id='arrowupcol2'>
+						</div>
+						<div class='arrowdown' id='arrowdowncol2'>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="placeholderlign" id="placeholderlign3">
+		<div id="placeholderL3n5" class="placeholder"></div>
+			<div id="placeholderL3n4" class="placeholder"></div>
+			<div id="placeholderL3n3" class="placeholder"></div>
+			<div id="placeholderL3n2" class="placeholder"></div>
+			<div id="placeholderL3n1" class="placeholder"></div>
+			<div class="placeholderbutton">
+				<div class='insideplaceholder'style='width:120px;text-align:center;'><span class='textinsideplaceholder'style='display:none' id='l3risk'>PLUS DE RISQUE</span>
+				</div>
+				<div class='insideplaceholder'>
+					
+				</div>
+			</div>
+			<div class="placeholderbutton">
+				<div class='insideplaceholder'>
+				</div>
+				<div class='insideplaceholder'>
+					<div class='ovalnoir'>
+						<div class='arrowup' id='arrowupcol3'>
+						</div>
+						<div class='arrowdown' id='arrowdowncol3'>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="placeholderlign" id="placeholderlign4">
+			<div id="placeholderL4n5" class="placeholder"></div>
+			<div id="placeholderL4n4" class="placeholder"></div>
+			<div id="placeholderL4n3" class="placeholder"></div>
+			<div id="placeholderL4n2" class="placeholder"></div>
+			<div id="placeholderL4n1" class="placeholder"></div>
+			<div class="placeholderbutton">
+				<div class='insideplaceholder'style='width:120px;text-align:center;'><span class='textinsideplaceholder'style='display:none' id='l4risk'>PLUS DE RISQUE</span>
+				</div>
+				<div class='insideplaceholder'>
+					
+				</div>
+			</div>
+			<div class="placeholderbutton">
+				<div class='insideplaceholder'>
+				</div>
+				<div class='insideplaceholder'>
+					<div class='ovalnoir'>
+						<div class='arrowup' id='arrowupcol4'>
+						</div>
+						<div class='arrowdown' id='arrowdowncol4'>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="placeholderlign" id="placeholderlign5">
+			<div id="placeholderL5n5" class="placeholder"></div>
+			<div id="placeholderL5n4" class="placeholder"></div>
+			<div id="placeholderL5n3" class="placeholder"></div>
+			<div id="placeholderL5n2" class="placeholder"></div>
+			<div id="placeholderL5n1" class="placeholder"></div>
+			<div class="placeholderbutton">
+				<div class='insideplaceholder'style='width:120px;text-align:center;'><span class='textinsideplaceholder'>PLUS DE RISQUE</span>
+				</div>
+				<div class='insideplaceholder'>
+					
+				</div>
+			</div>
+			<div class="placeholderbutton">
+				<div class='insideplaceholder'>
+				
+				</div>
+				<div class='insideplaceholder'>
+					<div class='ovalnoir'>
+						<div class='arrowup' id='arrowupcol5'>
+						</div>
+						<div class='arrowdown' id='arrowdowncol5'>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		
+	
+		<div class="placeholderlignnoleft">
+		<div id="actionvalid" class="valider" >VALIDER </div>
+			
+			
+		
+	
+		</div>
+		
+
+	</div>
+
+
+
+</body>
+
+
+
+<div id="dialogoverlay"></div>
+<div id="dialogbox">
+  <div>
+  <div id="dialogboxfoot"></div>
+
+    <div id="dialogboxbody"></div>
+	    <div id="dialogboxhead"></div>
+    
+  </div>
+</div>
+
+
+
+
+
+
+<!-- custom alert -->
+
+
+
+
+<!-- fin custom alert -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

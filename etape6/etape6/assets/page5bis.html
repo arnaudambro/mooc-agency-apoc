@@ -1,0 +1,379 @@
+<html style='height:3440px;'>
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="../assets/style/css/fontstyle.css">
+      <!--JQUERY ET EXTENSIONS-->
+      <script type='text/javascript' src='../assets/jquery-2.2.4.min.js'></script>
+      <script type='text/javascript' src='../assets/jquery.browser.js'></script>
+      <script type='text/javascript' src='../assets/jquery.iframe-auto-height.js'></script>
+      <script type='text/javascript' src='../assets/jquery.scrollTo.min.js'></script>
+      <!--FIN DE JQUERY ET EXTENSIONS-->
+      <!--NOS PROPRES SCRIPTS-->
+      <script type="text/javascript" src="assets/etape5_library.js"></script>
+      <!-- optimize mobile versions -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="../assets/style/marchestyle.css">
+   </head>
+   <script>
+      <!-- Mouseover de la vidéo -->
+      
+      var actionvertical1show2 = function(){$('.actionvertical1').show();}
+      
+   </script>
+   <style>
+      body{
+      font-family:'Helvetica Neue LT Std 55 Roman';background-color:silver;color:#676767;
+      }
+      .fondschema{width:708px;height:440px;background-color:#EFEFEF;}
+      
+	  
+	  
+	  .bigtouch{margin:1px;width:136px;height:75px;background-color:#FAFAFA;border-radius:17px;box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);text-align:center;
+  vertical-align:middle;margin:2px;cursor:pointer;background 0.5s;
+	  
+	  
+	  
+	  
+      }
+	  
+	  
+	    .semitouch{;text-align:center;margin:1px;width:136px;height:50px;background-color:#FAFAFA;border-radius:17px;box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);margin:2px;cursor:pointer;transition: background 0.5s;
+      }
+	  
+	   .bigtouch:hover{
+     background: transparent;
+     transition: background 0s;
+}
+	  
+	  	  	   .semitouch:hover{
+     background: transparent;
+     transition: background 0s;
+}
+	.bigtouch:hover, .bigtouch:focus, .bigtouch:active {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: #2098d1;
+  background-color: #808080;
+  color: white;
+  
+}	  
+
+.semitouch:hover, .semitouch:focus, .semitouch:active {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: #2098d1;
+  background-color: #808080;
+  color: white;
+}
+
+	  	  
+	  .bigtouchdouble{margin:1px;width:136px;height:150px;background-color:#FAFAFA;border-radius:17px;box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);text-align:center;
+  vertical-align:middle;margin:2px;
+	  
+	  
+	  
+	  
+      }
+	  	  .bigtouchtriple{margin:1px;width:136px;height:200px;border-radius:17px;text-align:center;
+  vertical-align:middle;margin:2px;
+	  
+	  
+	  
+	  
+      }
+    
+	  .semitouchempty{;text-align:center;margin:1px;width:136px;height:50px;
+      }
+      .brick{margin:1px;width:136px;height:10px;background-color:#FAFAFA;border-radius:17px;box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);;
+      }
+	   .semibrick{margin:1px;width:136px;height:5px;background-color:#FAFAFA;border-radius:17px;box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);;
+      }
+      .grandcol{
+      float:left;
+      width:142px;
+      height:440px;
+      background-color:#EFEFEF;
+      }
+      .minicol{
+      float:left;
+      width:25px;
+      height:440px;
+
+      background-color:#EFEFEF;
+
+      }
+      .hidden{visibility:hidden;}
+	  .none{display:none;}
+	  
+	  .insidetouch{
+	  margin:auto 0;
+	  font-size:12px;
+	  width:100%;
+	  height:70%;
+	  line-height:12px;
+	 display: inline-block;
+    vertical-align: middle;
+    line-height: 1em; 
+ margin-left:auto;
+  margin-right:auto;
+  position:relative;
+  top:20%;
+
+
+
+	  
+
+	  }
+	    .insidesemitouch{
+	   margin:0 auto;
+	  font-size:12px;
+	  width:100px;
+	  height:100%;
+	  line-height:12px;
+	 display: inline-block;
+    vertical-align: middle;
+    line-height: 1em; 
+
+	  }
+	  
+	  
+	  .bold{
+	  
+		font-weight:bold;
+
+	  }
+	  .alignv{
+
+
+	  }
+	  .ou{width:32px;
+	  height:17px;
+	  background-color:grey;
+	  left:53px;
+	  position:relative;
+	  bottom:-15px;
+	  border-radius:12px;
+	  color:white;
+	  font-size:11px;z-index:1;}
+	  
+	  
+	  .light{font-weight:normal;}
+	  	  .lower{font-weight:normal;text-transform:lowercase;}
+	  
+	  .leftmarge{left:27px;
+	  position:relative;}
+	  
+	  .fleche{width:25px;height:100px;}
+	  
+	  .upper{text-transform:uppercase;}
+	  
+   </style>
+   <body style='height:4440px;margin:0px;width:708px;' id='MarcheAction'  >
+      <div class='fondschema'>
+         <div class='grandcol'>
+    
+            <div class='bigtouchtriple leftmarge'><iframe style='display:block;margin-bottom: 0px;border:none;'
+							 width="139" 
+							 height="260"
+							 src="assets/diagramme/graphgestiontaux/index.html" 
+							 id="simulateur1"
+							 scrolling='no'>
+							</iframe> 
+            </div>
+			<div class="containerinfo2" style=";left:355px;top:400px;width:1px;z-index:999;">
+         <div id="tauxgestpopinfobulle2"  class="infobulle2"><span></span></div>
+      </div>
+		<div class='semibrick hidden'>15
+      
+            </div>	
+		<div class='brick hidden'>15
+      
+            </div>
+				<div class='brick hidden'>15
+      
+            </div>
+				<div class='brick hidden'>15
+      
+            </div>
+            <div class='bigtouch  leftmarge' ><div class='insidetouch'  align='center';> <span class='bold alignv upper'>allocation  </br>du risque</span> </div>
+            </div>
+            <div class='bigtouch hidden'>5
+            </div>
+            <div class='bigtouch hidden'>6
+            </div>
+            <div class='bigtouch leftmarge hidden'><div class='insidetouch'  align='center';></div>
+            </div>
+         </div>
+         <div class='minicol view1'> 
+			<div class="fleche leftmarge" style='position:relative;top:205px;'><img src='assets/img/triple fleche droite.png'></img>
+			</div>
+         </div>
+         <div class='grandcol view2'>
+            <div class='semitouch hidden'><div class='insidetouch'  align='center';> </div>
+            </div>
+            <div class='bigtouch hidden' style='height:112px;'>9
+            </div>
+             <div class='bigtouch leftmarge'id="tauxgestpop1title" name="tauxgestpop1" onmouseover="popfunk(this)" onmouseout="popfunkout()"data="11"><div class='insidetouch'  align='center';> <span class='bold alignv upper'>courbe des taux </span><span class='light'></br>Évolution des taux d'intérêt</span>   </div>
+            </div>
+            <div class='bigtouch leftmarge'id="tauxgestpop2title" name="tauxgestpop2" onmouseover="popfunk(this)" onmouseout="popfunkout()"data="11"><div class='insidetouch'  align='center';> <span class='bold alignv upper'>sensibilité  </span> <span class='light'></br>Aux mouvements des taux d'intérêt</span> </div>
+            </div>
+            <div class='bigtouch leftmarge' id="tauxgestpop6title" name="tauxgestpop6" onmouseover="popfunk(this)" onmouseout="popfunkout()"><div class='insidetouch'  align='center';> <span class='bold alignv upper'>diversification</span> </div>
+            </div>
+            <div class='bigtouch none'>13
+            </div>
+            <div class='bigtouch hidden' data="14"><div class='insidetouch'  align='center';> <span class='bold alignv'>Gestion benchmarkée  </span> <span class='light'></br>(suit l'indice de référence)</span>
+				</div>
+            </div>
+         </div>
+         <div class='minicol view3'>
+		 	<div class="fleche leftmarge" style='position:relative;top:205px;'><img src='assets/img/triple fleche droite.png'></img>
+			</div>
+         </div>
+         <div class='grandcol view4'>
+            <div class='brick none'>15
+            </div>
+            <div class='bigtouch hidden' style='height:163px;'>
+               16
+            </div>
+              <div class='bigtouch leftmarge'id="tauxgestpop3title" name="tauxgestpop3" onmouseover="popfunk(this)" onmouseout="popfunkout()" data="19"><div class='insidetouch'  align='center';> <span class='bold alignv upper'>maturité  </span> <span class='light'></br>Durée de vie de la dette</span>
+				</div>
+            </div>
+            <div class='bigtouch leftmarge '>
+             <div class='insidetouch' id="tauxgestpop4title" name="tauxgestpop4" onmouseover="popfunk(this)" onmouseout="popfunkout()" align='center';> <span class='bold alignv upper'>duration  </span> <span class='light'></br>Durée de vie moyenne pondérée de la dette</span>
+				</div>
+            </div>
+            <div class='bigtouch leftmarge' id="tauxgestpop5title" name="tauxgestpop5" onmouseover="popfunk(this)" onmouseout="popfunkout()"><div class='insidetouch'  align='center';> <span class='bold alignv upper'>risque de crédit </span>  <span class='light'></br>Classification et notation de l'émetteur</span>
+				</div>
+			
+            </div>
+			
+            <div class='bigtouch hidden'><div class='insidetouch'  align='center';> <span class='bold alignv'>Gestion structurée</span>  <span class='light'></br>(structure un profil rentabilité/risque avec une garantie)</span>
+				</div>
+            </div>
+         </div>
+         <div class='minicol'>
+		 <div class="fleche hidden" style='position:relative;top:125px;'><img src='assets/img/fleche gauche grande.png'></img>
+			</div>
+         </div>
+  <div class='grandcol hidden'>
+            <div class='brick none'>15
+            </div>
+            <div class='bigtouch hidden' style='height:163px;'>
+               16
+            </div>
+            <div class='bigtouch leftmarge' data="17"><div class='insidetouch'  align='center';> <span class='bold alignv'>Gestion benchmarkée <span class='light'></br>(suit l'indice de référence)</span> </span> 
+				</div>
+               
+            </div>
+        
+            <div class='bigtouch leftmarge' data="19"><div class='insidetouch'  align='center';> <span class='bold alignv'>Gestion non benchmarkée <span class='light'></br>(decorélée de l'indice de référence)</span> </span> 
+				</div>
+            </div>
+            <div class='bigtouch leftmarge '>
+               20
+            </div>
+            <div class='bigtouch hidden'><div class='insidetouch'  align='center';> <span class='bold alignv'>Gestion indicielle <span class='light'></br>(replique l'indice de référence)</span></span>  
+				</div>
+				<div class="ou">OU</div>
+            </div>
+			
+            <div class='bigtouch hidden'><div class='insidetouch'  align='center';> <span class='bold alignv'>Gestion structurée <span class='light'></br>(structure un profil rentabilité/risque avec une garantie)</span></span> </span> 
+				</div>
+            </div>
+  </div>
+         <div class='minicol'>
+		  <div class="fleche hidden" style='position:relative;top:125px;'><img src='assets/img/fleche droite grande.png'></img>
+			</div>
+         </div>
+       
+      </div>
+	   <div style='display:none'>
+ <div id='tauxgestpop1' class='popup' >
+            <span class='rubriquetitle'>Courbe des taux </span>
+            </br>
+            <span class='glossary'>cf. glossaire</span> </br>
+            </br>
+            <span class='popcontent'>
+            Elle représente le niveau des différents taux d’intérêt à un moment donné, en fonction de leur durée
+            respective.
+            </span>
+         </div>
+         <div id='tauxgestpop2' class='popup' >
+            <span class='rubriquetitle'>Sensibilité </span>
+            </br>
+            <span class='glossary'>cf. glossaire</span> </br>
+            </br>
+            <span class='popcontent'>
+            Elle mesure l’impact d’une variation des taux de 1% sur le cours d’un produit de taux (obligation ou titre monétaire) ou la valeur liquidative d’un OPC (valeur du portefeuille obligataire et monétaire détenu par le fonds). Pour un OPC de taux, une sensibilité de 4 signifie que sa valeur liquidative progressera de 4% en cas de baisse des taux d’intérêt de 1%, et diminuera de 4% en cas de hausse des taux d’intérêt de 1%.</span>
+         </div>
+         <div id='tauxgestpop3' class='popup' >
+            <span class='rubriquetitle'>Maturité </span>
+            </br>
+            <span class='glossary'>cf. glossaire</span> </br>
+            </br>
+            <span class='popcontent'>
+            Elle mesure la durée de vie d’un produit de taux, de la date d’émission à la date d’échéance à laquelle le
+            montant de la dette est remboursée et où le paiement des intérêts s’arrête. La maturité résiduelle mesure
+            le temps restant à courir jusqu’à l’échéance. Ces calculs s’appliquent aussi aux OPC de taux, désignant
+            dans le premier cas la durée de vie maximale des titres éligibles au fonds, dans le second la Maturité
+            Moyenne Pondérée (MMP) ou Weighted Average Maturity (WAM) du fonds.
+            </span>
+         </div>
+         <div id='tauxgestpop4' class='popup' >
+            <span class='rubriquetitle'>Duration</span>
+            </br>
+            <span class='glossary'>cf. glossaire</span> </br>
+            </br>
+            <span class='popcontent'>
+            Elle mesure la durée de vie moyenne d’un produit de taux pondérée par les flux de versement des intérêts (coupons) et de remboursement du capital actualisés, à savoir que les versements les plus proches dans le temps ont un poids plus important que les versements plus éloignés. A la différence de la simple durée résiduelle, la duration prend en compte le fait que les coupons versés peuvent être réinvestis, permettant d’atteindre la valeur cumulée des intérêts et du capital avant l’échéance (la duration est inférieure -ou égale en cas d’obligation zéro coupon- à la maturité). La valeur d’une obligation de duration 6 ans diminuera de 6% en cas de hausse des taux d’intérêt de 1%, et inversement.
+            La duration permet de comparer la sensibilité aux taux d’intérêt d’obligations de maturités et rendements
+            différents ; par exemple une obligation de duration 6 ans sera 2 fois plus sensible aux variations des
+            taux d’intérêt qu’une obligation de duration 3 ans, quels que soient la date d’échéance et le montant
+            des coupons. La duration peut aussi être calculée pour un OPC et elle est mesurée par la Durée de Vie
+            Moyenne Pondérée (DVMP) ou Weighted Average Life (WAL).
+            </span>
+         </div>
+         <div id='tauxgestpop5' class='popup' >
+            <span class='rubriquetitle'>Risque crédit </span>
+            </br>
+            <span class='glossary'>cf. glossaire</span> </br>
+            </br>
+            <span class='popcontent'>
+            Il désigne le risque que l’émetteur du produit de taux (Etat, collectivité publique, entreprise) ne rembourse
+            pas sa dette à l’échéance. Le risque de crédit relatif à chaque émetteur et à chaque émission est évalué
+            par les agences de notation que sont Moody’s, Standard and Poor’s, Fitch et Dagong, selon des échelles
+            qui vont respectivement de Aaa à C pour Moody’s et de AAA à D pour les trois autres. Moody’s et Standard and Poor’s sont des entreprises américaines, Fitch est européenne et Dagong chinoise.
+            Les obligations notées de AAA à BBB- sont classées en « investment grade » et répondent à un niveau
+            de risque faible requis notamment par les investisseurs institutionnels; les obligations notées de BB+ à D
+            sont classées en « speculative grade » ou « high yield » et offrent des rendements élevés pour des risques élevés.
+            </span>
+         </div>
+         <div id='tauxgestpop6' class='popup' >
+            <span class='rubriquetitle'>Diversification</span>
+            </br>
+            <span class='glossary'>cf. glossaire</span> </br>
+            </br>
+            <span class='popcontent'>
+            La diversité des émetteurs et des émissions de produits de taux permet d’utiliser le levier de la diversification dans le but d’améliorer la performance des différentes catégories d’OPC obligataires et monétaires. Un OPC principalement investi en titres d’Etats peut ainsi détenir une part de diversification en titres émis par des entreprises (appelés « obligations crédit ou corporate »).</span>
+         </div>
+		 
+		 </div>
+   </body>
+   <script type="text/javascript"></script>
+</html>
