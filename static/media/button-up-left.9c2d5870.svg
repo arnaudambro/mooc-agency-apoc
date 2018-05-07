@@ -1,0 +1,10 @@
+
+<svg  viewBox="0 0 119 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="button-up-left">
+            <path d="M64,128 C81.4527588,128 99.1120531,128 118.739775,128 C118.660689,111.97173 118.739775,81.8934652 118.739775,64 C118.739775,46.8557735 118.739775,14.1724383 118.739775,2.90878432e-14 C98.384144,0 82.2019975,0 64,0 C28.653776,0 0,28.653776 0,64 C0,99.346224 28.653776,128 64,128 Z" id="Oval-left" fill="#0A0A0A"></path>
+            <polyline id="arrow-up" stroke="#FAFAFA" stroke-width="3" transform="translate(58.910369, 64.316494) scale(1, -1) translate(-58.910369, -64.316494) " points="31 50 58.9103687 78.6329881 86.8207373 50"></polyline>
+        </g>
+    </g>
+</svg>
